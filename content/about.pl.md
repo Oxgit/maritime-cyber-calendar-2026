@@ -2,9 +2,9 @@
 title: "O projekcie"
 ---
 
-# O Maritime Cybersecurity Calendar
+# O Maritime Cybersecurity Conference Calendar - MC³ 2026
 
-**Maritime Cybersecurity Calendar** to kalendarz konferencji, summitów i wydarzeń poświęconych cyberbezpieczeństwu w sektorze morskim na rok 2026.
+**Maritime Cybersecurity Conference Calendar MC³ 2026** to kalendarz konferencji, summitów i wydarzeń poświęconych cyberbezpieczeństwu w sektorze morskim na rok 2026.
 
 ## Dla kogo?
 
@@ -13,7 +13,7 @@ Kalendarz jest przeznaczony dla:
 - 🚢 **Specjalistów ds. cyberbezpieczeństwa** w sektorze morskim i portowym
 - ⚓ **Oficerów bezpieczeństwa** firm żeglugowych i operatorów portów
 - 🔒 **Konsultantów** specjalizujących się w maritime cybersecurity
-- 🎓 **Badaczy** zajmujących się bezpieczeństwem OT/IT w transporcie morskim
+- 🎓 **Badaczy** zajmujących się bezpieczeństwem MT/OT/IT w transporcie morskim
 - 🏛️ **Przedstawicieli regulatorów** i organizacji międzynarodowych (IMO, EMSA, NATO)
 
 ## Typy wydarzeń
@@ -58,13 +58,14 @@ Kalendarz zbudowany jest przy użyciu:
 
 ## Kluczowe organizacje Maritime Cybersecurity
 
+- [Maritime Cyber Guild](https://maritimecyberguild.com/) - a non-profit organization dedicated to advancing cybersecurity within the maritime industry. 
 - [NORMA Cyber](https://www.normacyber.no) - Norwegian Maritime Cyber Resilience Centre
-- [NATO NMIOTC](https://nmiotc.nato.int) - Maritime Interdiction Operational Training Centre
+- [IMO](https://www.imo.org) - International Maritime Organization
 - [EMSA](https://www.emsa.europa.eu) - European Maritime Safety Agency
 - [MTS-ISAC](https://www.mtsisac.org) - Maritime Transportation System ISAC
+- [NATO NMIOTC](https://nmiotc.nato.int) - Maritime Interdiction Operational Training Centre
 - [France Cyber Maritime](https://www.france-cyber-maritime.eu) - M-CERT
-- [IMO](https://www.imo.org) - International Maritime Organization
 
 ---
 
-*Projekt rozwijany przez CyberBRIDGE Maritime Cybersecurity Consultancy.*
+*Projekt rozwijany przez Andrzej Gab (Ogmios / CyberBRIDGE Maritime Cybersecurity Consultancy).*

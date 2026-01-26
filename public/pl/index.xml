@@ -1,3 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kalendarz Maritime Cybersecurity 2026</title><link>https://maritime-cyber-calendar.example.com/pl/</link><description>Recent content on Kalendarz Maritime Cybersecurity 2026</description><generator>Hugo -- gohugo.io</generator><language>pl</language><atom:link href="https://maritime-cyber-calendar.example.com/pl/index.xml" rel="self" type="application/rss+xml"/><item><title>O projekcie</title><link>https://maritime-cyber-calendar.example.com/pl/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://maritime-cyber-calendar.example.com/pl/about/</guid><description>O Maritime Cybersecurity Calendar Maritime Cybersecurity Calendar to kalendarz konferencji, summitów i wydarzeń poświęconych cyberbezpieczeństwu w sektorze morskim na rok 2026.
-Dla kogo? Kalendarz jest przeznaczony dla:
-🚢 Specjalistów ds. cyberbezpieczeństwa w sektorze morskim i portowym ⚓ Oficerów bezpieczeństwa firm żeglugowych i operatorów portów 🔒 Konsultantów specjalizujących się w maritime cybersecurity 🎓 Badaczy zajmujących się bezpieczeństwem OT/IT w transporcie morskim 🏛️ Przedstawicieli regulatorów i organizacji międzynarodowych (IMO, EMSA, NATO) Typy wydarzeń Kalendarz obejmuje różne typy wydarzeń:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kalendarz Konferencji Maritime Cybersecurity 2026</title>
+    <link>http://localhost:1313/pl/</link>
+    <description>Recent content on Kalendarz Konferencji Maritime Cybersecurity 2026</description>
+    <generator>Hugo</generator>
+    <language>pl</language>
+    <atom:link href="http://localhost:1313/pl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>O projekcie</title>
+      <link>http://localhost:1313/pl/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pl/about/</guid>
+      <description>&lt;h1 id=&#34;o-maritime-cybersecurity-conference-calendar---mc-2026&#34;&gt;O Maritime Cybersecurity Conference Calendar - MC³ 2026&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Maritime Cybersecurity Conference Calendar MC³ 2026&lt;/strong&gt; to kalendarz konferencji, summitów i wydarzeń poświęconych cyberbezpieczeństwu w sektorze morskim na rok 2026.&lt;/p&gt;&#xA;&lt;h2 id=&#34;dla-kogo&#34;&gt;Dla kogo?&lt;/h2&gt;&#xA;&lt;p&gt;Kalendarz jest przeznaczony dla:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🚢 &lt;strong&gt;Specjalistów ds. cyberbezpieczeństwa&lt;/strong&gt; w sektorze morskim i portowym&lt;/li&gt;&#xA;&lt;li&gt;⚓ &lt;strong&gt;Oficerów bezpieczeństwa&lt;/strong&gt; firm żeglugowych i operatorów portów&lt;/li&gt;&#xA;&lt;li&gt;🔒 &lt;strong&gt;Konsultantów&lt;/strong&gt; specjalizujących się w maritime cybersecurity&lt;/li&gt;&#xA;&lt;li&gt;🎓 &lt;strong&gt;Badaczy&lt;/strong&gt; zajmujących się bezpieczeństwem MT/OT/IT w transporcie morskim&lt;/li&gt;&#xA;&lt;li&gt;🏛️ &lt;strong&gt;Przedstawicieli regulatorów&lt;/strong&gt; i organizacji międzynarodowych (IMO, EMSA, NATO)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;typy-wydarzeń&#34;&gt;Typy wydarzeń&lt;/h2&gt;&#xA;&lt;p&gt;Kalendarz obejmuje różne typy wydarzeń:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -2,9 +2,9 @@
 title: "About"
 ---
 
-# About Maritime Cybersecurity Calendar
+# About Maritime Cybersecurity Conference Calendar - MC³ 2026
 
-**Maritime Cybersecurity Calendar** is a calendar of conferences, summits, and events dedicated to cybersecurity in the maritime sector for 2026.
+**Maritime Cybersecurity Conference Calendar MC³** is a calendar of conferences, summits, and events dedicated to cybersecurity in the maritime sector for 2026.
 
 ## Who is it for?
 
@@ -13,7 +13,7 @@ The calendar is designed for:
 - 🚢 **Cybersecurity specialists** in the maritime and port sector
 - ⚓ **Security officers** of shipping companies and port operators
 - 🔒 **Consultants** specializing in maritime cybersecurity
-- 🎓 **Researchers** working on OT/IT security in maritime transport
+- 🎓 **Researchers** working on MT/OT/IT security in maritime transport
 - 🏛️ **Representatives of regulators** and international organizations (IMO, EMSA, NATO)
 
 ## Event types
@@ -58,13 +58,15 @@ The calendar is built using:
 
 ## Key Maritime Cybersecurity Organizations
 
+- [Maritime Cyber Guild](https://maritimecyberguild.com/) - a non-profit organization dedicated to advancing cybersecurity within the maritime industry. 
 - [NORMA Cyber](https://www.normacyber.no) - Norwegian Maritime Cyber Resilience Centre
-- [NATO NMIOTC](https://nmiotc.nato.int) - Maritime Interdiction Operational Training Centre
+- [IMO](https://www.imo.org) - International Maritime Organization
 - [EMSA](https://www.emsa.europa.eu) - European Maritime Safety Agency
 - [MTS-ISAC](https://www.mtsisac.org) - Maritime Transportation System ISAC
+- [NATO NMIOTC](https://nmiotc.nato.int) - Maritime Interdiction Operational Training Centre
 - [France Cyber Maritime](https://www.france-cyber-maritime.eu) - M-CERT
-- [IMO](https://www.imo.org) - International Maritime Organization
+
 
 ---
 
-*Project developed by CyberBRIDGE Maritime Cybersecurity Consultancy.*
+*Project developed by Andrzej Gab (Ogmios / CyberBRIDGE Maritime Cybersecurity Consultancy).*

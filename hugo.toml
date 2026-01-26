@@ -1,20 +1,20 @@
-baseURL = "https://maritime-cyber-calendar.example.com/"
+baseURL = "https://maritime-cyber-calendar.ogmios.pl/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 #theme = ""
 
 [params]
-  author = "CyberBRIDGE"
-  contactEmail = "info@cyberbridge.example.com"
+  author = "Andrzej Andy Gab (Ogmios / CyberBRIDGE)"
+  contactEmail = "a.gab@ogmios.pl"
 
 [languages]
   [languages.en]
     languageCode = "en"
     languageName = "English"
     weight = 1
-    title = "Maritime Cybersecurity Calendar 2026"
+    title = "Maritime Cybersecurity Conference Calendar 2026"
     [languages.en.params]
-      description = "Maritime Cybersecurity conferences and events calendar for 2026"
+      #description = "Maritime Cybersecurity conferences and events calendar for 2026"
     [[languages.en.menus.main]]
       name = "Calendar"
       url = "/"
@@ -28,7 +28,7 @@ defaultContentLanguageInSubdir = false
     languageCode = "pl"
     languageName = "Polski"
     weight = 2
-    title = "Kalendarz Maritime Cybersecurity 2026"
+    title = "Kalendarz Konferencji Maritime Cybersecurity 2026"
     [languages.pl.params]
       description = "Kalendarz konferencji Maritime Cybersecurity na rok 2026"
     [[languages.pl.menus.main]]

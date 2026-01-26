@@ -1,7 +1,7 @@
 baseURL = "https://maritime-cyber-calendar.example.com/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
-theme = ""
+#theme = ""
 
 [params]
   author = "CyberBRIDGE"

@@ -1,0 +1,28 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Maritime Cybersecurity Calendar</h4>
+                <p>{{ i18n "footer_description" }}</p>
+            </div>
+            <div class="footer-section">
+                <h4>{{ i18n "footer_links" }}</h4>
+                <ul>
+                    <li><a href="https://www.normacyber.no" target="_blank">NORMA Cyber</a></li>
+                    <li><a href="https://nmiotc.nato.int" target="_blank">NATO NMIOTC</a></li>
+                    <li><a href="https://www.emsa.europa.eu" target="_blank">EMSA</a></li>
+                    <li><a href="https://www.mtsisac.org" target="_blank">MTS-ISAC</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>{{ i18n "footer_contact" }}</h4>
+                <p>{{ i18n "footer_contact_text" }}</p>
+                <p><a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Year }} {{ i18n "footer_copyright" }}</p>
+            <p class="credits">{{ i18n "footer_credits" }} <a href="https://konferencje.szurek.tv" target="_blank">konferencje.szurek.tv</a></p>
+        </div>
+    </div>
+</footer>

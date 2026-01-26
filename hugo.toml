@@ -1,0 +1,41 @@
+baseURL = "https://maritime-cyber-calendar.example.com/"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+theme = ""
+
+[params]
+  author = "CyberBRIDGE"
+  contactEmail = "info@cyberbridge.example.com"
+
+[languages]
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    weight = 1
+    title = "Maritime Cybersecurity Calendar 2026"
+    [languages.en.params]
+      description = "Maritime Cybersecurity conferences and events calendar for 2026"
+    [[languages.en.menus.main]]
+      name = "Calendar"
+      url = "/"
+      weight = 1
+    [[languages.en.menus.main]]
+      name = "About"
+      url = "/about/"
+      weight = 2
+
+  [languages.pl]
+    languageCode = "pl"
+    languageName = "Polski"
+    weight = 2
+    title = "Kalendarz Maritime Cybersecurity 2026"
+    [languages.pl.params]
+      description = "Kalendarz konferencji Maritime Cybersecurity na rok 2026"
+    [[languages.pl.menus.main]]
+      name = "Kalendarz"
+      url = "/pl/"
+      weight = 1
+    [[languages.pl.menus.main]]
+      name = "O projekcie"
+      url = "/pl/about/"
+      weight = 2

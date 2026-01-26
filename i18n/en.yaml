@@ -1,0 +1,52 @@
+# English translations
+hero_title: "🚢 Maritime Cybersecurity Calendar 2026"
+hero_subtitle: "Conferences, summits and events dedicated to cybersecurity in the maritime sector"
+
+# Filters
+filter_all: "All"
+filter_conferences: "Conferences"
+filter_cfp: "CFP Open"
+filter_expo: "Expos"
+filter_summits: "Summits"
+filter_cyber_track: "🔒 Cyber Track"
+filter_online: "🌐 Online"
+
+# Search
+search_placeholder: "Search (Ctrl+K)..."
+
+# Stats
+stats_events: "events"
+stats_countries: "countries"
+stats_cyber_track: "with dedicated cyber track"
+
+# Card
+more_info: "More information →"
+cfp_deadline: "CFP (deadline"
+
+# Legend
+legend_title: "Legend"
+legend_cyber: "Dedicated Cyber Track"
+legend_cfp: "Call for Papers open"
+legend_online: "Online event"
+legend_tentative: "Tentative date"
+
+# No results
+no_results: "🔍 No events found matching your search criteria."
+
+# Footer
+footer_description: "Maritime Cybersecurity conferences and events calendar for 2026."
+footer_links: "Links"
+footer_contact: "Contact"
+footer_contact_text: "Have questions or want to add an event?"
+footer_copyright: "Maritime Cybersecurity Calendar | Built with Hugo"
+footer_credits: "Inspired by"
+
+# Types
+type_conference: "conference"
+type_summit: "summit"
+type_expo: "expo"
+type_forum: "forum"
+type_symposium: "symposium"
+type_training: "training"
+type_workshop: "workshop"
+type_meeting: "meeting"

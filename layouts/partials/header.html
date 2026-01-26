@@ -1,0 +1,22 @@
+<header class="header">
+    <nav class="nav container">
+        <a href="{{ .Site.Home.RelPermalink }}" class="logo">
+            <span class="logo-icon">🚢</span>
+            <span class="logo-text">Maritime Cyber Calendar</span>
+        </a>
+        <div class="nav-right">
+            <ul class="nav-links">
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+            <div class="lang-switcher">
+                {{ range .Site.Home.AllTranslations }}
+                <a href="{{ .RelPermalink }}" class="lang-link {{ if eq .Language.Lang $.Site.Language.Lang }}active{{ end }}" title="{{ .Language.LanguageName }}">
+                    {{ if eq .Language.Lang "en" }}🇬🇧{{ else if eq .Language.Lang "pl" }}🇵🇱{{ end }}
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </nav>
+</header>

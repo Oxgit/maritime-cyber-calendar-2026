@@ -1,0 +1,126 @@
+{{ define "main" }}
+<div class="hero">
+    <div class="hero-content">
+        <h1>{{ i18n "hero_title" }}</h1>
+        <p class="hero-subtitle">{{ i18n "hero_subtitle" }}</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="controls">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">{{ i18n "filter_all" }}</button>
+            <button class="filter-btn" data-filter="conference">{{ i18n "filter_conferences" }}</button>
+            <button class="filter-btn" data-filter="cfp">{{ i18n "filter_cfp" }}</button>
+            <button class="filter-btn" data-filter="expo">{{ i18n "filter_expo" }}</button>
+            <button class="filter-btn" data-filter="summit">{{ i18n "filter_summits" }}</button>
+            <button class="filter-btn" data-filter="cyber-track">{{ i18n "filter_cyber_track" }}</button>
+            <button class="filter-btn" data-filter="online">{{ i18n "filter_online" }}</button>
+        </div>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="{{ i18n "search_placeholder" }}" autocomplete="off">
+        </div>
+    </div>
+
+    <div class="stats">
+        <span class="stat-item"><strong id="total-count">0</strong> {{ i18n "stats_events" }}</span>
+        <span class="stat-item"><strong id="countries-count">0</strong> {{ i18n "stats_countries" }}</span>
+        <span class="stat-item"><strong id="cyber-count">0</strong> {{ i18n "stats_cyber_track" }}</span>
+    </div>
+
+    {{ $conferences := .Site.Data.conferences.conferences }}
+
+    <div class="conferences-grid" id="conferences">
+        {{ range $conferences }}
+        {{ $flagEmoji := "" }}
+        {{ if eq .country_code "NO" }}{{ $flagEmoji = "🇳🇴" }}{{ end }}
+        {{ if eq .country_code "GR" }}{{ $flagEmoji = "🇬🇷" }}{{ end }}
+        {{ if eq .country_code "US" }}{{ $flagEmoji = "🇺🇸" }}{{ end }}
+        {{ if eq .country_code "DE" }}{{ $flagEmoji = "🇩🇪" }}{{ end }}
+        {{ if eq .country_code "GB" }}{{ $flagEmoji = "🇬🇧" }}{{ end }}
+        {{ if eq .country_code "FR" }}{{ $flagEmoji = "🇫🇷" }}{{ end }}
+        {{ if eq .country_code "NL" }}{{ $flagEmoji = "🇳🇱" }}{{ end }}
+        {{ if eq .country_code "PT" }}{{ $flagEmoji = "🇵🇹" }}{{ end }}
+        {{ if eq .country_code "PL" }}{{ $flagEmoji = "🇵🇱" }}{{ end }}
+        {{ if eq .country_code "SG" }}{{ $flagEmoji = "🇸🇬" }}{{ end }}
+        {{ if eq .country_code "JP" }}{{ $flagEmoji = "🇯🇵" }}{{ end }}
+        {{ if eq .country_code "CA" }}{{ $flagEmoji = "🇨🇦" }}{{ end }}
+        {{ if eq .country_code "BE" }}{{ $flagEmoji = "🇧🇪" }}{{ end }}
+        {{ if eq .country_code "LV" }}{{ $flagEmoji = "🇱🇻" }}{{ end }}
+        {{ if eq .country_code "FI" }}{{ $flagEmoji = "🇫🇮" }}{{ end }}
+        
+        <article class="conference-card" 
+                 data-type="{{ .type }}"
+                 data-country="{{ .country_code }}"
+                 data-cyber-track="{{ if .cyber_track }}true{{ else }}false{{ end }}"
+                 data-online="{{ if .online }}true{{ else }}false{{ end }}"
+                 data-cfp="{{ if .cfp_deadline }}true{{ else }}false{{ end }}"
+                 data-tags="{{ delimit .tags "," }}"
+                 data-name="{{ .name }}"
+                 data-place="{{ .place }}"
+                 data-date="{{ .date_start }}">
+            
+            <div class="card-header">
+                <span class="card-type type-{{ .type }}">{{ .type }}</span>
+                {{ if .cyber_track }}<span class="cyber-badge" title="{{ i18n "legend_cyber" }}">🔒</span>{{ end }}
+                {{ if .cfp_deadline }}<span class="cfp-badge pulse" title="{{ i18n "legend_cfp" }}">CFP</span>{{ end }}
+                {{ if .online }}<span class="online-badge" title="{{ i18n "legend_online" }}">🌐</span>{{ end }}
+                {{ if .tentative_date }}<span class="tentative-badge" title="{{ i18n "legend_tentative" }}">~</span>{{ end }}
+            </div>
+            
+            <h3 class="card-title">{{ .name }}</h3>
+            
+            <div class="card-meta">
+                <div class="meta-item">
+                    <span class="meta-icon">📅</span>
+                    <span>{{ .date_start }}{{ if ne .date_start .date_end }} — {{ .date_end }}{{ end }}</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">{{ $flagEmoji }}</span>
+                    <span>{{ .place }}</span>
+                </div>
+                {{ if .price }}
+                <div class="meta-item">
+                    <span class="meta-icon">💰</span>
+                    <span>{{ .price }}</span>
+                </div>
+                {{ end }}
+            </div>
+            
+            <p class="card-description">{{ .description }}</p>
+            
+            <div class="card-tags">
+                {{ range .tags }}
+                <span class="tag" data-tag="{{ . }}">{{ . }}</span>
+                {{ end }}
+            </div>
+            
+            <div class="card-actions">
+                <a href="{{ .link }}" target="_blank" rel="noopener" class="btn btn-primary">
+                    {{ i18n "more_info" }}
+                </a>
+                {{ if .cfp_link }}
+                <a href="{{ .cfp_link }}" target="_blank" rel="noopener" class="btn btn-cfp">
+                    {{ i18n "cfp_deadline" }} {{ if .cfp_deadline }}{{ .cfp_deadline }}){{ else }}){{ end }}
+                </a>
+                {{ end }}
+            </div>
+        </article>
+        {{ end }}
+    </div>
+
+    <div class="no-results" id="no-results" style="display: none;">
+        <p>{{ i18n "no_results" }}</p>
+    </div>
+</div>
+
+<div class="legend">
+    <h4>{{ i18n "legend_title" }}</h4>
+    <div class="legend-items">
+        <span class="legend-item"><span class="cyber-badge">🔒</span> {{ i18n "legend_cyber" }}</span>
+        <span class="legend-item"><span class="cfp-badge">CFP</span> {{ i18n "legend_cfp" }}</span>
+        <span class="legend-item"><span class="online-badge">🌐</span> {{ i18n "legend_online" }}</span>
+        <span class="legend-item"><span class="tentative-badge">~</span> {{ i18n "legend_tentative" }}</span>
+    </div>
+</div>
+{{ end }}

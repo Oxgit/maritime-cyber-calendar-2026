@@ -1,7 +1,8 @@
 # Maritime Cybersecurity Conference Calendar 2026
-# All data in English
-# Types: conference, summit, forum, training, workshop, expo
-# Tags: maritime-cyber, shipping, port-security, ot-security, nato, regulations, supply-chain
+# All data in English - Verified & Expanded
+# Sources: NORMA Cyber, MTS-ISAC, NATO NMIOTC, Smart Maritime Network, People Tech Maritime, Eventbrite, SAE Media Group, Riviera Maritime
+# Types: conference, summit, forum, training, workshop, expo, meetup
+# Focus Types: dedicated (primary maritime cyber), track (cyber track at general event), defense (military/naval)
 
 conferences:
   # ===== JANUARY 2026 =====
@@ -15,6 +16,7 @@ conferences:
     country_code: "BE"
     tags: ["naval", "quantum", "ai", "maritime-cyber"]
     type: "conference"
+    focus_type: "defense"
     price: "€200-400"
     online: false
     cyber_track: true
@@ -29,11 +31,102 @@ conferences:
     country_code: "FR"
     tags: ["autonomous", "data-management", "ai"]
     type: "conference"
+    focus_type: "track"
     price: "By invitation"
     online: false
     cyber_track: false
 
+  - name: "Maritime Reconnaissance & Surveillance Technology"
+    year: 2026
+    description: "Defense event focusing on C4ISR - securing ISR data links, protection of unmanned maritime systems against jamming and hijacking. Maritime Domain Awareness meets Cyber Domain Awareness."
+    link: "https://www.smgconferences.com/defence/uk/conference/Maritime-Reconnaissance"
+    date_start: "2026-01-27"
+    date_end: "2026-01-28"
+    place: "London"
+    country_code: "GB"
+    tags: ["defense", "isr", "unmanned-systems", "c4isr", "maritime-cyber"]
+    type: "conference"
+    focus_type: "defense"
+    price: "£1,500-2,500"
+    online: false
+    cyber_track: true
+
   # ===== FEBRUARY 2026 =====
+  - name: "Annual Offshore Support Journal Conference"
+    year: 2026
+    description: "Offshore sector conference (wind farms, oil & gas) with dedicated track on cyber resilience of Dynamic Positioning (DP) systems and offshore asset protection."
+    link: "https://www.rivieramm.com/events/events"
+    date_start: "2026-02-02"
+    date_end: "2026-02-04"
+    place: "London"
+    country_code: "GB"
+    tags: ["offshore", "ot-security", "dynamic-positioning", "osv"]
+    type: "conference"
+    focus_type: "track"
+    price: "£800-1,200"
+    online: false
+    cyber_track: true
+
+  - name: "Smart Maritime Network Dubai"
+    year: 2026
+    description: "High-impact one-day summit focusing on digitalization of logistics chains in the GCC region, port automation security, and blockchain integration."
+    link: "https://smartmaritimenetwork.com/dubai-conference-2026/"
+    date_start: "2026-02-03"
+    date_end: "2026-02-03"
+    place: "Dubai"
+    country_code: "AE"
+    tags: ["digitalization", "port-security", "blockchain", "gcc"]
+    type: "summit"
+    focus_type: "dedicated"
+    price: "Paid (free passes for shipowners)"
+    online: false
+    cyber_track: true
+
+  - name: "Cybersecurity, Stronger Together"
+    year: 2026
+    description: "US-based event with strong focus on OT and critical infrastructure security, including transport and maritime sectors."
+    link: "https://www.cloudtango.net/events/cybersecurity/"
+    date_start: "2026-02-03"
+    date_end: "2026-02-04"
+    place: "Washington DC"
+    country_code: "US"
+    tags: ["critical-infrastructure", "ot-security", "transport"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
+  - name: "CruiseCon 2026"
+    year: 2026
+    description: "Unique floating conference aboard a cruise ship for CISOs. Topics include 'Agentic AI', 'The Snowden Affair', operational safety (navigation) and passenger data privacy."
+    link: "https://cruisecon.com/"
+    date_start: "2026-02-07"
+    date_end: "2026-02-12"
+    place: "Port Canaveral / At Sea"
+    country_code: "US"
+    tags: ["ciso", "cruise", "data-privacy", "ai", "strategy"]
+    type: "conference"
+    focus_type: "dedicated"
+    price: "All-inclusive cruise fare"
+    online: false
+    cyber_track: true
+
+  - name: "MIS Shipping Summit"
+    year: 2026
+    description: "Maritime Information Services summit focused heavily on cybersecurity, operational resilience, and decarbonization in shipping."
+    link: "https://www.shippingsummit.com"
+    date_start: "2026-02-10"
+    date_end: "2026-02-12"
+    place: "Athens"
+    country_code: "GR"
+    tags: ["digital-transformation", "cybersecurity", "shipping", "decarbonization"]
+    type: "summit"
+    focus_type: "dedicated"
+    price: "€500-800"
+    online: false
+    cyber_track: true
+
   - name: "SMI Conference 2026"
     year: 2026
     description: "Society of Maritime Industries conference in Scotland - marine engineering, cybersecurity, new technologies."
@@ -44,25 +137,72 @@ conferences:
     country_code: "GB"
     tags: ["engineering", "maritime-tech", "cybersecurity"]
     type: "conference"
+    focus_type: "track"
     price: "£150-300"
     online: false
     cyber_track: true
 
-  - name: "Maritime Information Services: Shipping Summit 2026"
+  # ===== MARCH 2026 =====
+  - name: "CS4CA USA"
     year: 2026
-    description: "Summit dedicated to digital transformation, cybersecurity and operational resilience in shipping."
-    link: "https://www.shippingsummit.com"
-    date_start: "2026-02-10"
-    date_end: "2026-02-12"
-    place: "Athens"
-    country_code: "GR"
-    tags: ["digital-transformation", "cybersecurity", "shipping"]
+    description: "Cyber Security for Critical Assets summit with critical focus on Oil & Gas logistics, port SCADA systems, and IT/OT convergence."
+    link: "https://usa.cs4ca.com/"
+    date_start: "2026-03-10"
+    date_end: "2026-03-11"
+    place: "Houston"
+    country_code: "US"
+    tags: ["critical-infrastructure", "ot-security", "scada", "oil-gas", "port-security"]
     type: "summit"
-    price: "€500-800"
+    focus_type: "dedicated"
+    price: "Paid"
     online: false
     cyber_track: true
 
-  # ===== MARCH 2026 =====
+  - name: "CMA Shipping 2026"
+    year: 2026
+    description: "North America's premier shipping event with focus on US Coast Guard cyber compliance and regulatory requirements."
+    link: "https://cmashipping.com/"
+    date_start: "2026-03-10"
+    date_end: "2026-03-12"
+    place: "Stamford, CT"
+    country_code: "US"
+    tags: ["shipping", "uscg", "regulations", "compliance"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
+  - name: "MTS-ISAC Maritime Cyber Resilience Summit"
+    year: 2026
+    description: "Community-driven ISAC summit focusing on real-time threat intelligence sharing, active defense, threat hunting on vessel networks. Priority for ISAC members."
+    link: "https://www.mtsisac.org/maritime-cybersecurity-summit"
+    date_start: "2026-03-16"
+    date_end: "2026-03-17"
+    place: "Athens (Grand Hyatt)"
+    country_code: "GR"
+    tags: ["maritime-cyber", "isac", "threat-sharing", "threat-intelligence", "soc"]
+    type: "summit"
+    focus_type: "dedicated"
+    price: "Paid (ISAC member priority)"
+    online: false
+    cyber_track: true
+
+  - name: "People Tech Maritime - Oslo"
+    year: 2026
+    description: "Forum focusing on human-machine interface, crew training, and 'human firewall' concept in the context of vessel autonomy."
+    link: "https://www.peopletechmaritime.com/futureevents"
+    date_start: "2026-03-17"
+    date_end: "2026-03-17"
+    place: "Oslo"
+    country_code: "NO"
+    tags: ["human-factors", "crew-training", "insider-threat", "autonomy"]
+    type: "forum"
+    focus_type: "dedicated"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
   - name: "Baltic Security Conference 2026"
     year: 2026
     description: "The largest security event in the Baltic region - IT security, crisis management, physical security."
@@ -73,7 +213,38 @@ conferences:
     country_code: "LV"
     tags: ["it-security", "crisis-management", "baltic"]
     type: "conference"
+    focus_type: "track"
     price: "€200-400"
+    online: false
+    cyber_track: true
+
+  - name: "RSA Conference 2026"
+    year: 2026
+    description: "Premier global cybersecurity event with transport and critical infrastructure tracks relevant to maritime sector."
+    link: "https://www.rsaconference.com/"
+    date_start: "2026-03-23"
+    date_end: "2026-03-26"
+    place: "San Francisco"
+    country_code: "US"
+    tags: ["cybersecurity", "critical-infrastructure", "transport"]
+    type: "conference"
+    focus_type: "track"
+    price: "Premium ($2,000+)"
+    online: false
+    cyber_track: true
+
+  - name: "NORMA Cyber Conference 2026"
+    year: 2026
+    description: "Flagship event of Norwegian Maritime Cyber Resilience Centre. Launch of Annual Threat Assessment report. Focus on state-sponsored actors targeting Nordic maritime and energy infrastructure."
+    link: "https://www.normacyber.no/news/norma-cyber-conference-2025-xfkx3"
+    date_start: "2026-03-24"
+    date_end: "2026-03-24"
+    place: "Oslo (Ambassaden)"
+    country_code: "NO"
+    tags: ["maritime-cyber", "threat-intelligence", "incident-response", "shipping", "nordic"]
+    type: "conference"
+    focus_type: "dedicated"
+    price: "Free for members / NOK 11,700 non-members"
     online: false
     cyber_track: true
 
@@ -87,51 +258,129 @@ conferences:
     country_code: "US"
     tags: ["port-security", "cybersecurity", "automation", "infrastructure"]
     type: "conference"
+    focus_type: "track"
     price: "$500-800"
     online: false
     cyber_track: true
 
-  # ===== APRIL 2026 =====
-  - name: "NORMA Cyber Annual Conference 2026"
+  - name: "APM 2026 (Asia Pacific Maritime)"
     year: 2026
-    description: "Annual conference of the Norwegian Maritime Cyber Resilience Centre - cyber threats in the maritime sector, information sharing, incident management."
-    link: "https://www.normacyber.no"
-    cfp_link: "https://www.normacyber.no/events"
-    date_start: "2026-04-08"
-    date_end: "2026-04-08"
-    place: "Oslo"
-    country_code: "NO"
-    tags: ["maritime-cyber", "threat-intelligence", "incident-response", "shipping"]
+    description: "Massive maritime expo with significant MarineTech and cyber floors, showcasing latest maritime cybersecurity solutions for Asian market."
+    link: "https://www.apmaritime.com/"
+    date_start: "2026-03-25"
+    date_end: "2026-03-27"
+    place: "Singapore"
+    country_code: "SG"
+    tags: ["maritime-tech", "cybersecurity", "asia-pacific"]
+    type: "expo"
+    focus_type: "track"
+    price: "Trade fair pricing"
+    online: false
+    cyber_track: true
+
+  # ===== APRIL 2026 =====
+  - name: "World Border Security Congress"
+    year: 2026
+    description: "High relevance for Port Facility Security Officers (PFSO) - biometric data protection, border/port security convergence."
+    link: "https://world-border-congress.com/"
+    date_start: "2026-04-14"
+    date_end: "2026-04-16"
+    place: "Vienna"
+    country_code: "AT"
+    tags: ["border-security", "port-security", "pfso", "biometrics"]
     type: "conference"
-    price: "Members only"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
+  - name: "Smart Maritime Network Rotterdam"
+    year: 2026
+    description: "Focus on Port Community Systems (PCS) security. A cyberattack on Rotterdam's PCS could freeze European supply chains."
+    link: "https://smartmaritimenetwork.com/smn-events-2026/"
+    date_start: "2026-04-15"
+    date_end: "2026-04-15"
+    place: "Rotterdam"
+    country_code: "NL"
+    tags: ["port-security", "pcs", "supply-chain", "digitalization"]
+    type: "summit"
+    focus_type: "dedicated"
+    price: "Paid"
     online: false
     cyber_track: true
 
   - name: "Singapore Maritime Week 2026"
     year: 2026
-    description: "20th edition of Asia's largest maritime event - digitalization, decarbonization, cybersecurity, talent attraction."
+    description: "20th edition of Asia's largest maritime event. Hosts 'Marine CyberSafe' forum and showcases Maritime Cyber Assurance and Operations Centre."
     link: "https://www.smw.sg/"
     date_start: "2026-04-20"
     date_end: "2026-04-24"
-    place: "Singapore"
+    place: "Singapore (Suntec)"
     country_code: "SG"
-    tags: ["digitalization", "cybersecurity", "decarbonization", "maritime-tech"]
+    tags: ["digitalization", "cybersecurity", "decarbonization", "maritime-tech", "regulation"]
     type: "expo"
-    price: "Free/paid sessions"
+    focus_type: "track"
+    price: "Mixed (free/paid sessions)"
+    online: false
+    cyber_track: true
+
+  - name: "People Tech Maritime - Athens"
+    year: 2026
+    description: "Digitalization journey focus for Greek shipowners. Cyber security as enabler - cloud migration security, satellite network protection."
+    link: "https://www.peopletechmaritime.com/athensapr26"
+    date_start: "2026-04-21"
+    date_end: "2026-04-22"
+    place: "Athens"
+    country_code: "GR"
+    tags: ["digitalization", "cloud-security", "satellite", "shipping"]
+    type: "forum"
+    focus_type: "dedicated"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
+  - name: "Black Hat Asia 2026"
+    year: 2026
+    description: "Premier technical infosec event in Asia. Research on Cyber-Physical Systems - hacks on ECDIS, AIS, and maritime embedded systems."
+    link: "https://blackhat.com/asia-26/"
+    date_start: "2026-04-21"
+    date_end: "2026-04-24"
+    place: "Singapore (Marina Bay Sands)"
+    country_code: "SG"
+    tags: ["hacking", "research", "ecdis", "ais", "embedded-systems"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid ($2,000+)"
     online: false
     cyber_track: true
 
   - name: "Sea Japan 2026"
     year: 2026
-    description: "International maritime trade fair and conference in Japan - maritime technologies, cybersecurity, automation."
-    link: "https://www.seajapan.ne.jp"
+    description: "Japan shipbuilding expo with 'Digital Solution Square'. Focus on safety certification of AI-driven autonomous ships where cybersecurity is prerequisite for class approval."
+    link: "https://www.seajapan.ne.jp/en/"
     date_start: "2026-04-22"
     date_end: "2026-04-24"
-    place: "Tokyo"
+    place: "Tokyo (Big Sight)"
     country_code: "JP"
-    tags: ["maritime-tech", "shipbuilding", "automation"]
+    tags: ["maritime-tech", "shipbuilding", "autonomous", "certification"]
     type: "expo"
-    price: "¥3000-5000"
+    focus_type: "track"
+    price: "Trade fair pricing"
+    online: false
+    cyber_track: true
+
+  - name: "Marine Insurance Asia"
+    year: 2026
+    description: "Focus on cyber insurance policies for maritime sector, risk assessment, and underwriting practices."
+    link: "https://www.maritime-insurance.com/"
+    date_start: "2026-04-23"
+    date_end: "2026-04-23"
+    place: "Singapore"
+    country_code: "SG"
+    tags: ["insurance", "cyber-risk", "underwriting"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid"
     online: false
     cyber_track: true
 
@@ -146,64 +395,86 @@ conferences:
     country_code: "US"
     tags: ["offshore", "digital-solutions", "energy", "cybersecurity"]
     type: "conference"
-    price: "$500-1500"
+    focus_type: "track"
+    price: "$500-1,500"
     online: false
     cyber_track: true
 
-  - name: "Maritime IT & Technical Networking Summit 2026"
+  - name: "People Tech Maritime - Hamburg"
     year: 2026
-    description: "Summit for IT and digitalization executives in shipping - cybersecurity, digital transformation, B2B meetings."
-    link: "https://container-news.com/maritime-it-technical-networking-summit-2026/"
-    date_start: "2026-05-13"
-    date_end: "2026-05-14"
-    place: "Athens (Grecotel La Riviera)"
-    country_code: "GR"
-    tags: ["it-leadership", "cybersecurity", "digital-transformation", "networking"]
-    type: "summit"
-    price: "By invitation"
+    description: "Also known as Hamburg Maritime Forum. Focus on scaling cybersecurity across large managed fleets - endpoint protection deployment challenges."
+    link: "https://www.peopletechmaritime.com/futureevents"
+    date_start: "2026-05-05"
+    date_end: "2026-05-06"
+    place: "Hamburg"
+    country_code: "DE"
+    tags: ["fleet-management", "endpoint-protection", "vsat", "it-management"]
+    type: "forum"
+    focus_type: "dedicated"
+    price: "Paid"
     online: false
     cyber_track: true
 
-  - name: "MTS-ISAC Maritime Cybersecurity Summit 2026"
+  - name: "GISEC Global 2026"
     year: 2026
-    description: "Annual Maritime Transportation System ISAC summit - cyber threat information sharing, best practices for port and vessel operators."
-    link: "https://www.mtsisac.org/maritime-cybersecurity-summit"
-    date_start: "2026-05-19"
-    date_end: "2026-05-21"
-    place: "Baltimore"
+    description: "Middle East's largest cybersecurity expo. Critical Infrastructure track covers SCADA security for oil terminals and OT assets in extreme environments."
+    link: "https://gisec.ae/"
+    date_start: "2026-05-05"
+    date_end: "2026-05-07"
+    place: "Dubai"
+    country_code: "AE"
+    tags: ["critical-infrastructure", "scada", "ot-security", "gcc"]
+    type: "expo"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
+  - name: "Digital@Sea North America"
+    year: 2026
+    description: "Focus on security of digital navigation data and communications, e-navigation standards and implementation."
+    link: "https://www.rtcm.org/"
+    date_start: "2026-05-06"
+    date_end: "2026-05-07"
+    place: "Florida"
     country_code: "US"
-    tags: ["maritime-cyber", "isac", "threat-sharing", "port-security", "ot-security"]
-    type: "summit"
-    price: "$400-600"
+    tags: ["e-navigation", "communications", "navigation-data"]
+    type: "conference"
+    focus_type: "dedicated"
+    price: "Paid"
     online: false
     cyber_track: true
+    tentative_date: true
+
+  - name: "International Tug & Salvage Convention"
+    year: 2026
+    description: "Focus on tug telemetry security and operational technology protection in specialized maritime operations."
+    link: "https://www.rivieramm.com/events/events"
+    date_start: "2026-05-19"
+    date_end: "2026-05-19"
+    place: "Europe (TBD)"
+    country_code: "GB"
+    tags: ["tug", "salvage", "ot-security", "telemetry"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+    tentative_date: true
 
   # ===== JUNE 2026 =====
   - name: "Posidonia 2026"
     year: 2026
-    description: "World's largest shipping exhibition in Athens - maritime technologies, cybersecurity, digitalization. Access to the world's largest shipowning community."
+    description: "The 'Olympics of Shipping' - world's largest shipping exhibition. Expanded 'Digital Shipping' hall. Focus on ROI, insurance reduction, charterparty compliance."
     link: "https://posidonia-events.com/"
     date_start: "2026-06-01"
     date_end: "2026-06-05"
-    place: "Athens"
+    place: "Athens (Metropolitan Expo)"
     country_code: "GR"
-    tags: ["shipping", "maritime-tech", "cybersecurity", "digitalization"]
+    tags: ["shipping", "maritime-tech", "cybersecurity", "digitalization", "greek-shipping"]
     type: "expo"
+    focus_type: "track"
     price: "€50-200"
-    online: false
-    cyber_track: true
-
-  - name: "17th NMIOTC Annual Conference 2026"
-    year: 2026
-    description: "Annual NATO Maritime Interdiction Operational Training Centre conference - maritime security, critical infrastructure protection, multi-domain awareness."
-    link: "https://nmiotc.nato.int/nmiotc-annual-conferences/"
-    date_start: "2026-06-03"
-    date_end: "2026-06-04"
-    place: "Souda Bay, Crete"
-    country_code: "GR"
-    tags: ["nato", "maritime-security", "infrastructure-protection", "multi-domain"]
-    type: "conference"
-    price: "Free"
     online: false
     cyber_track: true
 
@@ -217,20 +488,67 @@ conferences:
     country_code: "PL"
     tags: ["baltic", "infrastructure-protection", "nato", "eu", "maritime-cyber"]
     type: "conference"
+    focus_type: "dedicated"
     price: "By invitation"
+    online: false
+    cyber_track: true
+
+  - name: "17th NMIOTC Annual Conference"
+    year: 2026
+    description: "NATO high-security conference on hybrid threats - GPS spoofing, cyber-attacks on ports as prelude to kinetic action, state-level adversaries."
+    link: "https://nmiotc.nato.int/nmiotc-annual-conferences/"
+    date_start: "2026-06-03"
+    date_end: "2026-06-04"
+    place: "Souda Bay, Crete"
+    country_code: "GR"
+    tags: ["nato", "maritime-security", "hybrid-threats", "gps-spoofing", "infrastructure-protection"]
+    type: "conference"
+    focus_type: "defense"
+    price: "Invitation/Vetting required"
+    online: false
+    cyber_track: true
+
+  - name: "Maritime Cyber Guild Meetup Q2"
+    year: 2026
+    description: "Grassroots practitioner meetup. Theme: 'What happens when cybersecurity fails?' - business continuity, disaster recovery, war-gaming, scenario planning."
+    link: "https://www.eventbrite.com/e/maritime-cyber-guild-meetup-q2-2026-what-happens-when-cybersecurity-fails-tickets-1981420760834"
+    date_start: "2026-06-15"
+    date_end: "2026-06-15"
+    place: "Prague (Vienna House by Wyndham Diplomat)"
+    country_code: "CZ"
+    tags: ["practitioner", "incident-response", "bcdr", "war-gaming"]
+    type: "meetup"
+    focus_type: "dedicated"
+    price: "Low cost"
+    online: false
+    cyber_track: true
+
+  - name: "CO2 Shipping & Terminals"
+    year: 2026
+    description: "Security of new OT systems for Carbon Capture storage and transport - emerging cybersecurity challenges in green shipping."
+    link: "https://www.rivieramm.com/events/events"
+    date_start: "2026-06-16"
+    date_end: "2026-06-16"
+    place: "London"
+    country_code: "GB"
+    tags: ["carbon-capture", "ot-security", "green-shipping"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid"
     online: false
     cyber_track: true
 
   - name: "Autonomous Ship Expo 2026"
     year: 2026
-    description: "Trade fair and conference on autonomous navigation - cybersecurity, remote control, sensor technologies."
+    description: "Dedicated to unmanned vessels. Focus on control link integrity, anti-jamming navigation, ethical AI decision-making. Cybersecurity as safety-critical engineering."
     link: "https://electricandhybridmarineworldexpo.com/autonomous-ship-expo"
     date_start: "2026-06-16"
     date_end: "2026-06-18"
-    place: "Amsterdam"
+    place: "Amsterdam (RAI)"
     country_code: "NL"
-    tags: ["autonomous", "cybersecurity", "remote-control", "sensors"]
+    tags: ["autonomous", "cybersecurity", "remote-control", "sensors", "mass"]
     type: "expo"
+    focus_type: "dedicated"
     price: "€200-500"
     online: false
     cyber_track: true
@@ -245,6 +563,7 @@ conferences:
     country_code: "CA"
     tags: ["green-tech", "sustainability", "digitalization"]
     type: "conference"
+    focus_type: "track"
     price: "CAD 500-800"
     online: false
     cyber_track: false
@@ -260,6 +579,7 @@ conferences:
     country_code: "US"
     tags: ["port-security", "ot-security", "coast-guard", "cybersecurity"]
     type: "conference"
+    focus_type: "dedicated"
     price: "$400-700"
     online: false
     cyber_track: true
@@ -275,11 +595,12 @@ conferences:
     country_code: "US"
     tags: ["hacking", "maritime-cyber", "ctf", "research"]
     type: "conference"
+    focus_type: "track"
     price: "$450"
     online: false
     cyber_track: true
 
-  - name: "BSPC Annual Conference 2026 (Lübeck)"
+  - name: "BSPC Annual Conference 2026"
     year: 2026
     description: "35th Baltic Sea Parliamentary Conference - maritime security, critical infrastructure, democratic resilience."
     link: "https://www.bspc.net/"
@@ -289,6 +610,7 @@ conferences:
     country_code: "DE"
     tags: ["baltic", "maritime-security", "infrastructure", "policy"]
     type: "conference"
+    focus_type: "track"
     price: "By invitation"
     online: false
     cyber_track: true
@@ -296,20 +618,20 @@ conferences:
   # ===== SEPTEMBER 2026 =====
   - name: "SMM Hamburg 2026"
     year: 2026
-    description: "World's leading maritime industry trade fair - cybersecurity, digitalization, AI, smart shipping. Digital & Security track."
+    description: "World's leading maritime trade fair - showcase for 'Security by Design'. IACS E26/E27 implementation case studies. Maritime Future Summit covers AI/Cyber."
     link: "https://www.smm-hamburg.com/"
-    cfp_link: "https://www.smm-hamburg.com/contact"
     date_start: "2026-09-01"
     date_end: "2026-09-04"
     place: "Hamburg"
     country_code: "DE"
-    tags: ["maritime-tech", "cybersecurity", "digitalization", "ai", "smart-shipping"]
+    tags: ["maritime-tech", "cybersecurity", "digitalization", "ai", "smart-shipping", "iacs"]
     type: "expo"
+    focus_type: "track"
     price: "€25-50"
     online: false
     cyber_track: true
 
-  - name: "10th NMIOTC Conference on Cyber Security in Maritime Domain 2026"
+  - name: "10th NMIOTC Conference on Cyber Security in Maritime Domain"
     year: 2026
     description: "Annual NATO NMIOTC conference on cybersecurity in the maritime domain - cyber threats, cyber defense operations, cross-sector cooperation."
     link: "https://nmiotc.nato.int/nmiotc-annual-conferences/cyber-security-conference/"
@@ -321,7 +643,23 @@ conferences:
     country_code: "GR"
     tags: ["nato", "maritime-cyber", "cyber-defense", "navy", "shipping"]
     type: "conference"
+    focus_type: "dedicated"
     price: "Free"
+    online: false
+    cyber_track: true
+
+  - name: "CS4CA Europe"
+    year: 2026
+    description: "Cyber Security for Critical Assets - bridges IT and OT gap. Attracts CISOs from major European ports and energy terminals. NIS2 implementation focus."
+    link: "https://europe.cs4ca.com/"
+    date_start: "2026-09-23"
+    date_end: "2026-09-24"
+    place: "London"
+    country_code: "GB"
+    tags: ["critical-infrastructure", "it-ot-convergence", "nis2", "port-security", "energy"]
+    type: "summit"
+    focus_type: "dedicated"
+    price: "Paid"
     online: false
     cyber_track: true
 
@@ -335,11 +673,72 @@ conferences:
     country_code: "GR"
     tags: ["shipping", "cybersecurity", "cyber-risk", "smart-tech"]
     type: "conference"
+    focus_type: "dedicated"
     price: "€200-400"
     online: false
     cyber_track: true
 
+  - name: "International Security Expo"
+    year: 2026
+    description: "Broad security event with 'Perimeter Protection' zone - convergence of physical port security (CCTV, access control) with cyber surveillance."
+    link: "https://www.internationalsecurityexpo.com/"
+    date_start: "2026-09-29"
+    date_end: "2026-09-30"
+    place: "London (Olympia)"
+    country_code: "GB"
+    tags: ["physical-security", "perimeter", "cctv", "biometrics", "port-security"]
+    type: "expo"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
   # ===== OCTOBER 2026 =====
+  - name: "Shipping UK 2026"
+    year: 2026
+    description: "Strategic review of UK's maritime services hub. Focus on UK National Cyber Security Centre (NCSC) guidance and Code of Practice for ship security."
+    link: "https://www.rivieramm.com/events/events"
+    date_start: "2026-10-06"
+    date_end: "2026-10-06"
+    place: "London"
+    country_code: "GB"
+    tags: ["uk", "ncsc", "policy", "regulations", "code-of-practice"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
+  - name: "4th EMSA Maritime Cybersecurity Conference"
+    year: 2026
+    description: "Annual EMSA/ENISA conference on maritime cybersecurity - information sharing, NIS2 regulations, best practices."
+    link: "https://www.emsa.europa.eu"
+    date_start: "2026-10-08"
+    date_end: "2026-10-08"
+    place: "Lisbon"
+    country_code: "PT"
+    tags: ["eu", "maritime-cyber", "nis2", "information-sharing", "regulations"]
+    type: "conference"
+    focus_type: "dedicated"
+    price: "Free"
+    online: false
+    cyber_track: true
+
+  - name: "Smart Maritime Network Tokyo"
+    year: 2026
+    description: "Focus on Japanese shipping lines' use of LEO satellite constellations for ship-to-shore data. Security of high-bandwidth links and Japanese tech integration."
+    link: "https://smartmaritimenetwork.com/smn-events-2026/"
+    date_start: "2026-10-14"
+    date_end: "2026-10-14"
+    place: "Tokyo"
+    country_code: "JP"
+    tags: ["satellite", "leo", "japanese-tech", "ship-to-shore"]
+    type: "summit"
+    focus_type: "dedicated"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
   - name: "Digital Ship Summit 2026"
     year: 2026
     description: "Digital Ship Summit - digital transformation in shipping, cybersecurity, AI, cyber resilience, IT infrastructure."
@@ -350,23 +749,58 @@ conferences:
     country_code: "GB"
     tags: ["digital-transformation", "cybersecurity", "ai", "it-infrastructure"]
     type: "summit"
+    focus_type: "dedicated"
     price: "£300-500"
     online: false
     cyber_track: true
+    tentative_date: true
 
-  - name: "4th EMSA Maritime Cybersecurity Conference 2026"
+  - name: "Maritime HR & Crew Management Summit"
     year: 2026
-    description: "Annual EMSA/ENISA conference on maritime cybersecurity - information sharing, NIS2 regulations, best practices."
-    link: "https://www.emsa.europa.eu"
-    date_start: "2026-10-08"
-    date_end: "2026-10-08"
-    place: "Lisbon"
-    country_code: "PT"
-    tags: ["eu", "maritime-cyber", "nis2", "information-sharing", "regulations"]
-    type: "conference"
-    price: "Free"
+    description: "Session on 'Cybersecurity, Safety & Technology' - crew training, managing risk of personal devices on ship's bridge, Layer 8 (Human) vulnerability."
+    link: "https://www.wplgroup.com/aci/event/maritime-hr-crew-management-europe/"
+    date_start: "2026-10-15"
+    date_end: "2026-10-16"
+    place: "London"
+    country_code: "GB"
+    tags: ["crew-training", "human-factors", "personal-devices", "awareness"]
+    type: "summit"
+    focus_type: "track"
+    price: "Paid"
     online: false
     cyber_track: true
+
+  - name: "Maritime Hybrid, Electric & Hydrogen Fuel Cells Conference"
+    year: 2026
+    description: "Green transition event. Cyber risks in Battery Management Systems (BMS) and hydrogen fuel controls - safety and security of novel propulsion OT."
+    link: "https://www.rivieramm.com/events/events"
+    date_start: "2026-10-21"
+    date_end: "2026-10-23"
+    place: "Europe (TBD)"
+    country_code: "GB"
+    tags: ["green-tech", "bms", "hydrogen", "ot-security", "propulsion"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+    tentative_date: true
+
+  - name: "WISTA International AGM"
+    year: 2026
+    description: "Women's International Shipping & Trading Association AGM - governance and diversity aspects in maritime cybersecurity leadership."
+    link: "https://wistainternational.com/"
+    date_start: "2026-10-26"
+    date_end: "2026-10-30"
+    place: "TBD"
+    country_code: "GB"
+    tags: ["governance", "diversity", "leadership"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: false
+    tentative_date: true
 
   - name: "SNAME Maritime Convention 2026"
     year: 2026
@@ -378,6 +812,7 @@ conferences:
     country_code: "US"
     tags: ["naval-architecture", "marine-engineering", "technology"]
     type: "conference"
+    focus_type: "track"
     price: "$300-600"
     online: false
     cyber_track: false
@@ -393,11 +828,42 @@ conferences:
     country_code: "FR"
     tags: ["naval-defense", "cybersecurity", "autonomous-systems", "maritime-security"]
     type: "expo"
+    focus_type: "defense"
     price: "€30-100"
     online: false
     cyber_track: true
 
-  - name: "IMO/Cyber-SHIP Lab Symposium on Maritime Cyber Security 2026"
+  - name: "IAPH World Ports Conference"
+    year: 2026
+    description: "International Association of Ports and Harbors conference - Smart Port strategy, port digitalization and cybersecurity."
+    link: "https://www.iaphworldports.org/"
+    date_start: "2026-11-03"
+    date_end: "2026-11-06"
+    place: "London"
+    country_code: "GB"
+    tags: ["port-security", "smart-port", "digitalization", "iaph"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
+  - name: "LNG Shipping & Terminals"
+    year: 2026
+    description: "Protection of high-value LNG assets - cybersecurity for critical energy transport and terminal operations."
+    link: "https://www.rivieramm.com/events/events"
+    date_start: "2026-11-10"
+    date_end: "2026-11-11"
+    place: "London"
+    country_code: "GB"
+    tags: ["lng", "energy", "terminals", "high-value-assets"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
+  - name: "IMO/Cyber-SHIP Lab Symposium on Maritime Cyber Security"
     year: 2026
     description: "Annual IMO and University of Plymouth symposium - research on cyber risk in the maritime sector, supply chain resilience, seafarer training."
     link: "https://www.imo.org/en/about/events/pages/symposium-maritime-cyber-security-and-resilience.aspx"
@@ -407,6 +873,7 @@ conferences:
     country_code: "GB"
     tags: ["imo", "maritime-cyber", "research", "supply-chain", "training"]
     type: "symposium"
+    focus_type: "dedicated"
     price: "Free"
     online: false
     cyber_track: true
@@ -421,7 +888,23 @@ conferences:
     country_code: "US"
     tags: ["port-security", "ot-security", "coast-guard", "cybersecurity", "ppp"]
     type: "conference"
+    focus_type: "dedicated"
     price: "$400-700"
+    online: false
+    cyber_track: true
+
+  - name: "Smart Maritime Network Singapore"
+    year: 2026
+    description: "Year-end review of Asian digital maritime projects. Case studies from Port of Singapore 'digital twin' security."
+    link: "https://smartmaritimenetwork.com/smn-events-2026/"
+    date_start: "2026-11-18"
+    date_end: "2026-11-18"
+    place: "Singapore (Marina Square)"
+    country_code: "SG"
+    tags: ["digital-twin", "digital-corridors", "asia-pacific"]
+    type: "summit"
+    focus_type: "dedicated"
+    price: "Paid"
     online: false
     cyber_track: true
 
@@ -433,14 +916,15 @@ conferences:
     date_end: "2026-11-27"
     place: "Nantes"
     country_code: "FR"
-    tags: ["maritime-economy", "cybersecurity", "data-management", "ports"]
+    tags: ["maritime-economy", "cybersecurity", "data-management", "ports", "m-cert"]
     type: "conference"
+    focus_type: "track"
     price: "€300-500"
     online: false
     cyber_track: true
 
   # ===== DECEMBER 2026 =====
-  - name: "CyberOwl Annual Maritime Cybersecurity Conference 2026"
+  - name: "CyberOwl Annual Maritime Cybersecurity Conference"
     year: 2026
     description: "Annual CyberOwl virtual conference - practical cybersecurity solutions for fleet operators, IMO/IACS compliance."
     link: "https://cyberowl.io"
@@ -450,12 +934,28 @@ conferences:
     country_code: "GB"
     tags: ["maritime-cyber", "compliance", "imo", "iacs", "fleet-operations"]
     type: "conference"
+    focus_type: "dedicated"
     price: "Free"
     online: true
     cyber_track: true
 
+  - name: "Maritime Cyber Guild Meetup Q4"
+    year: 2026
+    description: "End-of-year technical wrap up. Grassroots practitioner community review of 2026 maritime cyber landscape."
+    link: "https://www.eventbrite.dk/o/115564904011"
+    date_start: "2026-12-04"
+    date_end: "2026-12-04"
+    place: "Hørsholm / Online"
+    country_code: "DK"
+    tags: ["practitioner", "community", "year-review"]
+    type: "meetup"
+    focus_type: "dedicated"
+    price: "Low cost"
+    online: true
+    cyber_track: true
+
   # ===== EVENTS WITH TENTATIVE DATES =====
-  - name: "France Cyber Maritime Annual Forum 2026"
+  - name: "France Cyber Maritime Annual Forum"
     year: 2026
     description: "France Cyber Maritime forum - M-CERT, threat information sharing, cyber-maritime ecosystem cooperation."
     link: "https://www.france-cyber-maritime.eu"
@@ -465,12 +965,13 @@ conferences:
     country_code: "FR"
     tags: ["m-cert", "maritime-cyber", "information-sharing", "ecosystem"]
     type: "forum"
+    focus_type: "dedicated"
     price: "€100-200"
     online: false
     cyber_track: true
     tentative_date: true
 
-  - name: "European Maritime ISAC Annual Meeting 2026"
+  - name: "European Maritime ISAC Annual Meeting"
     year: 2026
     description: "Annual EM-ISAC meeting - cyber threat information sharing for EU ports and maritime operators."
     link: "https://www.em-isac.eu"
@@ -480,6 +981,7 @@ conferences:
     country_code: "NL"
     tags: ["isac", "eu", "threat-sharing", "port-security"]
     type: "meeting"
+    focus_type: "dedicated"
     price: "Members only"
     online: false
     cyber_track: true
@@ -495,12 +997,13 @@ conferences:
     country_code: "FI"
     tags: ["baltic", "security", "infrastructure", "cooperation"]
     type: "forum"
+    focus_type: "track"
     price: "€100-200"
     online: false
     cyber_track: true
     tentative_date: true
 
-  - name: "New York Maritime Security Conference 2026"
+  - name: "New York Maritime Security Conference"
     year: 2026
     description: "Navy League NYC maritime security conference - cybersecurity, supply chain resilience, US maritime dominance."
     link: "https://www.nymaritimesecurityconference.org"
@@ -510,6 +1013,7 @@ conferences:
     country_code: "US"
     tags: ["maritime-security", "supply-chain", "cybersecurity", "navy-league"]
     type: "conference"
+    focus_type: "track"
     price: "$200-400"
     online: false
     cyber_track: true

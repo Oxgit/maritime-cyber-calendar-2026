@@ -1,4 +1,4 @@
-baseURL = "https://maritime-cyber-calendar.ogmios.pl/"
+baseURL = "https://maritime.ogmios.pl/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 #theme = ""

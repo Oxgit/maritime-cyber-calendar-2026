@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-	<meta name="generator" content="Hugo 0.155.0-DEV"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.156.0-DEV"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maritime Cybersecurity Conference Calendar 2026 | Maritime Cybersecurity Calendar</title>
@@ -24,6 +24,10 @@
                 <li><a href="/">Calendar</a></li>
                 
                 <li><a href="/about/">About</a></li>
+                
+                <li><a href="/privacy/">Privacy</a></li>
+                
+                <li><a href="/impressum/">Impressum</a></li>
                 
             </ul>
             <div class="lang-switcher">
@@ -60,6 +64,7 @@
             <button class="filter-btn" data-filter="summit">Summits</button>
             <button class="filter-btn" data-filter="cyber-track">🔒 Cyber Track</button>
             <button class="filter-btn" data-filter="online">🌐 Online</button>
+            <button class="filter-btn" data-filter="favorites">Favorites</button>
         </div>
         <div class="search-box">
             <input type="text" id="search" placeholder="Search (Ctrl&#43;K)..." autocomplete="off">
@@ -70,6 +75,25 @@
         <span class="stat-item"><strong id="total-count">0</strong> events</span>
         <span class="stat-item"><strong id="countries-count">0</strong> countries</span>
         <span class="stat-item"><strong id="cyber-count">0</strong> with dedicated cyber track</span>
+        <span class="stat-item favorites-stat"><strong id="favorites-count">0</strong> favorites</span>
+    </div>
+
+    <div class="favorites-panel" id="favorites-panel">
+        <div class="favorites-info">
+            <div class="favorites-info-content">
+                <h4>Your Favorites</h4>
+                <p>Click the heart icon on any conference card to add it to your favorites. Your selections are saved locally in your browser and will persist between visits. Use the &#34;Favorites&#34; filter to view only your saved conferences, then export them to PDF or TXT.</p>
+                <p class="privacy-note">Your data stays private - favorites are stored only in your browser (localStorage), never sent to any server.</p>
+            </div>
+            <div class="favorites-export">
+                <h4>Export</h4>
+                <div class="export-buttons">
+                    <button class="btn btn-export" id="export-txt">Download TXT</button>
+                    <button class="btn btn-export" id="export-pdf">Download PDF</button>
+                </div>
+                <p class="export-empty-msg" id="export-empty-msg" style="display: none;">No favorites to export. Add some conferences to your favorites first.</p>
+            </div>
+        </div>
     </div>
 
     
@@ -97,7 +121,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="BE"
                  data-cyber-track="true"
@@ -106,7 +130,12 @@
                  data-tags="naval,quantum,ai,maritime-cyber"
                  data-name="EURONAVAL Conference: Maritime Superiority - Quantum and AI"
                  data-place="Brussels"
-                 data-date="2026-01-13">
+                 data-date="2026-01-13"
+                 data-date-end="2026-01-13"
+                 data-price="€200-400"
+                 data-link="https://www.euronaval.com"
+                 data-description="EURONAVAL conference dedicated to quantum technologies and AI in maritime operations, including cybersecurity aspects."
+                 data-id="euronaval-conference-maritime-superiority-quantum-and-ai">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -114,6 +143,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">EURONAVAL Conference: Maritime Superiority - Quantum and AI</h3>
@@ -178,7 +210,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="FR"
                  data-cyber-track="false"
@@ -187,7 +219,12 @@
                  data-tags="autonomous,data-management,ai"
                  data-name="Exail Maritime Users Conference"
                  data-place="Saint Germain en Laye"
-                 data-date="2026-01-20">
+                 data-date="2026-01-20"
+                 data-date-end="2026-01-20"
+                 data-price="By invitation"
+                 data-link="https://www.exail.com/events/maritime-users-conference-2026"
+                 data-description="Exail maritime technology users conference - autonomy, data management, AI in the maritime sector."
+                 data-id="exail-maritime-users-conference">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -195,6 +232,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Exail Maritime Users Conference</h3>
@@ -257,7 +297,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GB"
                  data-cyber-track="true"
@@ -266,7 +306,12 @@
                  data-tags="defense,isr,unmanned-systems,c4isr,maritime-cyber"
                  data-name="Maritime Reconnaissance &amp; Surveillance Technology"
                  data-place="London"
-                 data-date="2026-01-27">
+                 data-date="2026-01-27"
+                 data-date-end="2026-01-28"
+                 data-price="£1,500-2,500"
+                 data-link="https://www.smgconferences.com/defence/uk/conference/Maritime-Reconnaissance"
+                 data-description="Defense event focusing on C4ISR - securing ISR data links, protection of unmanned maritime systems against jamming and hijacking. Maritime Domain Awareness meets Cyber Domain Awareness."
+                 data-id="maritime-reconnaissance-surveillance-technology">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -274,6 +319,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Maritime Reconnaissance &amp; Surveillance Technology</h3>
@@ -340,7 +388,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GB"
                  data-cyber-track="true"
@@ -349,7 +397,12 @@
                  data-tags="offshore,ot-security,dynamic-positioning,osv"
                  data-name="Annual Offshore Support Journal Conference"
                  data-place="London"
-                 data-date="2026-02-02">
+                 data-date="2026-02-02"
+                 data-date-end="2026-02-04"
+                 data-price="£800-1,200"
+                 data-link="https://www.rivieramm.com/events/events"
+                 data-description="Offshore sector conference (wind farms, oil &amp; gas) with dedicated track on cyber resilience of Dynamic Positioning (DP) systems and offshore asset protection."
+                 data-id="annual-offshore-support-journal-conference">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -357,6 +410,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Annual Offshore Support Journal Conference</h3>
@@ -421,7 +477,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="summit"
                  data-country="AE"
                  data-cyber-track="true"
@@ -430,7 +486,12 @@
                  data-tags="digitalization,port-security,blockchain,gcc"
                  data-name="Smart Maritime Network Dubai"
                  data-place="Dubai"
-                 data-date="2026-02-03">
+                 data-date="2026-02-03"
+                 data-date-end="2026-02-03"
+                 data-price="Paid (free passes for shipowners)"
+                 data-link="https://smartmaritimenetwork.com/dubai-conference-2026/"
+                 data-description="High-impact one-day summit focusing on digitalization of logistics chains in the GCC region, port automation security, and blockchain integration."
+                 data-id="smart-maritime-network-dubai">
             
             <div class="card-header">
                 <span class="card-type type-summit">summit</span>
@@ -438,6 +499,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Smart Maritime Network Dubai</h3>
@@ -502,7 +566,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="true"
@@ -511,7 +575,12 @@
                  data-tags="critical-infrastructure,ot-security,transport"
                  data-name="Cybersecurity, Stronger Together"
                  data-place="Washington DC"
-                 data-date="2026-02-03">
+                 data-date="2026-02-03"
+                 data-date-end="2026-02-04"
+                 data-price="Paid"
+                 data-link="https://www.cloudtango.net/events/cybersecurity/"
+                 data-description="US-based event with strong focus on OT and critical infrastructure security, including transport and maritime sectors."
+                 data-id="cybersecurity-stronger-together">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -519,6 +588,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Cybersecurity, Stronger Together</h3>
@@ -581,7 +653,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="true"
@@ -590,7 +662,12 @@
                  data-tags="ciso,cruise,data-privacy,ai,strategy"
                  data-name="CruiseCon 2026"
                  data-place="Port Canaveral / At Sea"
-                 data-date="2026-02-07">
+                 data-date="2026-02-07"
+                 data-date-end="2026-02-12"
+                 data-price="All-inclusive cruise fare"
+                 data-link="https://cruisecon.com/"
+                 data-description="Unique floating conference aboard a cruise ship for CISOs. Topics include &#39;Agentic AI&#39;, &#39;The Snowden Affair&#39;, operational safety (navigation) and passenger data privacy."
+                 data-id="cruisecon-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -598,6 +675,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">CruiseCon 2026</h3>
@@ -664,7 +744,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="summit"
                  data-country="GR"
                  data-cyber-track="true"
@@ -673,7 +753,12 @@
                  data-tags="digital-transformation,cybersecurity,shipping,decarbonization"
                  data-name="MIS Shipping Summit"
                  data-place="Athens"
-                 data-date="2026-02-10">
+                 data-date="2026-02-10"
+                 data-date-end="2026-02-12"
+                 data-price="€500-800"
+                 data-link="https://www.shippingsummit.com"
+                 data-description="Maritime Information Services summit focused heavily on cybersecurity, operational resilience, and decarbonization in shipping."
+                 data-id="mis-shipping-summit">
             
             <div class="card-header">
                 <span class="card-type type-summit">summit</span>
@@ -681,6 +766,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">MIS Shipping Summit</h3>
@@ -745,7 +833,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GB"
                  data-cyber-track="true"
@@ -754,7 +842,12 @@
                  data-tags="engineering,maritime-tech,cybersecurity"
                  data-name="SMI Conference 2026"
                  data-place="Glasgow"
-                 data-date="2026-02-17">
+                 data-date="2026-02-17"
+                 data-date-end="2026-02-17"
+                 data-price="£150-300"
+                 data-link="https://www.maritimeindustries.org"
+                 data-description="Society of Maritime Industries conference in Scotland - marine engineering, cybersecurity, new technologies."
+                 data-id="smi-conference-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -762,6 +855,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">SMI Conference 2026</h3>
@@ -824,7 +920,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="summit"
                  data-country="US"
                  data-cyber-track="true"
@@ -833,7 +929,12 @@
                  data-tags="critical-infrastructure,ot-security,scada,oil-gas,port-security"
                  data-name="CS4CA USA"
                  data-place="Houston"
-                 data-date="2026-03-10">
+                 data-date="2026-03-10"
+                 data-date-end="2026-03-11"
+                 data-price="Paid"
+                 data-link="https://usa.cs4ca.com/"
+                 data-description="Cyber Security for Critical Assets summit with critical focus on Oil &amp; Gas logistics, port SCADA systems, and IT/OT convergence."
+                 data-id="cs4ca-usa">
             
             <div class="card-header">
                 <span class="card-type type-summit">summit</span>
@@ -841,6 +942,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">CS4CA USA</h3>
@@ -907,7 +1011,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="true"
@@ -916,7 +1020,12 @@
                  data-tags="shipping,uscg,regulations,compliance"
                  data-name="CMA Shipping 2026"
                  data-place="Stamford, CT"
-                 data-date="2026-03-10">
+                 data-date="2026-03-10"
+                 data-date-end="2026-03-12"
+                 data-price="Paid"
+                 data-link="https://cmashipping.com/"
+                 data-description="North America&#39;s premier shipping event with focus on US Coast Guard cyber compliance and regulatory requirements."
+                 data-id="cma-shipping-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -924,6 +1033,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">CMA Shipping 2026</h3>
@@ -988,7 +1100,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="summit"
                  data-country="GR"
                  data-cyber-track="true"
@@ -997,7 +1109,12 @@
                  data-tags="maritime-cyber,isac,threat-sharing,threat-intelligence,soc"
                  data-name="MTS-ISAC Maritime Cyber Resilience Summit"
                  data-place="Athens (Grand Hyatt)"
-                 data-date="2026-03-16">
+                 data-date="2026-03-16"
+                 data-date-end="2026-03-17"
+                 data-price="Paid (ISAC member priority)"
+                 data-link="https://www.mtsisac.org/maritime-cybersecurity-summit"
+                 data-description="Community-driven ISAC summit focusing on real-time threat intelligence sharing, active defense, threat hunting on vessel networks. Priority for ISAC members."
+                 data-id="mts-isac-maritime-cyber-resilience-summit">
             
             <div class="card-header">
                 <span class="card-type type-summit">summit</span>
@@ -1005,6 +1122,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">MTS-ISAC Maritime Cyber Resilience Summit</h3>
@@ -1071,7 +1191,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="forum"
                  data-country="NO"
                  data-cyber-track="true"
@@ -1080,7 +1200,12 @@
                  data-tags="human-factors,crew-training,insider-threat,autonomy"
                  data-name="People Tech Maritime - Oslo"
                  data-place="Oslo"
-                 data-date="2026-03-17">
+                 data-date="2026-03-17"
+                 data-date-end="2026-03-17"
+                 data-price="Paid"
+                 data-link="https://www.peopletechmaritime.com/futureevents"
+                 data-description="Forum focusing on human-machine interface, crew training, and &#39;human firewall&#39; concept in the context of vessel autonomy."
+                 data-id="people-tech-maritime-oslo">
             
             <div class="card-header">
                 <span class="card-type type-forum">forum</span>
@@ -1088,6 +1213,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">People Tech Maritime - Oslo</h3>
@@ -1152,7 +1280,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="LV"
                  data-cyber-track="true"
@@ -1161,7 +1289,12 @@
                  data-tags="it-security,crisis-management,baltic"
                  data-name="Baltic Security Conference 2026"
                  data-place="Riga"
-                 data-date="2026-03-19">
+                 data-date="2026-03-19"
+                 data-date-end="2026-03-19"
+                 data-price="€200-400"
+                 data-link="https://balticsecurityconference.lv"
+                 data-description="The largest security event in the Baltic region - IT security, crisis management, physical security."
+                 data-id="baltic-security-conference-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -1169,6 +1302,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Baltic Security Conference 2026</h3>
@@ -1231,7 +1367,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="true"
@@ -1240,7 +1376,12 @@
                  data-tags="cybersecurity,critical-infrastructure,transport"
                  data-name="RSA Conference 2026"
                  data-place="San Francisco"
-                 data-date="2026-03-23">
+                 data-date="2026-03-23"
+                 data-date-end="2026-03-26"
+                 data-price="Premium ($2,000&#43;)"
+                 data-link="https://www.rsaconference.com/"
+                 data-description="Premier global cybersecurity event with transport and critical infrastructure tracks relevant to maritime sector."
+                 data-id="rsa-conference-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -1248,6 +1389,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">RSA Conference 2026</h3>
@@ -1310,7 +1454,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="NO"
                  data-cyber-track="true"
@@ -1319,7 +1463,12 @@
                  data-tags="maritime-cyber,threat-intelligence,incident-response,shipping,nordic"
                  data-name="NORMA Cyber Conference 2026"
                  data-place="Oslo (Ambassaden)"
-                 data-date="2026-03-24">
+                 data-date="2026-03-24"
+                 data-date-end="2026-03-24"
+                 data-price="Free for members / NOK 11,700 non-members"
+                 data-link="https://www.normacyber.no/news/norma-cyber-conference-2025-xfkx3"
+                 data-description="Flagship event of Norwegian Maritime Cyber Resilience Centre. Launch of Annual Threat Assessment report. Focus on state-sponsored actors targeting Nordic maritime and energy infrastructure."
+                 data-id="norma-cyber-conference-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -1327,6 +1476,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">NORMA Cyber Conference 2026</h3>
@@ -1393,7 +1545,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="true"
@@ -1402,7 +1554,12 @@
                  data-tags="port-security,cybersecurity,automation,infrastructure"
                  data-name="Port of the Future Conference 2026"
                  data-place="Houston"
-                 data-date="2026-03-24">
+                 data-date="2026-03-24"
+                 data-date-end="2026-03-26"
+                 data-price="$500-800"
+                 data-link="https://portofthefutureconference.com/"
+                 data-description="Conference dedicated to the future of ports - infrastructure, cybersecurity, automation across maritime, land, and cyber domains."
+                 data-id="port-of-the-future-conference-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -1410,6 +1567,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Port of the Future Conference 2026</h3>
@@ -1474,7 +1634,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="expo"
                  data-country="SG"
                  data-cyber-track="true"
@@ -1483,7 +1643,12 @@
                  data-tags="maritime-tech,cybersecurity,asia-pacific"
                  data-name="APM 2026 (Asia Pacific Maritime)"
                  data-place="Singapore"
-                 data-date="2026-03-25">
+                 data-date="2026-03-25"
+                 data-date-end="2026-03-27"
+                 data-price="Trade fair pricing"
+                 data-link="https://www.apmaritime.com/"
+                 data-description="Massive maritime expo with significant MarineTech and cyber floors, showcasing latest maritime cybersecurity solutions for Asian market."
+                 data-id="apm-2026-asia-pacific-maritime">
             
             <div class="card-header">
                 <span class="card-type type-expo">expo</span>
@@ -1491,6 +1656,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">APM 2026 (Asia Pacific Maritime)</h3>
@@ -1553,7 +1721,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="AT"
                  data-cyber-track="true"
@@ -1562,7 +1730,12 @@
                  data-tags="border-security,port-security,pfso,biometrics"
                  data-name="World Border Security Congress"
                  data-place="Vienna"
-                 data-date="2026-04-14">
+                 data-date="2026-04-14"
+                 data-date-end="2026-04-16"
+                 data-price="Paid"
+                 data-link="https://world-border-congress.com/"
+                 data-description="High relevance for Port Facility Security Officers (PFSO) - biometric data protection, border/port security convergence."
+                 data-id="world-border-security-congress">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -1570,6 +1743,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">World Border Security Congress</h3>
@@ -1634,7 +1810,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="summit"
                  data-country="NL"
                  data-cyber-track="true"
@@ -1643,7 +1819,12 @@
                  data-tags="port-security,pcs,supply-chain,digitalization"
                  data-name="Smart Maritime Network Rotterdam"
                  data-place="Rotterdam"
-                 data-date="2026-04-15">
+                 data-date="2026-04-15"
+                 data-date-end="2026-04-15"
+                 data-price="Paid"
+                 data-link="https://smartmaritimenetwork.com/smn-events-2026/"
+                 data-description="Focus on Port Community Systems (PCS) security. A cyberattack on Rotterdam&#39;s PCS could freeze European supply chains."
+                 data-id="smart-maritime-network-rotterdam">
             
             <div class="card-header">
                 <span class="card-type type-summit">summit</span>
@@ -1651,6 +1832,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Smart Maritime Network Rotterdam</h3>
@@ -1715,7 +1899,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="expo"
                  data-country="SG"
                  data-cyber-track="true"
@@ -1724,7 +1908,12 @@
                  data-tags="digitalization,cybersecurity,decarbonization,maritime-tech,regulation"
                  data-name="Singapore Maritime Week 2026"
                  data-place="Singapore (Suntec)"
-                 data-date="2026-04-20">
+                 data-date="2026-04-20"
+                 data-date-end="2026-04-24"
+                 data-price="Mixed (free/paid sessions)"
+                 data-link="https://www.smw.sg/"
+                 data-description="20th edition of Asia&#39;s largest maritime event. Hosts &#39;Marine CyberSafe&#39; forum and showcases Maritime Cyber Assurance and Operations Centre."
+                 data-id="singapore-maritime-week-2026">
             
             <div class="card-header">
                 <span class="card-type type-expo">expo</span>
@@ -1732,6 +1921,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Singapore Maritime Week 2026</h3>
@@ -1798,7 +1990,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="forum"
                  data-country="GR"
                  data-cyber-track="true"
@@ -1807,7 +1999,12 @@
                  data-tags="digitalization,cloud-security,satellite,shipping"
                  data-name="People Tech Maritime - Athens"
                  data-place="Athens"
-                 data-date="2026-04-21">
+                 data-date="2026-04-21"
+                 data-date-end="2026-04-22"
+                 data-price="Paid"
+                 data-link="https://www.peopletechmaritime.com/athensapr26"
+                 data-description="Digitalization journey focus for Greek shipowners. Cyber security as enabler - cloud migration security, satellite network protection."
+                 data-id="people-tech-maritime-athens">
             
             <div class="card-header">
                 <span class="card-type type-forum">forum</span>
@@ -1815,6 +2012,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">People Tech Maritime - Athens</h3>
@@ -1879,7 +2079,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="SG"
                  data-cyber-track="true"
@@ -1888,7 +2088,12 @@
                  data-tags="hacking,research,ecdis,ais,embedded-systems"
                  data-name="Black Hat Asia 2026"
                  data-place="Singapore (Marina Bay Sands)"
-                 data-date="2026-04-21">
+                 data-date="2026-04-21"
+                 data-date-end="2026-04-24"
+                 data-price="Paid ($2,000&#43;)"
+                 data-link="https://blackhat.com/asia-26/"
+                 data-description="Premier technical infosec event in Asia. Research on Cyber-Physical Systems - hacks on ECDIS, AIS, and maritime embedded systems."
+                 data-id="black-hat-asia-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -1896,6 +2101,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Black Hat Asia 2026</h3>
@@ -1962,7 +2170,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="expo"
                  data-country="JP"
                  data-cyber-track="true"
@@ -1971,7 +2179,12 @@
                  data-tags="maritime-tech,shipbuilding,autonomous,certification"
                  data-name="Sea Japan 2026"
                  data-place="Tokyo (Big Sight)"
-                 data-date="2026-04-22">
+                 data-date="2026-04-22"
+                 data-date-end="2026-04-24"
+                 data-price="Trade fair pricing"
+                 data-link="https://www.seajapan.ne.jp/en/"
+                 data-description="Japan shipbuilding expo with &#39;Digital Solution Square&#39;. Focus on safety certification of AI-driven autonomous ships where cybersecurity is prerequisite for class approval."
+                 data-id="sea-japan-2026">
             
             <div class="card-header">
                 <span class="card-type type-expo">expo</span>
@@ -1979,6 +2192,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Sea Japan 2026</h3>
@@ -2043,7 +2259,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="SG"
                  data-cyber-track="true"
@@ -2052,7 +2268,12 @@
                  data-tags="insurance,cyber-risk,underwriting"
                  data-name="Marine Insurance Asia"
                  data-place="Singapore"
-                 data-date="2026-04-23">
+                 data-date="2026-04-23"
+                 data-date-end="2026-04-23"
+                 data-price="Paid"
+                 data-link="https://www.maritime-insurance.com/"
+                 data-description="Focus on cyber insurance policies for maritime sector, risk assessment, and underwriting practices."
+                 data-id="marine-insurance-asia">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -2060,6 +2281,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Marine Insurance Asia</h3>
@@ -2122,7 +2346,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="true"
@@ -2131,7 +2355,12 @@
                  data-tags="offshore,digital-solutions,energy,cybersecurity"
                  data-name="Offshore Technology Conference (OTC) 2026"
                  data-place="Houston"
-                 data-date="2026-05-04">
+                 data-date="2026-05-04"
+                 data-date-end="2026-05-07"
+                 data-price="$500-1,500"
+                 data-link="https://2026.otcnet.org/"
+                 data-description="World&#39;s premier offshore technology conference - critical infrastructure cybersecurity, digital solutions, marine energy."
+                 data-id="offshore-technology-conference-otc-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -2139,6 +2368,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Offshore Technology Conference (OTC) 2026</h3>
@@ -2203,7 +2435,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="forum"
                  data-country="DE"
                  data-cyber-track="true"
@@ -2212,7 +2444,12 @@
                  data-tags="fleet-management,endpoint-protection,vsat,it-management"
                  data-name="People Tech Maritime - Hamburg"
                  data-place="Hamburg"
-                 data-date="2026-05-05">
+                 data-date="2026-05-05"
+                 data-date-end="2026-05-06"
+                 data-price="Paid"
+                 data-link="https://www.peopletechmaritime.com/futureevents"
+                 data-description="Also known as Hamburg Maritime Forum. Focus on scaling cybersecurity across large managed fleets - endpoint protection deployment challenges."
+                 data-id="people-tech-maritime-hamburg">
             
             <div class="card-header">
                 <span class="card-type type-forum">forum</span>
@@ -2220,6 +2457,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">People Tech Maritime - Hamburg</h3>
@@ -2284,7 +2524,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="expo"
                  data-country="AE"
                  data-cyber-track="true"
@@ -2293,7 +2533,12 @@
                  data-tags="critical-infrastructure,scada,ot-security,gcc"
                  data-name="GISEC Global 2026"
                  data-place="Dubai"
-                 data-date="2026-05-05">
+                 data-date="2026-05-05"
+                 data-date-end="2026-05-07"
+                 data-price="Paid"
+                 data-link="https://gisec.ae/"
+                 data-description="Middle East&#39;s largest cybersecurity expo. Critical Infrastructure track covers SCADA security for oil terminals and OT assets in extreme environments."
+                 data-id="gisec-global-2026">
             
             <div class="card-header">
                 <span class="card-type type-expo">expo</span>
@@ -2301,6 +2546,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">GISEC Global 2026</h3>
@@ -2365,7 +2613,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="true"
@@ -2374,7 +2622,12 @@
                  data-tags="e-navigation,communications,navigation-data"
                  data-name="Digital@Sea North America"
                  data-place="Florida"
-                 data-date="2026-05-06">
+                 data-date="2026-05-06"
+                 data-date-end="2026-05-07"
+                 data-price="Paid"
+                 data-link="https://www.rtcm.org/"
+                 data-description="Focus on security of digital navigation data and communications, e-navigation standards and implementation."
+                 data-id="digital@sea-north-america">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -2382,6 +2635,9 @@
                 
                 
                 <span class="tentative-badge" title="Tentative date">~</span>
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Digital@Sea North America</h3>
@@ -2444,7 +2700,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GB"
                  data-cyber-track="true"
@@ -2453,7 +2709,12 @@
                  data-tags="tug,salvage,ot-security,telemetry"
                  data-name="International Tug &amp; Salvage Convention"
                  data-place="Europe (TBD)"
-                 data-date="2026-05-19">
+                 data-date="2026-05-19"
+                 data-date-end="2026-05-19"
+                 data-price="Paid"
+                 data-link="https://www.rivieramm.com/events/events"
+                 data-description="Focus on tug telemetry security and operational technology protection in specialized maritime operations."
+                 data-id="international-tug-salvage-convention">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -2461,6 +2722,9 @@
                 
                 
                 <span class="tentative-badge" title="Tentative date">~</span>
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">International Tug &amp; Salvage Convention</h3>
@@ -2525,7 +2789,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="expo"
                  data-country="GR"
                  data-cyber-track="true"
@@ -2534,7 +2798,12 @@
                  data-tags="shipping,maritime-tech,cybersecurity,digitalization,greek-shipping"
                  data-name="Posidonia 2026"
                  data-place="Athens (Metropolitan Expo)"
-                 data-date="2026-06-01">
+                 data-date="2026-06-01"
+                 data-date-end="2026-06-05"
+                 data-price="€50-200"
+                 data-link="https://posidonia-events.com/"
+                 data-description="The &#39;Olympics of Shipping&#39; - world&#39;s largest shipping exhibition. Expanded &#39;Digital Shipping&#39; hall. Focus on ROI, insurance reduction, charterparty compliance."
+                 data-id="posidonia-2026">
             
             <div class="card-header">
                 <span class="card-type type-expo">expo</span>
@@ -2542,6 +2811,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Posidonia 2026</h3>
@@ -2608,7 +2880,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="PL"
                  data-cyber-track="true"
@@ -2617,7 +2889,12 @@
                  data-tags="baltic,infrastructure-protection,nato,eu,maritime-cyber"
                  data-name="Digital Baltic 2026"
                  data-place="Gdynia"
-                 data-date="2026-06-02">
+                 data-date="2026-06-02"
+                 data-date-end="2026-06-04"
+                 data-price="By invitation"
+                 data-link="https://polish-presidency.consilium.europa.eu"
+                 data-description="International conference on digital security in the Baltic Sea region - critical infrastructure protection, dual-use technologies, NATO-EU cooperation."
+                 data-id="digital-baltic-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -2625,6 +2902,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Digital Baltic 2026</h3>
@@ -2691,7 +2971,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GR"
                  data-cyber-track="true"
@@ -2700,7 +2980,12 @@
                  data-tags="nato,maritime-security,hybrid-threats,gps-spoofing,infrastructure-protection"
                  data-name="17th NMIOTC Annual Conference"
                  data-place="Souda Bay, Crete"
-                 data-date="2026-06-03">
+                 data-date="2026-06-03"
+                 data-date-end="2026-06-04"
+                 data-price="Invitation/Vetting required"
+                 data-link="https://nmiotc.nato.int/nmiotc-annual-conferences/"
+                 data-description="NATO high-security conference on hybrid threats - GPS spoofing, cyber-attacks on ports as prelude to kinetic action, state-level adversaries."
+                 data-id="17th-nmiotc-annual-conference">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -2708,6 +2993,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">17th NMIOTC Annual Conference</h3>
@@ -2774,7 +3062,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="meetup"
                  data-country="CZ"
                  data-cyber-track="true"
@@ -2783,7 +3071,12 @@
                  data-tags="practitioner,incident-response,bcdr,war-gaming"
                  data-name="Maritime Cyber Guild Meetup Q2"
                  data-place="Prague (Vienna House by Wyndham Diplomat)"
-                 data-date="2026-06-15">
+                 data-date="2026-06-15"
+                 data-date-end="2026-06-15"
+                 data-price="Low cost"
+                 data-link="https://www.eventbrite.com/e/maritime-cyber-guild-meetup-q2-2026-what-happens-when-cybersecurity-fails-tickets-1981420760834"
+                 data-description="Grassroots practitioner meetup. Theme: &#39;What happens when cybersecurity fails?&#39; - business continuity, disaster recovery, war-gaming, scenario planning."
+                 data-id="maritime-cyber-guild-meetup-q2">
             
             <div class="card-header">
                 <span class="card-type type-meetup">meetup</span>
@@ -2791,6 +3084,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Maritime Cyber Guild Meetup Q2</h3>
@@ -2855,7 +3151,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GB"
                  data-cyber-track="true"
@@ -2864,7 +3160,12 @@
                  data-tags="carbon-capture,ot-security,green-shipping"
                  data-name="CO2 Shipping &amp; Terminals"
                  data-place="London"
-                 data-date="2026-06-16">
+                 data-date="2026-06-16"
+                 data-date-end="2026-06-16"
+                 data-price="Paid"
+                 data-link="https://www.rivieramm.com/events/events"
+                 data-description="Security of new OT systems for Carbon Capture storage and transport - emerging cybersecurity challenges in green shipping."
+                 data-id="co2-shipping-terminals">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -2872,6 +3173,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">CO2 Shipping &amp; Terminals</h3>
@@ -2934,7 +3238,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="expo"
                  data-country="NL"
                  data-cyber-track="true"
@@ -2943,7 +3247,12 @@
                  data-tags="autonomous,cybersecurity,remote-control,sensors,mass"
                  data-name="Autonomous Ship Expo 2026"
                  data-place="Amsterdam (RAI)"
-                 data-date="2026-06-16">
+                 data-date="2026-06-16"
+                 data-date-end="2026-06-18"
+                 data-price="€200-500"
+                 data-link="https://electricandhybridmarineworldexpo.com/autonomous-ship-expo"
+                 data-description="Dedicated to unmanned vessels. Focus on control link integrity, anti-jamming navigation, ethical AI decision-making. Cybersecurity as safety-critical engineering."
+                 data-id="autonomous-ship-expo-2026">
             
             <div class="card-header">
                 <span class="card-type type-expo">expo</span>
@@ -2951,6 +3260,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Autonomous Ship Expo 2026</h3>
@@ -3017,7 +3329,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="CA"
                  data-cyber-track="false"
@@ -3026,7 +3338,12 @@
                  data-tags="green-tech,sustainability,digitalization"
                  data-name="GreenTech / Green Marine Conference 2026"
                  data-place="Quebec City"
-                 data-date="2026-06-09">
+                 data-date="2026-06-09"
+                 data-date-end="2026-06-11"
+                 data-price="CAD 500-800"
+                 data-link="https://www.green-marine.org"
+                 data-description="Conference on green maritime technologies - digitalization and cybersecurity as elements of sustainable transport."
+                 data-id="greentech-/-green-marine-conference-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -3034,6 +3351,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">GreenTech / Green Marine Conference 2026</h3>
@@ -3096,7 +3416,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="true"
@@ -3105,7 +3425,12 @@
                  data-tags="port-security,ot-security,coast-guard,cybersecurity"
                  data-name="Maritime Security West 2026"
                  data-place="San Diego"
-                 data-date="2026-07-14">
+                 data-date="2026-07-14"
+                 data-date-end="2026-07-16"
+                 data-price="$400-700"
+                 data-link="https://marsecwest.com/"
+                 data-description="US maritime security conference - port cybersecurity, OT technologies, government-industry cooperation."
+                 data-id="maritime-security-west-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -3113,6 +3438,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Maritime Security West 2026</h3>
@@ -3177,7 +3505,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="true"
@@ -3186,7 +3514,12 @@
                  data-tags="hacking,maritime-cyber,ctf,research"
                  data-name="DEF CON 34 - Maritime Security Village"
                  data-place="Las Vegas"
-                 data-date="2026-08-06">
+                 data-date="2026-08-06"
+                 data-date-end="2026-08-09"
+                 data-price="$450"
+                 data-link="https://defcon.org"
+                 data-description="Maritime Security Village at DEF CON - hacking maritime systems, CTF, OT/IT security research."
+                 data-id="def-con-34-maritime-security-village">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -3194,6 +3527,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">DEF CON 34 - Maritime Security Village</h3>
@@ -3258,7 +3594,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="DE"
                  data-cyber-track="true"
@@ -3267,7 +3603,12 @@
                  data-tags="baltic,maritime-security,infrastructure,policy"
                  data-name="BSPC Annual Conference 2026"
                  data-place="Lübeck"
-                 data-date="2026-08-30">
+                 data-date="2026-08-30"
+                 data-date-end="2026-09-01"
+                 data-price="By invitation"
+                 data-link="https://www.bspc.net/"
+                 data-description="35th Baltic Sea Parliamentary Conference - maritime security, critical infrastructure, democratic resilience."
+                 data-id="bspc-annual-conference-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -3275,6 +3616,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">BSPC Annual Conference 2026</h3>
@@ -3339,7 +3683,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="expo"
                  data-country="DE"
                  data-cyber-track="true"
@@ -3348,7 +3692,12 @@
                  data-tags="maritime-tech,cybersecurity,digitalization,ai,smart-shipping,iacs"
                  data-name="SMM Hamburg 2026"
                  data-place="Hamburg"
-                 data-date="2026-09-01">
+                 data-date="2026-09-01"
+                 data-date-end="2026-09-04"
+                 data-price="€25-50"
+                 data-link="https://www.smm-hamburg.com/"
+                 data-description="World&#39;s leading maritime trade fair - showcase for &#39;Security by Design&#39;. IACS E26/E27 implementation case studies. Maritime Future Summit covers AI/Cyber."
+                 data-id="smm-hamburg-2026">
             
             <div class="card-header">
                 <span class="card-type type-expo">expo</span>
@@ -3356,6 +3705,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">SMM Hamburg 2026</h3>
@@ -3424,7 +3776,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GR"
                  data-cyber-track="true"
@@ -3433,7 +3785,12 @@
                  data-tags="nato,maritime-cyber,cyber-defense,navy,shipping"
                  data-name="10th NMIOTC Conference on Cyber Security in Maritime Domain"
                  data-place="Chania, Crete"
-                 data-date="2026-09-16">
+                 data-date="2026-09-16"
+                 data-date-end="2026-09-17"
+                 data-price="Free"
+                 data-link="https://nmiotc.nato.int/nmiotc-annual-conferences/cyber-security-conference/"
+                 data-description="Annual NATO NMIOTC conference on cybersecurity in the maritime domain - cyber threats, cyber defense operations, cross-sector cooperation."
+                 data-id="10th-nmiotc-conference-on-cyber-security-in-maritime-domain">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -3441,6 +3798,9 @@
                 <span class="cfp-badge pulse" title="Call for Papers open">CFP</span>
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">10th NMIOTC Conference on Cyber Security in Maritime Domain</h3>
@@ -3511,7 +3871,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="summit"
                  data-country="GB"
                  data-cyber-track="true"
@@ -3520,7 +3880,12 @@
                  data-tags="critical-infrastructure,it-ot-convergence,nis2,port-security,energy"
                  data-name="CS4CA Europe"
                  data-place="London"
-                 data-date="2026-09-23">
+                 data-date="2026-09-23"
+                 data-date-end="2026-09-24"
+                 data-price="Paid"
+                 data-link="https://europe.cs4ca.com/"
+                 data-description="Cyber Security for Critical Assets - bridges IT and OT gap. Attracts CISOs from major European ports and energy terminals. NIS2 implementation focus."
+                 data-id="cs4ca-europe">
             
             <div class="card-header">
                 <span class="card-type type-summit">summit</span>
@@ -3528,6 +3893,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">CS4CA Europe</h3>
@@ -3594,7 +3962,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GR"
                  data-cyber-track="true"
@@ -3603,7 +3971,12 @@
                  data-tags="shipping,cybersecurity,cyber-risk,smart-tech"
                  data-name="ShipIT Conference 2026"
                  data-place="Athens"
-                 data-date="2026-09-29">
+                 data-date="2026-09-29"
+                 data-date-end="2026-09-29"
+                 data-price="€200-400"
+                 data-link="https://shipit.boussiasevents.gr/"
+                 data-description="12th edition of Ship IT Conference in Athens - smart technologies, cybersecurity, cyber risk management in shipping."
+                 data-id="shipit-conference-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -3611,6 +3984,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">ShipIT Conference 2026</h3>
@@ -3675,7 +4051,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="expo"
                  data-country="GB"
                  data-cyber-track="true"
@@ -3684,7 +4060,12 @@
                  data-tags="physical-security,perimeter,cctv,biometrics,port-security"
                  data-name="International Security Expo"
                  data-place="London (Olympia)"
-                 data-date="2026-09-29">
+                 data-date="2026-09-29"
+                 data-date-end="2026-09-30"
+                 data-price="Paid"
+                 data-link="https://www.internationalsecurityexpo.com/"
+                 data-description="Broad security event with &#39;Perimeter Protection&#39; zone - convergence of physical port security (CCTV, access control) with cyber surveillance."
+                 data-id="international-security-expo">
             
             <div class="card-header">
                 <span class="card-type type-expo">expo</span>
@@ -3692,6 +4073,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">International Security Expo</h3>
@@ -3758,7 +4142,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GB"
                  data-cyber-track="true"
@@ -3767,7 +4151,12 @@
                  data-tags="uk,ncsc,policy,regulations,code-of-practice"
                  data-name="Shipping UK 2026"
                  data-place="London"
-                 data-date="2026-10-06">
+                 data-date="2026-10-06"
+                 data-date-end="2026-10-06"
+                 data-price="Paid"
+                 data-link="https://www.rivieramm.com/events/events"
+                 data-description="Strategic review of UK&#39;s maritime services hub. Focus on UK National Cyber Security Centre (NCSC) guidance and Code of Practice for ship security."
+                 data-id="shipping-uk-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -3775,6 +4164,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Shipping UK 2026</h3>
@@ -3841,7 +4233,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="PT"
                  data-cyber-track="true"
@@ -3850,7 +4242,12 @@
                  data-tags="eu,maritime-cyber,nis2,information-sharing,regulations"
                  data-name="4th EMSA Maritime Cybersecurity Conference"
                  data-place="Lisbon"
-                 data-date="2026-10-08">
+                 data-date="2026-10-08"
+                 data-date-end="2026-10-08"
+                 data-price="Free"
+                 data-link="https://www.emsa.europa.eu"
+                 data-description="Annual EMSA/ENISA conference on maritime cybersecurity - information sharing, NIS2 regulations, best practices."
+                 data-id="4th-emsa-maritime-cybersecurity-conference">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -3858,6 +4255,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">4th EMSA Maritime Cybersecurity Conference</h3>
@@ -3924,7 +4324,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="summit"
                  data-country="JP"
                  data-cyber-track="true"
@@ -3933,7 +4333,12 @@
                  data-tags="satellite,leo,japanese-tech,ship-to-shore"
                  data-name="Smart Maritime Network Tokyo"
                  data-place="Tokyo"
-                 data-date="2026-10-14">
+                 data-date="2026-10-14"
+                 data-date-end="2026-10-14"
+                 data-price="Paid"
+                 data-link="https://smartmaritimenetwork.com/smn-events-2026/"
+                 data-description="Focus on Japanese shipping lines&#39; use of LEO satellite constellations for ship-to-shore data. Security of high-bandwidth links and Japanese tech integration."
+                 data-id="smart-maritime-network-tokyo">
             
             <div class="card-header">
                 <span class="card-type type-summit">summit</span>
@@ -3941,6 +4346,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Smart Maritime Network Tokyo</h3>
@@ -4005,7 +4413,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="summit"
                  data-country="GB"
                  data-cyber-track="true"
@@ -4014,7 +4422,12 @@
                  data-tags="digital-transformation,cybersecurity,ai,it-infrastructure"
                  data-name="Digital Ship Summit 2026"
                  data-place="Location TBD"
-                 data-date="2026-10-14">
+                 data-date="2026-10-14"
+                 data-date-end="2026-10-14"
+                 data-price="£300-500"
+                 data-link="https://thedigitalship.com/summit/"
+                 data-description="Digital Ship Summit - digital transformation in shipping, cybersecurity, AI, cyber resilience, IT infrastructure."
+                 data-id="digital-ship-summit-2026">
             
             <div class="card-header">
                 <span class="card-type type-summit">summit</span>
@@ -4022,6 +4435,9 @@
                 
                 
                 <span class="tentative-badge" title="Tentative date">~</span>
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Digital Ship Summit 2026</h3>
@@ -4086,7 +4502,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="summit"
                  data-country="GB"
                  data-cyber-track="true"
@@ -4095,7 +4511,12 @@
                  data-tags="crew-training,human-factors,personal-devices,awareness"
                  data-name="Maritime HR &amp; Crew Management Summit"
                  data-place="London"
-                 data-date="2026-10-15">
+                 data-date="2026-10-15"
+                 data-date-end="2026-10-16"
+                 data-price="Paid"
+                 data-link="https://www.wplgroup.com/aci/event/maritime-hr-crew-management-europe/"
+                 data-description="Session on &#39;Cybersecurity, Safety &amp; Technology&#39; - crew training, managing risk of personal devices on ship&#39;s bridge, Layer 8 (Human) vulnerability."
+                 data-id="maritime-hr-crew-management-summit">
             
             <div class="card-header">
                 <span class="card-type type-summit">summit</span>
@@ -4103,6 +4524,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Maritime HR &amp; Crew Management Summit</h3>
@@ -4167,7 +4591,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GB"
                  data-cyber-track="true"
@@ -4176,7 +4600,12 @@
                  data-tags="green-tech,bms,hydrogen,ot-security,propulsion"
                  data-name="Maritime Hybrid, Electric &amp; Hydrogen Fuel Cells Conference"
                  data-place="Europe (TBD)"
-                 data-date="2026-10-21">
+                 data-date="2026-10-21"
+                 data-date-end="2026-10-23"
+                 data-price="Paid"
+                 data-link="https://www.rivieramm.com/events/events"
+                 data-description="Green transition event. Cyber risks in Battery Management Systems (BMS) and hydrogen fuel controls - safety and security of novel propulsion OT."
+                 data-id="maritime-hybrid-electric-hydrogen-fuel-cells-conference">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -4184,6 +4613,9 @@
                 
                 
                 <span class="tentative-badge" title="Tentative date">~</span>
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Maritime Hybrid, Electric &amp; Hydrogen Fuel Cells Conference</h3>
@@ -4250,7 +4682,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GB"
                  data-cyber-track="false"
@@ -4259,7 +4691,12 @@
                  data-tags="governance,diversity,leadership"
                  data-name="WISTA International AGM"
                  data-place="TBD"
-                 data-date="2026-10-26">
+                 data-date="2026-10-26"
+                 data-date-end="2026-10-30"
+                 data-price="Paid"
+                 data-link="https://wistainternational.com/"
+                 data-description="Women&#39;s International Shipping &amp; Trading Association AGM - governance and diversity aspects in maritime cybersecurity leadership."
+                 data-id="wista-international-agm">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -4267,6 +4704,9 @@
                 
                 
                 <span class="tentative-badge" title="Tentative date">~</span>
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">WISTA International AGM</h3>
@@ -4329,7 +4769,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="false"
@@ -4338,7 +4778,12 @@
                  data-tags="naval-architecture,marine-engineering,technology"
                  data-name="SNAME Maritime Convention 2026"
                  data-place="Houston"
-                 data-date="2026-10-28">
+                 data-date="2026-10-28"
+                 data-date-end="2026-10-30"
+                 data-price="$300-600"
+                 data-link="https://sname.org/conferences-and-events"
+                 data-description="SNAME Maritime Convention - marine engineering, new technologies, ship systems cybersecurity."
+                 data-id="sname-maritime-convention-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -4346,6 +4791,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">SNAME Maritime Convention 2026</h3>
@@ -4408,7 +4856,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="expo"
                  data-country="FR"
                  data-cyber-track="true"
@@ -4417,7 +4865,12 @@
                  data-tags="naval-defense,cybersecurity,autonomous-systems,maritime-security"
                  data-name="EURONAVAL 2026"
                  data-place="Paris (Villepinte)"
-                 data-date="2026-11-03">
+                 data-date="2026-11-03"
+                 data-date-end="2026-11-06"
+                 data-price="€30-100"
+                 data-link="https://www.euronaval.com"
+                 data-description="Europe&#39;s largest naval defense exhibition - naval cybersecurity, autonomous systems, maritime security."
+                 data-id="euronaval-2026">
             
             <div class="card-header">
                 <span class="card-type type-expo">expo</span>
@@ -4425,6 +4878,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">EURONAVAL 2026</h3>
@@ -4489,7 +4945,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GB"
                  data-cyber-track="true"
@@ -4498,7 +4954,12 @@
                  data-tags="port-security,smart-port,digitalization,iaph"
                  data-name="IAPH World Ports Conference"
                  data-place="London"
-                 data-date="2026-11-03">
+                 data-date="2026-11-03"
+                 data-date-end="2026-11-06"
+                 data-price="Paid"
+                 data-link="https://www.iaphworldports.org/"
+                 data-description="International Association of Ports and Harbors conference - Smart Port strategy, port digitalization and cybersecurity."
+                 data-id="iaph-world-ports-conference">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -4506,6 +4967,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">IAPH World Ports Conference</h3>
@@ -4570,7 +5034,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GB"
                  data-cyber-track="true"
@@ -4579,7 +5043,12 @@
                  data-tags="lng,energy,terminals,high-value-assets"
                  data-name="LNG Shipping &amp; Terminals"
                  data-place="London"
-                 data-date="2026-11-10">
+                 data-date="2026-11-10"
+                 data-date-end="2026-11-11"
+                 data-price="Paid"
+                 data-link="https://www.rivieramm.com/events/events"
+                 data-description="Protection of high-value LNG assets - cybersecurity for critical energy transport and terminal operations."
+                 data-id="lng-shipping-terminals">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -4587,6 +5056,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">LNG Shipping &amp; Terminals</h3>
@@ -4651,7 +5123,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="symposium"
                  data-country="GB"
                  data-cyber-track="true"
@@ -4660,7 +5132,12 @@
                  data-tags="imo,maritime-cyber,research,supply-chain,training"
                  data-name="IMO/Cyber-SHIP Lab Symposium on Maritime Cyber Security"
                  data-place="London (IMO HQ)"
-                 data-date="2026-11-11">
+                 data-date="2026-11-11"
+                 data-date-end="2026-11-12"
+                 data-price="Free"
+                 data-link="https://www.imo.org/en/about/events/pages/symposium-maritime-cyber-security-and-resilience.aspx"
+                 data-description="Annual IMO and University of Plymouth symposium - research on cyber risk in the maritime sector, supply chain resilience, seafarer training."
+                 data-id="imo/cyber-ship-lab-symposium-on-maritime-cyber-security">
             
             <div class="card-header">
                 <span class="card-type type-symposium">symposium</span>
@@ -4668,6 +5145,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">IMO/Cyber-SHIP Lab Symposium on Maritime Cyber Security</h3>
@@ -4734,7 +5214,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="true"
@@ -4743,7 +5223,12 @@
                  data-tags="port-security,ot-security,coast-guard,cybersecurity,ppp"
                  data-name="Maritime Security East 2026"
                  data-place="Tampa"
-                 data-date="2026-11-17">
+                 data-date="2026-11-17"
+                 data-date-end="2026-11-19"
+                 data-price="$400-700"
+                 data-link="https://marseceast.com/"
+                 data-description="US East Coast maritime security conference - port OT cybersecurity, USCG Cyber Command, public-private partnerships."
+                 data-id="maritime-security-east-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -4751,6 +5236,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Maritime Security East 2026</h3>
@@ -4817,7 +5305,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="summit"
                  data-country="SG"
                  data-cyber-track="true"
@@ -4826,7 +5314,12 @@
                  data-tags="digital-twin,digital-corridors,asia-pacific"
                  data-name="Smart Maritime Network Singapore"
                  data-place="Singapore (Marina Square)"
-                 data-date="2026-11-18">
+                 data-date="2026-11-18"
+                 data-date-end="2026-11-18"
+                 data-price="Paid"
+                 data-link="https://smartmaritimenetwork.com/smn-events-2026/"
+                 data-description="Year-end review of Asian digital maritime projects. Case studies from Port of Singapore &#39;digital twin&#39; security."
+                 data-id="smart-maritime-network-singapore">
             
             <div class="card-header">
                 <span class="card-type type-summit">summit</span>
@@ -4834,6 +5327,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Smart Maritime Network Singapore</h3>
@@ -4896,7 +5392,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="FR"
                  data-cyber-track="true"
@@ -4905,7 +5401,12 @@
                  data-tags="maritime-economy,cybersecurity,data-management,ports,m-cert"
                  data-name="Assises de l&#39;économie de la mer 2026"
                  data-place="Nantes"
-                 data-date="2026-11-26">
+                 data-date="2026-11-26"
+                 data-date-end="2026-11-27"
+                 data-price="€300-500"
+                 data-link="https://www.assises-economie-mer.com"
+                 data-description="France&#39;s main maritime economy event - cybersecurity and data management in the maritime and port sector, with France Cyber Maritime participation."
+                 data-id="assises-de-l%C3%A9conomie-de-la-mer-2026">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -4913,6 +5414,9 @@
                 
                 
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Assises de l&#39;économie de la mer 2026</h3>
@@ -4979,7 +5483,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="GB"
                  data-cyber-track="true"
@@ -4988,7 +5492,12 @@
                  data-tags="maritime-cyber,compliance,imo,iacs,fleet-operations"
                  data-name="CyberOwl Annual Maritime Cybersecurity Conference"
                  data-place="Online"
-                 data-date="2026-12-03">
+                 data-date="2026-12-03"
+                 data-date-end="2026-12-03"
+                 data-price="Free"
+                 data-link="https://cyberowl.io"
+                 data-description="Annual CyberOwl virtual conference - practical cybersecurity solutions for fleet operators, IMO/IACS compliance."
+                 data-id="cyberowl-annual-maritime-cybersecurity-conference">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -4996,6 +5505,9 @@
                 
                 <span class="online-badge" title="Online event">🌐</span>
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">CyberOwl Annual Maritime Cybersecurity Conference</h3>
@@ -5062,7 +5574,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="meetup"
                  data-country="DK"
                  data-cyber-track="true"
@@ -5071,7 +5583,12 @@
                  data-tags="practitioner,community,year-review"
                  data-name="Maritime Cyber Guild Meetup Q4"
                  data-place="Hørsholm / Online"
-                 data-date="2026-12-04">
+                 data-date="2026-12-04"
+                 data-date-end="2026-12-04"
+                 data-price="Low cost"
+                 data-link="https://www.eventbrite.dk/o/115564904011"
+                 data-description="End-of-year technical wrap up. Grassroots practitioner community review of 2026 maritime cyber landscape."
+                 data-id="maritime-cyber-guild-meetup-q4">
             
             <div class="card-header">
                 <span class="card-type type-meetup">meetup</span>
@@ -5079,6 +5596,9 @@
                 
                 <span class="online-badge" title="Online event">🌐</span>
                 
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Maritime Cyber Guild Meetup Q4</h3>
@@ -5141,7 +5661,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="forum"
                  data-country="FR"
                  data-cyber-track="true"
@@ -5150,7 +5670,12 @@
                  data-tags="m-cert,maritime-cyber,information-sharing,ecosystem"
                  data-name="France Cyber Maritime Annual Forum"
                  data-place="Brest"
-                 data-date="2026-03-01">
+                 data-date="2026-03-01"
+                 data-date-end="2026-03-01"
+                 data-price="€100-200"
+                 data-link="https://www.france-cyber-maritime.eu"
+                 data-description="France Cyber Maritime forum - M-CERT, threat information sharing, cyber-maritime ecosystem cooperation."
+                 data-id="france-cyber-maritime-annual-forum">
             
             <div class="card-header">
                 <span class="card-type type-forum">forum</span>
@@ -5158,6 +5683,9 @@
                 
                 
                 <span class="tentative-badge" title="Tentative date">~</span>
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">France Cyber Maritime Annual Forum</h3>
@@ -5222,7 +5750,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="meeting"
                  data-country="NL"
                  data-cyber-track="true"
@@ -5231,7 +5759,12 @@
                  data-tags="isac,eu,threat-sharing,port-security"
                  data-name="European Maritime ISAC Annual Meeting"
                  data-place="Rotterdam"
-                 data-date="2026-05-01">
+                 data-date="2026-05-01"
+                 data-date-end="2026-05-01"
+                 data-price="Members only"
+                 data-link="https://www.em-isac.eu"
+                 data-description="Annual EM-ISAC meeting - cyber threat information sharing for EU ports and maritime operators."
+                 data-id="european-maritime-isac-annual-meeting">
             
             <div class="card-header">
                 <span class="card-type type-meeting">meeting</span>
@@ -5239,6 +5772,9 @@
                 
                 
                 <span class="tentative-badge" title="Tentative date">~</span>
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">European Maritime ISAC Annual Meeting</h3>
@@ -5303,7 +5839,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="forum"
                  data-country="FI"
                  data-cyber-track="true"
@@ -5312,7 +5848,12 @@
                  data-tags="baltic,security,infrastructure,cooperation"
                  data-name="Baltic Sea Region Forum 2026"
                  data-place="Turku"
-                 data-date="2026-09-15">
+                 data-date="2026-09-15"
+                 data-date-end="2026-09-16"
+                 data-price="€100-200"
+                 data-link="https://www.centrumbalticum.org/baltic_sea_region_forum"
+                 data-description="Baltic Sea Region Forum - strategic security, critical infrastructure, regional cooperation."
+                 data-id="baltic-sea-region-forum-2026">
             
             <div class="card-header">
                 <span class="card-type type-forum">forum</span>
@@ -5320,6 +5861,9 @@
                 
                 
                 <span class="tentative-badge" title="Tentative date">~</span>
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">Baltic Sea Region Forum 2026</h3>
@@ -5384,7 +5928,7 @@
         
         
         
-        <article class="conference-card" 
+        <article class="conference-card"
                  data-type="conference"
                  data-country="US"
                  data-cyber-track="true"
@@ -5393,7 +5937,12 @@
                  data-tags="maritime-security,supply-chain,cybersecurity,navy-league"
                  data-name="New York Maritime Security Conference"
                  data-place="New York"
-                 data-date="2026-04-15">
+                 data-date="2026-04-15"
+                 data-date-end="2026-04-15"
+                 data-price="$200-400"
+                 data-link="https://www.nymaritimesecurityconference.org"
+                 data-description="Navy League NYC maritime security conference - cybersecurity, supply chain resilience, US maritime dominance."
+                 data-id="new-york-maritime-security-conference">
             
             <div class="card-header">
                 <span class="card-type type-conference">conference</span>
@@ -5401,6 +5950,9 @@
                 
                 
                 <span class="tentative-badge" title="Tentative date">~</span>
+                <button class="favorite-btn" data-add-title="Add to favorites" data-remove-title="Remove from favorites" title="Add to favorites">
+                    <span class="favorite-icon"></span>
+                </button>
             </div>
             
             <h3 class="card-title">New York Maritime Security Conference</h3>
@@ -5461,6 +6013,7 @@
     </div>
 </div>
 
+
     </main>
     <footer class="footer">
     <div class="container">
@@ -5486,7 +6039,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Maritime Cybersecurity Calendar | Built with Hugo</p>
+            <p>&copy; 2026 Maritime Cybersecurity Conference Calendar by Ogmios | Built with Hugo</p>
             <p class="credits">Inspired by <a href="https://konferencje.szurek.tv" target="_blank">konferencje.szurek.tv</a></p>
         </div>
     </div>

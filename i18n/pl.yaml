@@ -33,12 +33,30 @@ legend_tentative: "Data orientacyjna"
 # No results
 no_results: "🔍 Nie znaleziono wydarzeń pasujących do kryteriów wyszukiwania."
 
+# Favorites
+filter_favorites: "Ulubione"
+favorite_add: "Dodaj do ulubionych"
+favorite_remove: "Usuń z ulubionych"
+favorites_count: "ulubionych"
+
+# Export
+export_title: "Eksport"
+export_favorites: "Eksportuj ulubione"
+export_pdf: "Pobierz PDF"
+export_txt: "Pobierz TXT"
+export_empty: "Brak ulubionych do eksportu. Najpierw dodaj konferencje do ulubionych."
+
+# Favorites info
+favorites_info_title: "Twoje Ulubione"
+favorites_info_text: "Kliknij ikonę serca na karcie konferencji, aby dodać ją do ulubionych. Twoje wybory są zapisywane lokalnie w przeglądarce i zachowają się między wizytami. Użyj filtra \"Ulubione\", aby wyświetlić tylko zapisane konferencje, a następnie wyeksportuj je do PDF lub TXT."
+favorites_info_privacy: "Twoje dane pozostają prywatne - ulubione są przechowywane tylko w Twojej przeglądarce (localStorage), nigdy nie są wysyłane na serwer."
+
 # Footer
 footer_description: "Kalendarz konferencji Maritime Cybersecurity na rok 2026."
 footer_links: "Linki"
 footer_contact: "Kontakt"
 footer_contact_text: "Masz pytania lub chcesz dodać wydarzenie?"
-footer_copyright: "Maritime Cybersecurity Conference Calendar | Zbudowano z Hugo"
+footer_copyright: "Maritime Cybersecurity Conference Calendar by Ogmios | Zbudowano z Hugo"
 footer_credits: "Inspirowane przez"
 
 # Types

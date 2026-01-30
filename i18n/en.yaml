@@ -33,12 +33,30 @@ legend_tentative: "Tentative date"
 # No results
 no_results: "🔍 No events found matching your search criteria."
 
+# Favorites
+filter_favorites: "Favorites"
+favorite_add: "Add to favorites"
+favorite_remove: "Remove from favorites"
+favorites_count: "favorites"
+
+# Export
+export_title: "Export"
+export_favorites: "Export favorites"
+export_pdf: "Download PDF"
+export_txt: "Download TXT"
+export_empty: "No favorites to export. Add some conferences to your favorites first."
+
+# Favorites info
+favorites_info_title: "Your Favorites"
+favorites_info_text: "Click the heart icon on any conference card to add it to your favorites. Your selections are saved locally in your browser and will persist between visits. Use the \"Favorites\" filter to view only your saved conferences, then export them to PDF or TXT."
+favorites_info_privacy: "Your data stays private - favorites are stored only in your browser (localStorage), never sent to any server."
+
 # Footer
 footer_description: "Maritime Cybersecurity conferences and events calendar for 2026."
 footer_links: "Links"
 footer_contact: "Contact"
 footer_contact_text: "Have questions or want to add an event?"
-footer_copyright: "Maritime Cybersecurity Conference Calendar | Built with Hugo"
+footer_copyright: "Maritime Cybersecurity Conference Calendar by Ogmios | Built with Hugo"
 footer_credits: "Inspired by"
 
 # Types

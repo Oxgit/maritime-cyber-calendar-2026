@@ -279,6 +279,21 @@ conferences:
     cyber_track: true
 
   # ===== APRIL 2026 =====
+  - name: "4th Annual Maritime Cyber Safety Summit"
+    year: 2026
+    description: "Exclusive invitation-only summit co-hosted by the three major cruise corporations: Carnival Corporation, Royal Caribbean Group (RCCL), and Norwegian Cruise Line Holdings (NCL). Heavily focused on Operational Technology (OT) cybersecurity for cruise vessels. Co-located with Seatrade Cruise Global. Full-day program with networking reception."
+    link: "https://maritime-cyber-summit.com/"
+    date_start: "2026-04-13"
+    date_end: "2026-04-13"
+    place: "Miami Beach Convention Center"
+    country_code: "US"
+    tags: ["cruise", "ot-security", "maritime-cyber", "carnival", "rccl", "ncl", "invitation-only"]
+    type: "summit"
+    focus_type: "dedicated"
+    price: "Free (invitation only)"
+    online: false
+    cyber_track: true
+
   - name: "World Border Security Congress"
     year: 2026
     description: "High relevance for Port Facility Security Officers (PFSO) - biometric data protection, border/port security convergence."
@@ -508,6 +523,21 @@ conferences:
     online: false
     cyber_track: true
 
+  - name: "GreenTech / Green Marine Conference 2026"
+    year: 2026
+    description: "Conference on green maritime technologies - digitalization and cybersecurity as elements of sustainable transport."
+    link: "https://www.green-marine.org"
+    date_start: "2026-06-09"
+    date_end: "2026-06-11"
+    place: "Quebec City"
+    country_code: "CA"
+    tags: ["green-tech", "sustainability", "digitalization"]
+    type: "conference"
+    focus_type: "track"
+    price: "CAD 500-800"
+    online: false
+    cyber_track: false
+
   - name: "Maritime Cyber Guild Meetup Q2"
     year: 2026
     description: "Grassroots practitioner meetup. Theme: 'What happens when cybersecurity fails?' - business continuity, disaster recovery, war-gaming, scenario planning."
@@ -552,21 +582,6 @@ conferences:
     price: "€200-500"
     online: false
     cyber_track: true
-
-  - name: "GreenTech / Green Marine Conference 2026"
-    year: 2026
-    description: "Conference on green maritime technologies - digitalization and cybersecurity as elements of sustainable transport."
-    link: "https://www.green-marine.org"
-    date_start: "2026-06-09"
-    date_end: "2026-06-11"
-    place: "Quebec City"
-    country_code: "CA"
-    tags: ["green-tech", "sustainability", "digitalization"]
-    type: "conference"
-    focus_type: "track"
-    price: "CAD 500-800"
-    online: false
-    cyber_track: false
 
   # ===== JULY 2026 =====
   - name: "Maritime Security West 2026"
@@ -630,6 +645,22 @@ conferences:
     price: "€25-50"
     online: false
     cyber_track: true
+
+  - name: "Baltic Sea Region Forum 2026"
+    year: 2026
+    description: "Baltic Sea Region Forum - strategic security, critical infrastructure, regional cooperation."
+    link: "https://www.centrumbalticum.org/baltic_sea_region_forum"
+    date_start: "2026-09-15"
+    date_end: "2026-09-16"
+    place: "Turku"
+    country_code: "FI"
+    tags: ["baltic", "security", "infrastructure", "cooperation"]
+    type: "forum"
+    focus_type: "track"
+    price: "€100-200"
+    online: false
+    cyber_track: true
+    tentative_date: true
 
   - name: "10th NMIOTC Conference on Cyber Security in Maritime Domain"
     year: 2026
@@ -971,38 +1002,6 @@ conferences:
     cyber_track: true
     tentative_date: true
 
-  - name: "European Maritime ISAC Annual Meeting"
-    year: 2026
-    description: "Annual EM-ISAC meeting - cyber threat information sharing for EU ports and maritime operators."
-    link: "https://www.em-isac.eu"
-    date_start: "2026-05-01"
-    date_end: "2026-05-01"
-    place: "Rotterdam"
-    country_code: "NL"
-    tags: ["isac", "eu", "threat-sharing", "port-security"]
-    type: "meeting"
-    focus_type: "dedicated"
-    price: "Members only"
-    online: false
-    cyber_track: true
-    tentative_date: true
-
-  - name: "Baltic Sea Region Forum 2026"
-    year: 2026
-    description: "Baltic Sea Region Forum - strategic security, critical infrastructure, regional cooperation."
-    link: "https://www.centrumbalticum.org/baltic_sea_region_forum"
-    date_start: "2026-09-15"
-    date_end: "2026-09-16"
-    place: "Turku"
-    country_code: "FI"
-    tags: ["baltic", "security", "infrastructure", "cooperation"]
-    type: "forum"
-    focus_type: "track"
-    price: "€100-200"
-    online: false
-    cyber_track: true
-    tentative_date: true
-
   - name: "New York Maritime Security Conference"
     year: 2026
     description: "Navy League NYC maritime security conference - cybersecurity, supply chain resilience, US maritime dominance."
@@ -1015,6 +1014,22 @@ conferences:
     type: "conference"
     focus_type: "track"
     price: "$200-400"
+    online: false
+    cyber_track: true
+    tentative_date: true
+
+  - name: "European Maritime ISAC Annual Meeting"
+    year: 2026
+    description: "Annual EM-ISAC meeting - cyber threat information sharing for EU ports and maritime operators."
+    link: "https://www.em-isac.eu"
+    date_start: "2026-05-01"
+    date_end: "2026-05-01"
+    place: "Rotterdam"
+    country_code: "NL"
+    tags: ["isac", "eu", "threat-sharing", "port-security"]
+    type: "meeting"
+    focus_type: "dedicated"
+    price: "Members only"
     online: false
     cyber_track: true
     tentative_date: true

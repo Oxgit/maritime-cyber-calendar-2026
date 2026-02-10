@@ -1,0 +1,26 @@
+[build]
+  publish = "public"
+  command = "hugo --minify"
+  # Pomiń build jeśli nie zmieniły się pliki wpływające na stronę
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- content/ layouts/ static/ data/ i18n/ hugo.toml netlify.toml"
+
+[build.environment]
+  HUGO_VERSION = "0.145.0"
+
+[context.production.environment]
+  HUGO_ENV = "production"
+
+# Wyłącz deploy previews (każdy PR = osobny build = kredyty)
+[context.deploy-preview]
+  ignore = "true"
+
+# Wyłącz branch deploys
+[context.branch-deploy]
+  ignore = "true"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

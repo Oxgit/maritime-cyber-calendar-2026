@@ -1,36 +1,139 @@
-/* ===== ROOT VARIABLES ===== */
+/* ============================================
+   MC3 CALENDAR — Design Token System
+   3-tier: Primitives → Semantic → Component
+   ============================================ */
+
+/* ===== TIER 1 — PRIMITIVES (raw values) ===== */
 :root {
-    --bg-primary: #0a1628;
-    --bg-secondary: #0f1f3a;
-    --bg-card: #142238;
-    --bg-card-hover: #1a2d4d;
-    
-    --accent-primary: #00b4d8;
-    --accent-secondary: #0077b6;
-    --accent-tertiary: #90e0ef;
-    
-    --text-primary: #e8f4f8;
-    --text-secondary: #a8c5d1;
-    --text-muted: #6b8a9a;
-    
-    --success: #00d68f;
-    --warning: #ffaa00;
-    --danger: #ff6b6b;
-    
-    --border-color: #1e3a5f;
-    --border-glow: rgba(0, 180, 216, 0.3);
-    
+    /* Navy palette */
+    --navy-900: #0a1628;
+    --navy-800: #0f1f3a;
+    --navy-700: #142238;
+    --navy-600: #1a2d4d;
+    --navy-500: #1e3a5f;
+
+    /* Frost palette */
+    --frost-100: #e8f4f8;
+    --frost-200: #a8c5d1;
+    --frost-300: #6b8a9a;
+
+    /* Accent palette */
+    --cyan-400: #00b4d8;
+    --cyan-600: #0077b6;
+    --cyan-200: #90e0ef;
+
+    /* Status palette */
+    --green-400: #00d68f;
+    --amber-400: #ffaa00;
+    --red-400: #ff6b6b;
+
+    /* Type badge palette */
+    --purple-400: #9b59b6;
+    --orange-400: #e67e22;
+    --gray-400: #95a5a6;
+
+    /* Typography */
     --font-display: 'Outfit', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
-    
+
+    /* Radius */
     --radius-sm: 6px;
     --radius-md: 12px;
     --radius-lg: 20px;
-    
+
+    /* Shadows (primitives) */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== TIER 2 — SEMANTIC (overridable per site) ===== */
+:root {
+    --brand-hue: 210;
+
+    /* Accent (semantic aliases to palette) */
+    --accent-primary: var(--cyan-400);
+    --accent-secondary: var(--cyan-600);
+    --accent-tertiary: var(--cyan-200);
+
+    /* Backgrounds */
+    --color-bg-primary: var(--navy-900);
+    --color-bg-secondary: var(--navy-800);
+    --color-bg-surface: var(--navy-700);
+    --color-bg-surface-hover: var(--navy-600);
+
+    /* Text */
+    --color-text-primary: var(--frost-100);
+    --color-text-secondary: var(--frost-200);
+    --color-text-muted: var(--frost-300);
+
+    /* Status */
+    --color-success: var(--green-400);
+    --color-warning: var(--amber-400);
+    --color-danger: var(--red-400);
+
+    /* Border */
+    --color-border: var(--navy-500);
+    --color-border-glow: rgba(0, 180, 216, 0.3);
+
+    /* Glow shadow */
     --shadow-glow: 0 0 30px rgba(0, 180, 216, 0.2);
+}
+
+/* ===== TIER 3 — COMPONENT (references to semantic) ===== */
+:root {
+    /* Card */
+    --card-bg: var(--color-bg-surface);
+    --card-bg-hover: var(--color-bg-surface-hover);
+    --card-border: var(--color-border);
+    --card-border-hover: var(--accent-secondary);
+
+    /* Button */
+    --button-bg: var(--accent-secondary);
+    --button-bg-hover: var(--accent-primary);
+    --button-text: #ffffff;
+
+    /* Header */
+    --header-bg: rgba(10, 22, 40, 0.95);
+    --header-border: var(--color-border);
+
+    /* Links */
+    --link-color: var(--accent-primary);
+    --link-color-hover: var(--accent-tertiary);
+
+    /* Body gradients */
+    --body-gradient-accent: rgba(0, 180, 216, 0.05);
+    --hero-gradient-accent: rgba(0, 119, 182, 0.1);
+
+    /* Tags */
+    --tag-bg: rgba(0, 180, 216, 0.1);
+    --tag-border: rgba(0, 180, 216, 0.2);
+    --tag-bg-hover: rgba(0, 180, 216, 0.2);
+
+    /* Type badges */
+    --type-conference-bg: rgba(0, 180, 216, 0.2);
+    --type-summit-bg: rgba(255, 170, 0, 0.2);
+    --type-expo-bg: rgba(0, 214, 143, 0.2);
+    --type-forum-bg: rgba(144, 224, 239, 0.2);
+    --type-symposium-bg: rgba(255, 107, 107, 0.2);
+    --type-training-bg: rgba(138, 43, 226, 0.2);
+    --type-workshop-bg: rgba(230, 126, 34, 0.2);
+    --type-meeting-bg: rgba(149, 165, 166, 0.2);
+
+    /* CFP pulse */
+    --cfp-pulse-color: rgba(0, 214, 143, 0.4);
+    --cfp-pulse-end: rgba(0, 214, 143, 0);
+
+    /* Favorites */
+    --favorite-hover-bg: rgba(255, 107, 107, 0.1);
+    --favorite-border: rgba(255, 107, 107, 0.4);
+    --favorite-filter-border: rgba(255, 107, 107, 0.3);
+    --favorite-glow: rgba(255, 107, 107, 0.3);
+    --favorite-gradient-accent: rgba(255, 107, 107, 0.05);
+    --favorite-active-end: #ff8787;
+
+    /* Export */
+    --export-empty-bg: rgba(255, 170, 0, 0.1);
 }
 
 /* ===== RESET & BASE ===== */
@@ -46,13 +149,13 @@ html {
 
 body {
     font-family: var(--font-display);
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
     line-height: 1.6;
     min-height: 100vh;
-    background-image: 
-        radial-gradient(ellipse at top, rgba(0, 180, 216, 0.05) 0%, transparent 50%),
-        linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    background-image:
+        radial-gradient(ellipse at top, var(--body-gradient-accent) 0%, transparent 50%),
+        linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
     background-attachment: fixed;
 }
 
@@ -63,20 +166,20 @@ body {
 }
 
 a {
-    color: var(--accent-primary);
+    color: var(--link-color);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 a:hover {
-    color: var(--accent-tertiary);
+    color: var(--link-color-hover);
 }
 
 /* ===== HEADER ===== */
 .header {
-    background: rgba(10, 22, 40, 0.95);
+    background: var(--header-bg);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--header-border);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -95,7 +198,7 @@ a:hover {
     gap: 10px;
     font-weight: 600;
     font-size: 1.2rem;
-    color: var(--text-primary);
+    color: var(--color-text-primary);
 }
 
 .logo-icon {
@@ -109,7 +212,7 @@ a:hover {
 }
 
 .nav-links a {
-    color: var(--text-secondary);
+    color: var(--color-text-secondary);
     font-weight: 500;
     transition: color 0.2s ease;
 }
@@ -150,15 +253,15 @@ a:hover {
 .hero {
     padding: 60px 20px;
     text-align: center;
-    background: linear-gradient(135deg, rgba(0, 119, 182, 0.1) 0%, transparent 100%);
-    border-bottom: 1px solid var(--border-color);
+    background: linear-gradient(135deg, var(--hero-gradient-accent) 0%, transparent 100%);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .hero h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 700;
     margin-bottom: 15px;
-    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-tertiary) 100%);
+    background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--accent-tertiary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -166,7 +269,7 @@ a:hover {
 
 .hero-subtitle {
     font-size: 1.2rem;
-    color: var(--text-secondary);
+    color: var(--color-text-secondary);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -179,7 +282,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .filters {
@@ -190,10 +293,10 @@ a:hover {
 
 .filter-btn {
     padding: 10px 18px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--card-border);
     border-radius: var(--radius-md);
-    background: var(--bg-card);
-    color: var(--text-secondary);
+    background: var(--card-bg);
+    color: var(--color-text-secondary);
     font-family: var(--font-mono);
     font-size: 0.85rem;
     cursor: pointer;
@@ -215,10 +318,10 @@ a:hover {
 .search-box input {
     padding: 12px 20px;
     width: 280px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--card-border);
     border-radius: var(--radius-md);
-    background: var(--bg-card);
-    color: var(--text-primary);
+    background: var(--card-bg);
+    color: var(--color-text-primary);
     font-family: var(--font-mono);
     font-size: 0.9rem;
     transition: all 0.2s ease;
@@ -231,7 +334,7 @@ a:hover {
 }
 
 .search-box input::placeholder {
-    color: var(--text-muted);
+    color: var(--color-text-muted);
 }
 
 /* ===== STATS ===== */
@@ -240,7 +343,7 @@ a:hover {
     gap: 30px;
     padding: 20px 0;
     font-family: var(--font-mono);
-    color: var(--text-muted);
+    color: var(--color-text-muted);
     font-size: 0.9rem;
 }
 
@@ -259,8 +362,8 @@ a:hover {
 
 /* ===== CONFERENCE CARD ===== */
 .conference-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
     border-radius: var(--radius-lg);
     padding: 25px;
     transition: all 0.3s ease;
@@ -284,8 +387,8 @@ a:hover {
 }
 
 .conference-card:hover {
-    background: var(--bg-card-hover);
-    border-color: var(--accent-secondary);
+    background: var(--card-bg-hover);
+    border-color: var(--card-border-hover);
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg), var(--shadow-glow);
 }
@@ -316,14 +419,14 @@ a:hover {
     letter-spacing: 0.5px;
 }
 
-.type-conference { background: rgba(0, 180, 216, 0.2); color: var(--accent-primary); }
-.type-summit { background: rgba(255, 170, 0, 0.2); color: var(--warning); }
-.type-expo { background: rgba(0, 214, 143, 0.2); color: var(--success); }
-.type-forum { background: rgba(144, 224, 239, 0.2); color: var(--accent-tertiary); }
-.type-symposium { background: rgba(255, 107, 107, 0.2); color: var(--danger); }
-.type-training { background: rgba(138, 43, 226, 0.2); color: #9b59b6; }
-.type-workshop { background: rgba(230, 126, 34, 0.2); color: #e67e22; }
-.type-meeting { background: rgba(149, 165, 166, 0.2); color: #95a5a6; }
+.type-conference { background: var(--type-conference-bg); color: var(--accent-primary); }
+.type-summit { background: var(--type-summit-bg); color: var(--color-warning); }
+.type-expo { background: var(--type-expo-bg); color: var(--color-success); }
+.type-forum { background: var(--type-forum-bg); color: var(--accent-tertiary); }
+.type-symposium { background: var(--type-symposium-bg); color: var(--color-danger); }
+.type-training { background: var(--type-training-bg); color: var(--purple-400); }
+.type-workshop { background: var(--type-workshop-bg); color: var(--orange-400); }
+.type-meeting { background: var(--type-meeting-bg); color: var(--gray-400); }
 
 .cyber-badge {
     font-size: 1rem;
@@ -332,8 +435,8 @@ a:hover {
 
 .cfp-badge {
     padding: 3px 8px;
-    background: var(--success);
-    color: var(--bg-primary);
+    background: var(--color-success);
+    color: var(--color-bg-primary);
     border-radius: var(--radius-sm);
     font-family: var(--font-mono);
     font-size: 0.7rem;
@@ -345,8 +448,8 @@ a:hover {
 }
 
 @keyframes pulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(0, 214, 143, 0.4); }
-    50% { box-shadow: 0 0 0 8px rgba(0, 214, 143, 0); }
+    0%, 100% { box-shadow: 0 0 0 0 var(--cfp-pulse-color); }
+    50% { box-shadow: 0 0 0 8px var(--cfp-pulse-end); }
 }
 
 .online-badge,
@@ -359,7 +462,7 @@ a:hover {
 .card-title {
     font-size: 1.15rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--color-text-primary);
     line-height: 1.4;
 }
 
@@ -374,7 +477,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--text-secondary);
+    color: var(--color-text-secondary);
     font-size: 0.9rem;
 }
 
@@ -386,7 +489,7 @@ a:hover {
 
 /* Card Description */
 .card-description {
-    color: var(--text-muted);
+    color: var(--color-text-muted);
     font-size: 0.9rem;
     line-height: 1.6;
     flex-grow: 1;
@@ -401,8 +504,8 @@ a:hover {
 
 .tag {
     padding: 4px 10px;
-    background: rgba(0, 180, 216, 0.1);
-    border: 1px solid rgba(0, 180, 216, 0.2);
+    background: var(--tag-bg);
+    border: 1px solid var(--tag-border);
     border-radius: var(--radius-sm);
     font-family: var(--font-mono);
     font-size: 0.75rem;
@@ -412,7 +515,7 @@ a:hover {
 }
 
 .tag:hover {
-    background: rgba(0, 180, 216, 0.2);
+    background: var(--tag-bg-hover);
     border-color: var(--accent-primary);
 }
 
@@ -423,7 +526,7 @@ a:hover {
     flex-wrap: wrap;
     margin-top: auto;
     padding-top: 15px;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--card-border);
 }
 
 .btn {
@@ -441,33 +544,33 @@ a:hover {
 }
 
 .btn-primary {
-    background: var(--accent-secondary);
-    color: white;
+    background: var(--button-bg);
+    color: var(--button-text);
     border: none;
 }
 
 .btn-primary:hover {
-    background: var(--accent-primary);
-    color: white;
+    background: var(--button-bg-hover);
+    color: var(--button-text);
     box-shadow: var(--shadow-glow);
 }
 
 .btn-cfp {
     background: transparent;
-    color: var(--success);
-    border: 1px solid var(--success);
+    color: var(--color-success);
+    border: 1px solid var(--color-success);
 }
 
 .btn-cfp:hover {
-    background: var(--success);
-    color: var(--bg-primary);
+    background: var(--color-success);
+    color: var(--color-bg-primary);
 }
 
 /* ===== NO RESULTS ===== */
 .no-results {
     text-align: center;
     padding: 60px 20px;
-    color: var(--text-muted);
+    color: var(--color-text-muted);
 }
 
 .no-results p {
@@ -478,9 +581,9 @@ a:hover {
 .legend {
     padding: 30px 20px;
     margin-top: 40px;
-    background: var(--bg-card);
+    background: var(--card-bg);
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--card-border);
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -488,7 +591,7 @@ a:hover {
 
 .legend h4 {
     margin-bottom: 15px;
-    color: var(--text-secondary);
+    color: var(--color-text-secondary);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -504,15 +607,15 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--text-muted);
+    color: var(--color-text-muted);
     font-size: 0.85rem;
 }
 
 /* ===== FOOTER ===== */
 .footer {
     margin-top: 80px;
-    background: var(--bg-secondary);
-    border-top: 1px solid var(--border-color);
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
     padding: 60px 0 30px;
 }
 
@@ -524,13 +627,13 @@ a:hover {
 }
 
 .footer-section h4 {
-    color: var(--text-primary);
+    color: var(--color-text-primary);
     margin-bottom: 15px;
     font-size: 1.1rem;
 }
 
 .footer-section p {
-    color: var(--text-muted);
+    color: var(--color-text-muted);
     font-size: 0.9rem;
     line-height: 1.7;
 }
@@ -544,7 +647,7 @@ a:hover {
 }
 
 .footer-section ul a {
-    color: var(--text-secondary);
+    color: var(--color-text-secondary);
     font-size: 0.9rem;
 }
 
@@ -555,8 +658,8 @@ a:hover {
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid var(--border-color);
-    color: var(--text-muted);
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-muted);
     font-size: 0.85rem;
 }
 
@@ -570,29 +673,29 @@ a:hover {
         flex-direction: column;
         align-items: stretch;
     }
-    
+
     .filters {
         justify-content: center;
     }
-    
+
     .search-box input {
         width: 100%;
     }
-    
+
     .conferences-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .stats {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .nav {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .nav-links {
         gap: 15px;
     }
@@ -636,24 +739,24 @@ a:hover {
 }
 
 .favorite-btn:hover {
-    background: rgba(255, 107, 107, 0.1);
+    background: var(--favorite-hover-bg);
     transform: scale(1.1);
 }
 
 .favorite-btn .favorite-icon::before {
     content: '\2661';
     font-size: 1.3rem;
-    color: var(--text-muted);
+    color: var(--color-text-muted);
     transition: all 0.2s ease;
 }
 
 .favorite-btn:hover .favorite-icon::before {
-    color: var(--danger);
+    color: var(--color-danger);
 }
 
 .favorite-btn.active .favorite-icon::before {
     content: '\2665';
-    color: var(--danger);
+    color: var(--color-danger);
 }
 
 .favorite-btn.active:hover .favorite-icon::before {
@@ -662,39 +765,39 @@ a:hover {
 
 /* Favorite card styling */
 .conference-card.is-favorite {
-    border-color: rgba(255, 107, 107, 0.4);
+    border-color: var(--favorite-border);
 }
 
 .conference-card.is-favorite::before {
-    background: linear-gradient(90deg, var(--danger), var(--warning));
+    background: linear-gradient(90deg, var(--color-danger), var(--color-warning));
     opacity: 1;
 }
 
 /* Favorites filter button */
 .filter-btn[data-filter="favorites"] {
-    border-color: rgba(255, 107, 107, 0.3);
+    border-color: var(--favorite-filter-border);
 }
 
 .filter-btn[data-filter="favorites"]:hover {
-    border-color: var(--danger);
-    color: var(--danger);
+    border-color: var(--color-danger);
+    color: var(--color-danger);
 }
 
 .filter-btn[data-filter="favorites"].active {
-    background: linear-gradient(135deg, var(--danger), #ff8787);
-    border-color: var(--danger);
+    background: linear-gradient(135deg, var(--color-danger), var(--favorite-active-end));
+    border-color: var(--color-danger);
     color: white;
-    box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 0 20px var(--favorite-glow);
 }
 
 /* ===== FAVORITES PANEL ===== */
 .favorites-panel {
     margin: 20px 0 30px;
     padding: 25px;
-    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(255, 107, 107, 0.05) 100%);
+    background: linear-gradient(135deg, var(--card-bg) 0%, var(--favorite-gradient-accent) 100%);
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border-color);
-    border-left: 4px solid var(--danger);
+    border: 1px solid var(--card-border);
+    border-left: 4px solid var(--color-danger);
 }
 
 .favorites-info {
@@ -705,7 +808,7 @@ a:hover {
 }
 
 .favorites-info-content h4 {
-    color: var(--text-primary);
+    color: var(--color-text-primary);
     font-size: 1.1rem;
     margin-bottom: 10px;
     display: flex;
@@ -715,18 +818,18 @@ a:hover {
 
 .favorites-info-content h4::before {
     content: '\2665';
-    color: var(--danger);
+    color: var(--color-danger);
 }
 
 .favorites-info-content p {
-    color: var(--text-secondary);
+    color: var(--color-text-secondary);
     font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 8px;
 }
 
 .favorites-info-content .privacy-note {
-    color: var(--text-muted);
+    color: var(--color-text-muted);
     font-size: 0.8rem;
     font-style: italic;
 }
@@ -737,7 +840,7 @@ a:hover {
 }
 
 .favorites-export h4 {
-    color: var(--text-secondary);
+    color: var(--color-text-secondary);
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -745,7 +848,7 @@ a:hover {
 }
 
 .favorites-stat strong {
-    color: var(--danger) !important;
+    color: var(--color-danger) !important;
 }
 
 @media (max-width: 768px) {
@@ -755,7 +858,7 @@ a:hover {
     }
 
     .favorites-export {
-        border-top: 1px solid var(--border-color);
+        border-top: 1px solid var(--card-border);
         padding-top: 20px;
     }
 }
@@ -769,9 +872,9 @@ a:hover {
 
 .btn-export {
     padding: 12px 24px;
-    background: var(--bg-secondary);
-    color: var(--text-primary);
-    border: 1px solid var(--border-color);
+    background: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--card-border);
     border-radius: var(--radius-md);
     font-family: var(--font-mono);
     font-size: 0.9rem;
@@ -802,10 +905,10 @@ a:hover {
 }
 
 .export-empty-msg {
-    color: var(--warning);
+    color: var(--color-warning);
     font-size: 0.85rem;
     margin-top: 15px;
     padding: 10px;
-    background: rgba(255, 170, 0, 0.1);
+    background: var(--export-empty-bg);
     border-radius: var(--radius-sm);
 }

@@ -1,4 +1,4 @@
-baseURL = "https://maritime.ogmios.pl/"
+baseURL = "https://mc3.maritime-ogmios.tech/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 #theme = ""
@@ -6,6 +6,13 @@ defaultContentLanguageInSubdir = false
 [params]
   author = "Andrzej \"Andy\" Gab (Ogmios / CyberBRIDGE)"
   contactEmail = "a.gab@ogmios.pl"
+
+[params.theme]
+  siteType = "community"
+  accentHue = "210"
+  # accentPrimary = "#00b4d8"
+  # accentSecondary = "#0077b6"
+  # accentTertiary = "#90e0ef"
 
 [languages]
   [languages.en]

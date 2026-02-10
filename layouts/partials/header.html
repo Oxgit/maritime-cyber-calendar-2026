@@ -2,8 +2,12 @@
     <nav class="nav container">
         <a href="{{ .Site.Home.RelPermalink }}" class="logo">
             <span class="logo-icon">🚢</span>
-            <span class="logo-text">Maritime Cyber Conference Calendar - MC³ 2026</span>
+            <span class="logo-text">Maritime Ogmios</span>
+            {{ with .Site.Params.theme.badgeLabel }}
+            <span class="site-badge site-badge--{{ $.Site.Params.theme.badgeStyle | default "filled" }}">{{ . }}</span>
+            {{ end }}
         </a>
+        <a href="https://maritime-ogmios.tech" class="hub-link" rel="noopener" title="Maritime Ogmios Cybersecurity Hub">⚓ Hub</a>
         <div class="nav-right">
             <ul class="nav-links">
                 {{ range .Site.Menus.main }}

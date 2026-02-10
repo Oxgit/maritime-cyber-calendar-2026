@@ -1,20 +1,20 @@
 {{- with .Site.Params.theme -}}
 <style>
   :root {
-    {{- with .accentHue }}--brand-hue: {{ . }};{{ end }}
-    {{- with .accentPrimary }}--accent-primary: {{ . }};{{ end }}
-    {{- with .accentSecondary }}--accent-secondary: {{ . }};{{ end }}
-    {{- with .accentTertiary }}--accent-tertiary: {{ . }};{{ end }}
-    {{- with .colorBgPrimary }}--color-bg-primary: {{ . }};{{ end }}
-    {{- with .colorBgSecondary }}--color-bg-secondary: {{ . }};{{ end }}
-    {{- with .colorBgSurface }}--color-bg-surface: {{ . }};{{ end }}
-    {{- with .colorTextPrimary }}--color-text-primary: {{ . }};{{ end }}
-    {{- with .colorTextSecondary }}--color-text-secondary: {{ . }};{{ end }}
-    {{- with .colorBorder }}--color-border: {{ . }};{{ end }}
-    {{- with .shadowGlow }}--shadow-glow: {{ . }};{{ end }}
-    {{- with .headerBg }}--header-bg: {{ . }};{{ end }}
-    {{- with .bodyGradientAccent }}--body-gradient-accent: {{ . }};{{ end }}
-    {{- with .heroGradientAccent }}--hero-gradient-accent: {{ . }};{{ end }}
+    {{- with .accentHue }}--brand-hue: {{ . | safeCSS }};{{ end }}
+    {{- with .accentPrimary }}--accent-primary: {{ . | safeCSS }};{{ end }}
+    {{- with .accentSecondary }}--accent-secondary: {{ . | safeCSS }};{{ end }}
+    {{- with .accentTertiary }}--accent-tertiary: {{ . | safeCSS }};{{ end }}
+    {{- with .colorBgPrimary }}--color-bg-primary: {{ . | safeCSS }};{{ end }}
+    {{- with .colorBgSecondary }}--color-bg-secondary: {{ . | safeCSS }};{{ end }}
+    {{- with .colorBgSurface }}--color-bg-surface: {{ . | safeCSS }};{{ end }}
+    {{- with .colorTextPrimary }}--color-text-primary: {{ . | safeCSS }};{{ end }}
+    {{- with .colorTextSecondary }}--color-text-secondary: {{ . | safeCSS }};{{ end }}
+    {{- with .colorBorder }}--color-border: {{ . | safeCSS }};{{ end }}
+    {{- with .shadowGlow }}--shadow-glow: {{ . | safeCSS }};{{ end }}
+    {{- with .headerBg }}--header-bg: {{ . | safeCSS }};{{ end }}
+    {{- with .bodyGradientAccent }}--body-gradient-accent: {{ . | safeCSS }};{{ end }}
+    {{- with .heroGradientAccent }}--hero-gradient-accent: {{ . | safeCSS }};{{ end }}
   }
 </style>
 {{- end -}}

@@ -13,6 +13,8 @@ defaultContentLanguageInSubdir = false
   # accentPrimary = "#00b4d8"
   # accentSecondary = "#0077b6"
   # accentTertiary = "#90e0ef"
+  badgeLabel = "MC³"
+  badgeStyle = "filled"
 
 [languages]
   [languages.en]

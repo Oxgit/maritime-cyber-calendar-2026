@@ -2,79 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/pl/impressum/</loc>
+    <loc>https://mc3.maritime-ogmios.tech/pl/impressum/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/impressum/"
+                href="https://mc3.maritime-ogmios.tech/impressum/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/impressum/"
+                href="https://mc3.maritime-ogmios.tech/pl/impressum/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pl/</loc>
+    <loc>https://mc3.maritime-ogmios.tech/pl/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://mc3.maritime-ogmios.tech/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/"
+                href="https://mc3.maritime-ogmios.tech/pl/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pl/privacy/</loc>
+    <loc>https://mc3.maritime-ogmios.tech/pl/privacy/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/privacy/"
+                href="https://mc3.maritime-ogmios.tech/privacy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/privacy/"
+                href="https://mc3.maritime-ogmios.tech/pl/privacy/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pl/categories/</loc>
+    <loc>https://mc3.maritime-ogmios.tech/pl/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://mc3.maritime-ogmios.tech/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/categories/"
+                href="https://mc3.maritime-ogmios.tech/pl/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pl/about/</loc>
+    <loc>https://mc3.maritime-ogmios.tech/pl/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/about/"
+                href="https://mc3.maritime-ogmios.tech/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/about/"
+                href="https://mc3.maritime-ogmios.tech/pl/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pl/tags/</loc>
+    <loc>https://mc3.maritime-ogmios.tech/pl/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://mc3.maritime-ogmios.tech/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/tags/"
+                href="https://mc3.maritime-ogmios.tech/pl/tags/"
                 />
   </url>
 </urlset>

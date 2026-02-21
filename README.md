@@ -199,6 +199,19 @@ Pull requests are welcome! Especially:
 - Bug fixes
 - Translations
 
+## TODO
+
+- [x] Utworzyć repo GitHub (Oxgit/maritime-cyber-calendar-2026) i push
+- [x] Konfiguracja Netlify (deploy z repo)
+- [x] Domena: `mc3.maritime-ogmios.tech` → Netlify DNS
+- [x] Hub branding (MC³ badge, hub link, ecosystem footer)
+- [x] Dwujęzyczność EN/PL (i18n)
+- [x] Strony: About, Privacy, Impressum
+- [x] Ulubione, wydruk TXT/PDF
+- [ ] SEO: robots.txt, sitemap.xml, canonical tags
+- [ ] Analytics (Plausible/Umami)
+- [ ] Aktualizacja danych konferencji na 2026 H2 (weryfikacja dat, nowe eventy)
+
 ---
 
 *Project inspired by [konferencje.szurek.tv](https://konferencje.szurek.tv)*

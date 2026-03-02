@@ -1,0 +1,7 @@
+<link rel="canonical" href="{{ .Permalink }}">
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ end }}
+{{ range .AllTranslations }}{{ if eq .Language.Lang "en" }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{ end }}{{ end }}

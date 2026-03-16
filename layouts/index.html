@@ -72,7 +72,10 @@
         {{ if eq .country_code "AT" }}{{ $flagEmoji = "🇦🇹" }}{{ end }}
         {{ if eq .country_code "CZ" }}{{ $flagEmoji = "🇨🇿" }}{{ end }}
         {{ if eq .country_code "DK" }}{{ $flagEmoji = "🇩🇰" }}{{ end }}
-        
+        {{ if eq .country_code "BR" }}{{ $flagEmoji = "🇧🇷" }}{{ end }}
+        {{ if eq .country_code "MY" }}{{ $flagEmoji = "🇲🇾" }}{{ end }}
+        {{ if eq .country_code "IN" }}{{ $flagEmoji = "🇮🇳" }}{{ end }}
+
         <article class="conference-card"
                  data-type="{{ .type }}"
                  data-country="{{ .country_code }}"

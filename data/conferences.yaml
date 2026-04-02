@@ -720,6 +720,21 @@ conferences:
     tentative_date: true
 
   # ===== JUNE 2026 =====
+  - name: "MARSEC COE 6th International Maritime Security Conference"
+    year: 2026
+    description: "Annual conference hosted by NATO Maritime Security Centre of Excellence (MARSEC COE) bringing together military, government and industry stakeholders to address contemporary maritime security challenges including cyber threats to naval and commercial shipping, hybrid warfare at sea, and critical maritime infrastructure protection."
+    link: "https://www.marseccoe.org/conference-2026"
+    date_start: "2026-06-09"
+    date_end: "2026-06-10"
+    place: "Istanbul"
+    country_code: "TR"
+    tags: ["nato", "maritime-security", "naval", "hybrid-warfare", "maritime-cyber", "critical-infrastructure"]
+    type: "conference"
+    focus_type: "defense"
+    price: "By invitation / registration"
+    online: false
+    cyber_track: true
+
   - name: "Lloyd's Maritime Academy Certificate in Maritime Cyber Security"
     year: 2026
     description: "Multi-week structured online certificate programme aimed at managers and officers seeking education in maritime cyber security and safety-management system integration, covering regulatory context, technical and organisational controls, and incident response governance."

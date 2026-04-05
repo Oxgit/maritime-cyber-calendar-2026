@@ -460,6 +460,21 @@ conferences:
     online: false
     cyber_track: true
 
+  - name: "Maritime Cyber Security Conference 2026 — Manila"
+    year: 2026
+    description: "Norwegian Training Center (NTC) and Philippine partners host a two-day conference on maritime cybersecurity. Day 1: leadership conference on regulation, collaboration, and evolving threats. Day 2: workshops for practitioners and vessel officers. Theme: Access Granted: Anchors Up, Firewalls On."
+    link: "https://ntcm.com.ph/event/2026-03-17-Maritime-Cyber-Security-Conference-2026-to-Convene-Global-Maritime-Leaders-in-Manila"
+    date_start: "2026-04-15"
+    date_end: "2026-04-16"
+    place: "Manila (Seda Hotel, Bonifacio Global City)"
+    country_code: "PH"
+    tags: ["maritime-cyber", "regulation", "seafarer-training", "norway-philippines", "crew-readiness"]
+    type: "conference"
+    focus_type: "dedicated"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
   - name: "DSA & NATSEC Asia 2026"
     year: 2026
     description: "Asia's flagship defence and national-security exhibition combining DSA and NATSEC Asia, with sea-based platform and offshore systems exhibits, C4ISR and cyber-related technologies relevant to naval and maritime critical-infrastructure security."
@@ -562,6 +577,21 @@ conferences:
     tags: ["insurance", "cyber-risk", "underwriting"]
     type: "conference"
     focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
+  - name: "Maritim Cyber Security 2026 — Ålesund"
+    year: 2026
+    description: "GCE Blue Maritime Cluster forum on how NIS2 and IACS UR E26 drive concrete cybersecurity requirements for shipowners, operators, and suppliers. Operator perspective and implications for existing fleets. Focus on practical implementation of regulatory demands and supply chain obligations."
+    link: "https://www.aakp.no/en/kalender/cyber-security"
+    date_start: "2026-04-30"
+    date_end: "2026-04-30"
+    place: "Ålesund (ÅKP Blue Innovation Arena)"
+    country_code: "NO"
+    tags: ["nis2", "iacs-e26", "maritime-cyber", "supply-chain", "operator-perspective", "regulation"]
+    type: "forum"
+    focus_type: "dedicated"
     price: "Paid"
     online: false
     cyber_track: true

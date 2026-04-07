@@ -886,6 +886,21 @@ conferences:
     cyber_track: true
 
   # ===== JULY 2026 =====
+  - name: "Monaco Energy Boat Challenge 2026 — Advanced Yachting Technology Conference"
+    year: 2026
+    description: "13th edition of Monaco Energy Boat Challenge hosted by Yacht Club de Monaco. The Advanced Yachting Technology Conference (9 July) features panels on climate-adaptive yachting, AI weather routing, cyberattacks in yachting and GNSS dark zones, and generative AI in yacht design. Invitation-only. Sponsors include UBS, Oceanco, Ferretti Group, Azimut Benetti, Lürssen."
+    link: "https://www.yacht-club-monaco.mc"
+    date_start: "2026-07-08"
+    date_end: "2026-07-11"
+    place: "Monaco (Yacht Club de Monaco)"
+    country_code: "MC"
+    tags: ["yachting", "superyacht", "gnss-spoofing", "maritime-cyber", "innovation", "clean-propulsion", "ai"]
+    type: "conference"
+    focus_type: "track"
+    price: "By invitation"
+    online: false
+    cyber_track: true
+
   - name: "Maritime Security West 2026"
     year: 2026
     description: "US maritime security conference - port cybersecurity, OT technologies, government-industry cooperation."

@@ -903,10 +903,10 @@ conferences:
 
   - name: "Maritime Security West 2026"
     year: 2026
-    description: "US maritime security conference - port cybersecurity, OT technologies, government-industry cooperation."
+    description: "13th Annual US maritime security conference - port cybersecurity, OT technologies, government-industry cooperation, Coast Guard and law-enforcement participation."
     link: "https://marsecwest.com/"
-    date_start: "2026-07-14"
-    date_end: "2026-07-16"
+    date_start: "2026-08-31"
+    date_end: "2026-09-02"
     place: "San Diego"
     country_code: "US"
     tags: ["port-security", "ot-security", "coast-guard", "cybersecurity"]
@@ -948,6 +948,52 @@ conferences:
     cyber_track: true
 
   # ===== SEPTEMBER 2026 =====
+  - name: "DNV Maritime Cybersecurity Summit 2026"
+    year: 2026
+    description: "DNV's dedicated maritime cybersecurity summit held during SMM week in Hamburg. First-hand insight into maritime cyber regulation (IACS UR E26/E27, NIS2) and real-world implementation across vessel and system architectures, from a classification-society perspective on turning compliance into operational security."
+    link: "https://www.dnv.com/events/maritime-cybersecurity-summit-2026/"
+    date_start: "2026-09-01"
+    date_end: "2026-09-01"
+    place: "Hamburg"
+    country_code: "DE"
+    tags: ["maritime-cyber", "iacs", "e26-e27", "nis2", "classification-society", "compliance"]
+    type: "summit"
+    focus_type: "dedicated"
+    price: "Registration required"
+    online: false
+    cyber_track: true
+
+  - name: "World Maritime Day 2026 — Panama (UMIP / MTCC Latin America / ClassNK)"
+    year: 2026
+    description: "Regional World Maritime Day 2026 event under the IMO theme 'From Policy to Practice: Powering Maritime Excellence', hosted by Universidad Marítima Internacional de Panamá (UMIP) and MTCC Latin America in collaboration with Nippon Kaiji Kyokai (ClassNK). Half-day programme (09:30–13:00) featuring a maritime cyber exercise translating maritime cyber policy into operational practice for Latin American ports and fleets."
+    link: "https://www.imo.org/en/about/events/pages/world-maritime-theme-2026-2027.aspx"
+    date_start: "2026-09-24"
+    date_end: "2026-09-24"
+    place: "Panama City (UMIP Auditorium, Building 1033)"
+    country_code: "PA"
+    tags: ["world-maritime-day", "imo", "maritime-cyber", "tabletop", "capacity-building", "latin-america", "classnk", "ports"]
+    type: "forum"
+    focus_type: "track"
+    price: "By invitation"
+    online: false
+    cyber_track: true
+
+  - name: "OAS/CIP Online Course: Cybersecurity and Digital Risk Management in the Port Sector"
+    year: 2026
+    description: "Capacity-building course run by the Inter-American Committee on Ports (CIP) of the Organization of American States (OAS), delivered online via the APN Virtual Platform. Aimed at Latin American and Caribbean port authorities and stakeholders, covering cybersecurity governance, digital risk management and operational resilience for port operations."
+    link: "http://portalcip.org/activities/calendar-of-activities/"
+    date_start: "2026-09-01"
+    date_end: "2026-12-31"
+    place: "Online (APN Virtual Platform)"
+    country_code: "US"
+    tags: ["training", "port-security", "cyber-risk", "capacity-building", "latin-america", "oas-cip"]
+    type: "training"
+    focus_type: "dedicated"
+    price: "Registration via CIP"
+    online: true
+    cyber_track: true
+    tentative_date: true
+
   - name: "SMM Hamburg 2026"
     year: 2026
     description: "World's leading maritime trade fair - showcase for 'Security by Design'. IACS E26/E27 implementation case studies. Maritime Future Summit covers AI/Cyber."
@@ -985,8 +1031,8 @@ conferences:
     link: "https://nmiotc.nato.int/nmiotc-annual-conferences/cyber-security-conference/"
     cfp_link: "https://nmiotc.nato.int/nmiotc-annual-conferences/cyber-security-conference/"
     cfp_deadline: "2026-07-15"
-    date_start: "2026-09-16"
-    date_end: "2026-09-17"
+    date_start: "2026-09-23"
+    date_end: "2026-09-24"
     place: "Chania, Crete"
     country_code: "GR"
     tags: ["nato", "maritime-cyber", "cyber-defense", "navy", "shipping"]
@@ -1042,6 +1088,21 @@ conferences:
     cyber_track: true
 
   # ===== OCTOBER 2026 =====
+  - name: "CS4CA LATAM Summit 2026"
+    year: 2026
+    description: "6th edition of the Cyber Security for Critical Assets (CS4CA) LATAM summit, gathering senior IT/OT security leaders from critical-infrastructure sectors across Latin America - including ports and maritime/terminal operations - to address industrial cyber resilience, IT/OT convergence and incident response in OT environments."
+    link: "https://latam.cs4ca.com"
+    date_start: "2026-10-27"
+    date_end: "2026-10-28"
+    place: "São Paulo"
+    country_code: "BR"
+    tags: ["critical-infrastructure", "ot-security", "ics", "port-security", "latin-america", "it-ot-convergence"]
+    type: "summit"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+
   - name: "Shipping UK 2026"
     year: 2026
     description: "Strategic review of UK's maritime services hub. Focus on UK National Cyber Security Centre (NCSC) guidance and Code of Practice for ship security."

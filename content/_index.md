@@ -1,3 +1,3 @@
 ---
-title: "Maritime Cybersecurity Conference Calendar 2026"
+title: "Maritime Cybersecurity Conference Calendar"
 ---

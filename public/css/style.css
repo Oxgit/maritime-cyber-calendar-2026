@@ -320,15 +320,33 @@ a:hover {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 30px 0;
     border-bottom: 1px solid var(--color-border);
+}
+
+.filter-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
 }
 
 .filters {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.filters-secondary {
+    padding-bottom: 14px;
+    border-bottom: 1px dashed var(--color-border);
+}
+
+.filters-secondary .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
 }
 
 .filter-btn {

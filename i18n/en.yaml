@@ -1,6 +1,14 @@
 # English translations
-hero_title: "🚢 MC³ - Maritime Cybersecurity Conference Calendar 2026"
+hero_title: "🚢 MC³ - Maritime Cybersecurity Conference Calendar"
 hero_subtitle: "Conferences, summits and events dedicated to cybersecurity in the maritime sector"
+
+# Time filters
+filter_upcoming: "Upcoming"
+filter_past: "Past"
+filter_time_all: "All"
+
+# Year filters
+filter_all_years: "All years"
 
 # Filters
 filter_all: "All"
@@ -52,7 +60,7 @@ favorites_info_text: "Click the heart icon on any conference card to add it to y
 favorites_info_privacy: "Your data stays private - favorites are stored only in your browser (localStorage), never sent to any server."
 
 # Footer
-footer_description: "Maritime Cybersecurity conferences and events calendar for 2026."
+footer_description: "Maritime Cybersecurity conferences and events calendar."
 footer_links: "Links"
 footer_contact: "Contact"
 footer_contact_text: "Have questions or want to add an event?"

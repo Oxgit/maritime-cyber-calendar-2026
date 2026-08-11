@@ -2,9 +2,21 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const cards = document.querySelectorAll('.conference-card');
-    const filterBtns = document.querySelectorAll('.filter-btn');
+    const timeFilterBtns = document.querySelectorAll('#time-filters .filter-btn');
+    const yearFilterBtns = document.querySelectorAll('#year-filters .filter-btn');
+    const typeFilterBtns = document.querySelectorAll('#type-filters .filter-btn');
     const searchInput = document.getElementById('search');
     const noResults = document.getElementById('no-results');
+
+    // "Today", frozen at page load - used for the Upcoming/Past time filter
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    // Parse a "YYYY-MM-DD" string as a local-time date (avoids the UTC
+    // off-by-one that plain `new Date("YYYY-MM-DD")` can produce)
+    function parseLocalDate(dateStr) {
+        return new Date(dateStr + 'T00:00:00');
+    }
 
     // Stats elements
     const totalCount = document.getElementById('total-count');
@@ -92,8 +104,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateFavoritesCount();
 
                 // Re-filter if favorites filter is active
-                const activeFilter = document.querySelector('.filter-btn.active');
-                if (activeFilter && activeFilter.dataset.filter === 'favorites') {
+                const activeTypeFilter = document.querySelector('#type-filters .filter-btn.active');
+                if (activeTypeFilter && activeTypeFilter.dataset.filter === 'favorites') {
                     filterCards();
                 }
             });
@@ -115,18 +127,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Initial stats calculation
-    updateStats();
     initFavorites();
 
-    // Filter functionality
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-            filterCards();
+    // Filter functionality - each group (time / year / type) manages its
+    // own "active" state independently; filterCards() combines all three.
+    function setupFilterGroup(buttons) {
+        buttons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                buttons.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                filterCards();
+            });
         });
-    });
+    }
+
+    setupFilterGroup(timeFilterBtns);
+    setupFilterGroup(yearFilterBtns);
+    setupFilterGroup(typeFilterBtns);
 
     // Search functionality
     searchInput.addEventListener('input', filterCards);
@@ -153,40 +170,64 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function filterCards() {
-        const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+        const activeTypeFilter = document.querySelector('#type-filters .filter-btn.active').dataset.filter;
+        const activeTimeFilter = document.querySelector('#time-filters .filter-btn.active').dataset.timeFilter;
+        const activeYearFilter = document.querySelector('#year-filters .filter-btn.active').dataset.yearFilter;
         const searchTerm = searchInput.value.toLowerCase().trim();
-        let visibleCount = 0;
+        const visibleCards = [];
 
         cards.forEach(card => {
-            let showByFilter = true;
+            let showByType = true;
+            let showByTime = true;
+            let showByYear = true;
             let showBySearch = true;
 
-            // Filter logic
-            switch(activeFilter) {
+            // Type filter logic (conference/expo/summit/cyber-track/online/favorites/cfp)
+            switch(activeTypeFilter) {
                 case 'all':
-                    showByFilter = true;
+                    showByType = true;
                     break;
                 case 'conference':
-                    showByFilter = card.dataset.type === 'conference';
+                    showByType = card.dataset.type === 'conference';
                     break;
                 case 'expo':
-                    showByFilter = card.dataset.type === 'expo';
+                    showByType = card.dataset.type === 'expo';
                     break;
                 case 'summit':
-                    showByFilter = card.dataset.type === 'summit' || card.dataset.type === 'forum' || card.dataset.type === 'symposium';
+                    showByType = card.dataset.type === 'summit' || card.dataset.type === 'forum' || card.dataset.type === 'symposium';
                     break;
                 case 'cfp':
-                    showByFilter = card.dataset.cfp === 'true';
+                    showByType = card.dataset.cfp === 'true';
                     break;
                 case 'cyber-track':
-                    showByFilter = card.dataset.cyberTrack === 'true';
+                    showByType = card.dataset.cyberTrack === 'true';
                     break;
                 case 'online':
-                    showByFilter = card.dataset.online === 'true';
+                    showByType = card.dataset.online === 'true';
                     break;
                 case 'favorites':
-                    showByFilter = isFavorite(card.dataset.id);
+                    showByType = isFavorite(card.dataset.id);
                     break;
+            }
+
+            // Time filter logic - based on date_end, so an event still
+            // running today counts as "upcoming", not "past"
+            const cardDateEnd = parseLocalDate(card.dataset.dateEnd || card.dataset.date);
+            switch(activeTimeFilter) {
+                case 'upcoming':
+                    showByTime = cardDateEnd >= today;
+                    break;
+                case 'past':
+                    showByTime = cardDateEnd < today;
+                    break;
+                case 'all':
+                    showByTime = true;
+                    break;
+            }
+
+            // Year filter logic - year taken from data-date (date_start)
+            if (activeYearFilter !== 'all') {
+                showByYear = card.dataset.date.substring(0, 4) === activeYearFilter;
             }
 
             // Search logic
@@ -202,44 +243,40 @@ document.addEventListener('DOMContentLoaded', function() {
                                country.includes(searchTerm);
             }
 
-            // Apply visibility
-            if (showByFilter && showBySearch) {
+            // Apply visibility - all filter groups combine as a conjunction
+            if (showByType && showByTime && showByYear && showBySearch) {
                 card.classList.remove('hidden');
-                visibleCount++;
+                visibleCards.push(card);
             } else {
                 card.classList.add('hidden');
             }
         });
 
         // Show/hide no results message
-        if (visibleCount === 0) {
+        if (visibleCards.length === 0) {
             noResults.style.display = 'block';
         } else {
             noResults.style.display = 'none';
         }
 
-        // Update displayed count
-        totalCount.textContent = visibleCount;
+        // Stats always reflect the currently visible set
+        updateStats(visibleCards);
     }
 
-    function updateStats() {
-        // Total conferences
-        totalCount.textContent = cards.length;
+    function updateStats(visibleCards) {
+        // Total visible conferences
+        totalCount.textContent = visibleCards.length;
 
-        // Unique countries
+        // Unique countries among visible conferences
         const countries = new Set();
-        cards.forEach(card => {
-            countries.add(card.dataset.country);
-        });
-        countriesCount.textContent = countries.size;
-
-        // Cyber track conferences
         let cyberTrackCount = 0;
-        cards.forEach(card => {
+        visibleCards.forEach(card => {
+            countries.add(card.dataset.country);
             if (card.dataset.cyberTrack === 'true') {
                 cyberTrackCount++;
             }
         });
+        countriesCount.textContent = countries.size;
         cyberCount.textContent = cyberTrackCount;
     }
 
@@ -261,6 +298,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Sort on load
     sortCardsByDate();
+
+    // Apply the default filters (Upcoming / All years / All types) and
+    // compute the initial stats from the resulting visible set
+    filterCards();
 
     // Get favorite cards data for export
     function getFavoriteCardsData() {

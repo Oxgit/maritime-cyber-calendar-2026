@@ -21,7 +21,7 @@ defaultContentLanguageInSubdir = false
     languageCode = "en"
     languageName = "English"
     weight = 1
-    title = "Maritime Cybersecurity Conference Calendar 2026"
+    title = "Maritime Cybersecurity Conference Calendar"
     [languages.en.params]
       #description = "Maritime Cybersecurity conferences and events calendar for 2026"
     [[languages.en.menus.main]]
@@ -45,9 +45,9 @@ defaultContentLanguageInSubdir = false
     languageCode = "pl"
     languageName = "Polski"
     weight = 2
-    title = "Kalendarz Konferencji Maritime Cybersecurity 2026"
+    title = "Kalendarz Konferencji Maritime Cybersecurity"
     [languages.pl.params]
-      description = "Kalendarz konferencji Maritime Cybersecurity na rok 2026"
+      description = "Kalendarz konferencji Maritime Cybersecurity"
     [[languages.pl.menus.main]]
       name = "Kalendarz"
       url = "/pl/"

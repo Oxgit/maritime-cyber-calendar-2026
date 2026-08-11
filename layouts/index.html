@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $conferences := .Site.Data.conferences.conferences }}
 <div class="hero">
     <div class="hero-content">
         <h1>{{ i18n "hero_title" }}</h1>
@@ -8,15 +9,36 @@
 
 <div class="container">
     <div class="controls">
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">{{ i18n "filter_all" }}</button>
-            <button class="filter-btn" data-filter="conference">{{ i18n "filter_conferences" }}</button>
-            <button class="filter-btn" data-filter="cfp">{{ i18n "filter_cfp" }}</button>
-            <button class="filter-btn" data-filter="expo">{{ i18n "filter_expo" }}</button>
-            <button class="filter-btn" data-filter="summit">{{ i18n "filter_summits" }}</button>
-            <button class="filter-btn" data-filter="cyber-track">{{ i18n "filter_cyber_track" }}</button>
-            <button class="filter-btn" data-filter="online">{{ i18n "filter_online" }}</button>
-            <button class="filter-btn" data-filter="favorites">{{ i18n "filter_favorites" }}</button>
+        <div class="filter-groups">
+            <div class="filters filters-secondary" id="time-filters">
+                <button class="filter-btn active" data-time-filter="upcoming">{{ i18n "filter_upcoming" }}</button>
+                <button class="filter-btn" data-time-filter="past">{{ i18n "filter_past" }}</button>
+                <button class="filter-btn" data-time-filter="all">{{ i18n "filter_time_all" }}</button>
+            </div>
+            <div class="filters filters-secondary" id="year-filters">
+                {{ $years := slice }}
+                {{ range $conferences }}
+                    {{ $year := slicestr .date_start 0 4 }}
+                    {{ if not (in $years $year) }}
+                        {{ $years = $years | append $year }}
+                    {{ end }}
+                {{ end }}
+                {{ $years = sort $years }}
+                {{ range $years }}
+                <button class="filter-btn" data-year-filter="{{ . }}">{{ . }}</button>
+                {{ end }}
+                <button class="filter-btn active" data-year-filter="all">{{ i18n "filter_all_years" }}</button>
+            </div>
+            <div class="filters filters-type" id="type-filters">
+                <button class="filter-btn active" data-filter="all">{{ i18n "filter_all" }}</button>
+                <button class="filter-btn" data-filter="conference">{{ i18n "filter_conferences" }}</button>
+                <button class="filter-btn" data-filter="cfp">{{ i18n "filter_cfp" }}</button>
+                <button class="filter-btn" data-filter="expo">{{ i18n "filter_expo" }}</button>
+                <button class="filter-btn" data-filter="summit">{{ i18n "filter_summits" }}</button>
+                <button class="filter-btn" data-filter="cyber-track">{{ i18n "filter_cyber_track" }}</button>
+                <button class="filter-btn" data-filter="online">{{ i18n "filter_online" }}</button>
+                <button class="filter-btn" data-filter="favorites">{{ i18n "filter_favorites" }}</button>
+            </div>
         </div>
         <div class="search-box">
             <input type="text" id="search" placeholder="{{ i18n "search_placeholder" }}" autocomplete="off">
@@ -48,37 +70,23 @@
         </div>
     </div>
 
-    {{ $conferences := .Site.Data.conferences.conferences }}
+    {{ $regionalIndicators := dict
+        "A" "🇦" "B" "🇧" "C" "🇨" "D" "🇩" "E" "🇪" "F" "🇫" "G" "🇬" "H" "🇭" "I" "🇮"
+        "J" "🇯" "K" "🇰" "L" "🇱" "M" "🇲" "N" "🇳" "O" "🇴" "P" "🇵" "Q" "🇶" "R" "🇷"
+        "S" "🇸" "T" "🇹" "U" "🇺" "V" "🇻" "W" "🇼" "X" "🇽" "Y" "🇾" "Z" "🇿"
+    }}
 
     <div class="conferences-grid" id="conferences">
         {{ range $conferences }}
-        {{ $flagEmoji := "" }}
-        {{ if eq .country_code "NO" }}{{ $flagEmoji = "🇳🇴" }}{{ end }}
-        {{ if eq .country_code "GR" }}{{ $flagEmoji = "🇬🇷" }}{{ end }}
-        {{ if eq .country_code "US" }}{{ $flagEmoji = "🇺🇸" }}{{ end }}
-        {{ if eq .country_code "DE" }}{{ $flagEmoji = "🇩🇪" }}{{ end }}
-        {{ if eq .country_code "GB" }}{{ $flagEmoji = "🇬🇧" }}{{ end }}
-        {{ if eq .country_code "FR" }}{{ $flagEmoji = "🇫🇷" }}{{ end }}
-        {{ if eq .country_code "MC" }}{{ $flagEmoji = "🇲🇨" }}{{ end }}
-        {{ if eq .country_code "NL" }}{{ $flagEmoji = "🇳🇱" }}{{ end }}
-        {{ if eq .country_code "PT" }}{{ $flagEmoji = "🇵🇹" }}{{ end }}
-        {{ if eq .country_code "PL" }}{{ $flagEmoji = "🇵🇱" }}{{ end }}
-        {{ if eq .country_code "SG" }}{{ $flagEmoji = "🇸🇬" }}{{ end }}
-        {{ if eq .country_code "JP" }}{{ $flagEmoji = "🇯🇵" }}{{ end }}
-        {{ if eq .country_code "CA" }}{{ $flagEmoji = "🇨🇦" }}{{ end }}
-        {{ if eq .country_code "BE" }}{{ $flagEmoji = "🇧🇪" }}{{ end }}
-        {{ if eq .country_code "LV" }}{{ $flagEmoji = "🇱🇻" }}{{ end }}
-        {{ if eq .country_code "FI" }}{{ $flagEmoji = "🇫🇮" }}{{ end }}
-        {{ if eq .country_code "AE" }}{{ $flagEmoji = "🇦🇪" }}{{ end }}
-        {{ if eq .country_code "AT" }}{{ $flagEmoji = "🇦🇹" }}{{ end }}
-        {{ if eq .country_code "CZ" }}{{ $flagEmoji = "🇨🇿" }}{{ end }}
-        {{ if eq .country_code "DK" }}{{ $flagEmoji = "🇩🇰" }}{{ end }}
-        {{ if eq .country_code "BR" }}{{ $flagEmoji = "🇧🇷" }}{{ end }}
-        {{ if eq .country_code "MY" }}{{ $flagEmoji = "🇲🇾" }}{{ end }}
-        {{ if eq .country_code "IN" }}{{ $flagEmoji = "🇮🇳" }}{{ end }}
-        {{ if eq .country_code "PH" }}{{ $flagEmoji = "🇵🇭" }}{{ end }}
-        {{ if eq .country_code "TR" }}{{ $flagEmoji = "🇹🇷" }}{{ end }}
-        {{ if eq .country_code "PA" }}{{ $flagEmoji = "🇵🇦" }}{{ end }}
+        {{ $flagEmoji := "🏳️" }}
+        {{ $code := upper .country_code }}
+        {{ if eq (len $code) 2 }}
+            {{ $c1 := index $regionalIndicators (substr $code 0 1) }}
+            {{ $c2 := index $regionalIndicators (substr $code 1 1) }}
+            {{ if and $c1 $c2 }}
+                {{ $flagEmoji = printf "%s%s" $c1 $c2 }}
+            {{ end }}
+        {{ end }}
 
         <article class="conference-card"
                  data-type="{{ .type }}"

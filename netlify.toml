@@ -1,14 +1,14 @@
 [build]
   publish = "public"
   command = "hugo --minify"
-  # Pomiń build jeśli nie zmieniły się pliki wpływające na stronę.
-  # UWAGA: warunek `test -n "$CACHED_COMMIT_REF"` jest konieczny. Bez niego, gdy
-  # zmienna jest pusta (a jest pusta po każdym anulowanym/nieudanym buildzie),
-  # `git diff --quiet $COMMIT_REF -- ...` porównuje katalog roboczy z tym samym
-  # commitem, zawsze zwraca 0 i build jest anulowany jako "no content change".
-  # Cache się wtedy nie odświeża, więc zmienna zostaje pusta i deploy jest
-  # trwale zakleszczony (zdarzyło się 2026-04-02, 2026-06-29 i 2026-08-11).
-  ignore = "test -n \"$CACHED_COMMIT_REF\" && git diff --quiet \"$CACHED_COMMIT_REF\" \"$COMMIT_REF\" -- content/ layouts/ static/ data/ i18n/ hugo.toml netlify.toml"
+  # ⛔ NIE przywracaj tu reguły `ignore` bez sprawdzenia logu builda.
+  # Reguła "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- content/ ..."
+  # anulowała KAŻDY deploy z komunikatem "Canceled build due to no content
+  # change" — potwierdzone 2026-04-02, 2026-06-29 i dwukrotnie 2026-08-11,
+  # także po zabezpieczeniu warunkiem `test -n "$CACHED_COMMIT_REF"`.
+  # Anulowany build nie odświeża cache, więc stan sam się utrwalał i treść
+  # wchodziła na produkcję dopiero ręcznym deployem z panelu.
+  # Build tej strony trwa ~1 s (11 podstron), więc oszczędność była pozorna.
 
 [build.environment]
   HUGO_VERSION = "0.145.0"

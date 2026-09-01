@@ -1073,10 +1073,10 @@ conferences:
     cyber_track: true
   - name: "World Maritime Day 2026 — Panama (UMIP / MTCC Latin America / ClassNK)"
     year: 2026
-    description: "Regional World Maritime Day 2026 event under the IMO theme 'From Policy to Practice: Powering Maritime Excellence', hosted by Universidad Marítima Internacional de Panamá (UMIP) and MTCC Latin America in collaboration with Nippon Kaiji Kyokai (ClassNK). Half-day programme (09:30–13:00) featuring a maritime cyber exercise translating maritime cyber policy into operational practice for Latin American ports and fleets."
+    description: "Regional World Maritime Day 2026 event under the IMO theme 'From Policy to Practice: Powering Maritime Excellence', hosted by Universidad Marítima Internacional de Panamá (UMIP) and MTCC Latin America in collaboration with Nippon Kaiji Kyokai (ClassNK). Two days: Thursday 24 September is the World Maritime Day conference programme; Friday 25 September is a maritime cyber tabletop exercise (09:30–15:30, up to 60 participants in five teams) translating maritime cyber policy into operational practice for Latin American ports and fleets. Registration through UMIP."
     link: "https://www.imo.org/en/about/events/pages/world-maritime-theme-2026-2027.aspx"
     date_start: "2026-09-24"
-    date_end: "2026-09-24"
+    date_end: "2026-09-25"
     place: "Panama City (UMIP Auditorium, Building 1033)"
     country_code: "PA"
     tags: ["world-maritime-day", "imo", "maritime-cyber", "tabletop", "capacity-building", "latin-america", "classnk", "ports"]

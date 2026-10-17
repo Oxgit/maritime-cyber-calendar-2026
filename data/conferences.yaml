@@ -1185,21 +1185,6 @@ conferences:
     price: "Unknown"
     online: false
     cyber_track: true
-  - name: "4th EMSA Maritime Cybersecurity Conference"
-    year: 2026
-    description: "Annual EMSA/ENISA conference on maritime cybersecurity - information sharing, NIS2 regulations, best practices."
-    link: "https://www.emsa.europa.eu"
-    tentative_date: true
-    date_start: "2026-10-08"
-    date_end: "2026-10-08"
-    place: "Lisbon"
-    country_code: "PT"
-    tags: ["eu", "maritime-cyber", "nis2", "information-sharing", "regulations"]
-    type: "conference"
-    focus_type: "dedicated"
-    price: "Free"
-    online: false
-    cyber_track: true
   - name: "Maritime Economy Forum Gdynia (Forum Gospodarki Morskiej Gdynia) — 25th edition"
     year: 2026
     description: "Poland's largest free maritime-economy gathering (25th/jubilee edition), organized by the City of Gdynia. Six thematic panels including a dedicated cybersecurity track led by Rafał Cichocki, head of the Maritime Cybersecurity Center at the University of Maritime Economy in Gdynia, titled 'From e-mail to catastrophe — cyber threats in maritime navigation', covering GNSS/AIS manipulation and IACS UR E26/E27 requirements."
@@ -1375,8 +1360,8 @@ conferences:
     cyber_track: true
   - name: "IMO/Cyber-SHIP Lab Symposium on Maritime Cyber Security"
     year: 2026
-    description: "Annual IMO and University of Plymouth symposium - research on cyber risk in the maritime sector, supply chain resilience, seafarer training."
-    link: "https://www.imo.org/en/about/events/pages/symposium-maritime-cyber-security-and-resilience.aspx"
+    description: "Annual IMO and University of Plymouth symposium - research on cyber risk in the maritime sector, supply chain resilience, seafarer training. The 2026 date has not yet been announced by IMO; the date shown is an estimate from previous editions (13-14 November 2024). Link points to the most recent official IMO page (2024 edition)."
+    link: "https://www.imo.org/en/About/Events/Pages/Cyber-SHIP-Lab-Symposium.aspx"
     tentative_date: true
     date_start: "2026-11-11"
     date_end: "2026-11-12"

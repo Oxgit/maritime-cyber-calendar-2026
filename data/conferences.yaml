@@ -1241,7 +1241,6 @@ conferences:
     price: "£395-695"
     online: false
     cyber_track: true
-    tentative_date: true
   - name: "Maritime Hybrid, Electric & Hydrogen Fuel Cells Conference"
     year: 2026
     description: "Green transition event. Cyber risks in Battery Management Systems (BMS) and hydrogen fuel controls - safety and security of novel propulsion OT."
@@ -1387,14 +1386,13 @@ conferences:
     price: "Paid"
     online: false
     cyber_track: true
-  - name: "Maritime Security East 2026"
-    year: 2026
-    description: "US East Coast maritime security conference - port OT cybersecurity, USCG Cyber Command, public-private partnerships."
+  - name: "Maritime Security East 2027"
+    year: 2027
+    description: "14th annual US maritime security conference. The draft agenda includes a two-part Cyber Security Workshop, a cyber or CISA keynote and sessions on maritime cybersecurity regulation and cyber security in the Maritime Transportation System."
     link: "https://marseceast.com/"
-    tentative_date: true
-    date_start: "2026-11-17"
-    date_end: "2026-11-19"
-    place: "Houston"
+    date_start: "2027-02-02"
+    date_end: "2027-02-04"
+    place: "Baytown, Houston area (Hyatt Regency Baytown-Houston)"
     country_code: "US"
     tags: ["port-security", "ot-security", "coast-guard", "cybersecurity", "ppp"]
     type: "conference"
@@ -1404,18 +1402,18 @@ conferences:
     cyber_track: true
   - name: "Assises de l'économie de la mer 2026"
     year: 2026
-    description: "France's main maritime economy event - cybersecurity and data management in the maritime and port sector, with France Cyber Maritime participation."
+    description: "France's main annual gathering of the maritime economy, with about thirty round tables and conferences. Moved from Le Corum to the Sud de France Arena after recent storms. Cybersecurity is not named in the published programme."
     link: "https://economiedelamer.ouest-france.fr/"
     date_start: "2026-11-24"
     date_end: "2026-11-25"
-    place: "Montpellier (Le Corum)"
+    place: "Montpellier (Sud de France Arena)"
     country_code: "FR"
     tags: ["maritime-economy", "cybersecurity", "data-management", "ports", "m-cert"]
     type: "conference"
     focus_type: "track"
     price: "€300-500"
     online: false
-    cyber_track: true
+    cyber_track: false
   - name: "Maritime HR & Crew Management Summit"
     year: 2026
     description: "Session on 'Cybersecurity, Safety & Technology' - crew training, managing risk of personal devices on ship's bridge, Layer 8 (Human) vulnerability."
@@ -1569,7 +1567,6 @@ conferences:
     year: 2027
     description: "Biennial Singapore-based maritime trade exhibition and conference organized by Informa Markets with the Singapore Maritime Foundation, 11th edition, expanding across two exhibition levels for 2027. General maritime industry event; not cyber-dedicated."
     link: "https://www.sea-asia.com/"
-    tentative_date: true
     date_start: "2027-04-13"
     date_end: "2027-04-15"
     place: "Singapore (Marina Bay Sands)"
@@ -1816,6 +1813,7 @@ conferences:
     price: "Unknown"
     online: false
     cyber_track: false
+    tentative_date: true
   - name: "Maritime Cyber Guild Meetup - Athens"
     year: 2027
     description: "Grassroots practitioner meetup of the Maritime Cyber Guild, hosted by the International Society of Automation (ISA) the day before its OT Cybersecurity Summit. Announced on the guild's LinkedIn page in November 2026; the date is to be confirmed by an event page."
@@ -1831,3 +1829,129 @@ conferences:
     online: false
     cyber_track: true
     tentative_date: true
+  - name: "5th CSN Greece ICT Conference 2026"
+    year: 2026
+    description: "Cyprus Shipping News conference for shipping ICT, titled 'Intelligent Skies, Secure Seas: The AI Impact on ICT'. Includes the session 'The Shield - Redefining Maritime Cybersecurity' and 'The War Room', a live cyber-attack simulation on a vessel."
+    link: "https://cyprusshippingevents.com/5th-csn-greece-ict-conference/"
+    date_start: "2026-11-19"
+    date_end: "2026-11-19"
+    place: "Athens (Ploes Floating Venue)"
+    country_code: "GR"
+    tags: ["ict", "maritime-cyber", "simulation", "shipping"]
+    type: "conference"
+    focus_type: "track"
+    price: "Free for members of supporting organisations"
+    online: false
+    cyber_track: true
+  - name: "Cybertech Global TLV 2027"
+    year: 2027
+    description: "International cyber conference and exhibition. The agenda includes an OT Stage session 'Cybersecurity Across Strategic Infrastructure: Maritime, Aviation, and Space' on 26 January."
+    link: "https://www.cybertechisrael.com"
+    date_start: "2027-01-25"
+    date_end: "2027-01-27"
+    place: "Tel Aviv (Expo Tel Aviv, Pavilion 2)"
+    country_code: "IL"
+    tags: ["cyber", "ot-security", "critical-infrastructure", "maritime"]
+    type: "conference"
+    focus_type: "track"
+    price: "Unknown"
+    online: false
+    cyber_track: true
+  - name: "CruiseCon 2027"
+    year: 2027
+    description: "Cybersecurity conference held aboard a cruise ship sailing from Port Canaveral. A general cybersecurity event at sea rather than a maritime-cyber conference; 2027 sessions not yet listed."
+    link: "https://cruisecon.com/"
+    date_start: "2027-02-05"
+    date_end: "2027-02-10"
+    place: "Port Canaveral / At Sea"
+    country_code: "US"
+    tags: ["ciso", "cyber", "at-sea"]
+    type: "conference"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+  - name: "World Maritime Forum 2027"
+    year: 2027
+    description: "Shipping industry forum in Copenhagen. The programme includes the panel 'The Connected Ship Under Attack: Cyber, GNSS and Operational Resilience'."
+    link: "https://worldmaritime-forum.com/"
+    date_start: "2027-02-23"
+    date_end: "2027-02-24"
+    place: "Copenhagen (AC Bella Sky Convention Center)"
+    country_code: "DK"
+    tags: ["shipping", "cyber", "gnss", "resilience"]
+    type: "forum"
+    focus_type: "track"
+    price: "Unknown"
+    online: false
+    cyber_track: true
+  - name: "IMDEX Asia 2027"
+    year: 2027
+    description: "Maritime defence exhibition and conference in Singapore. Its business forums cover developments in the maritime and naval sector including cyber security, smart ports and port security."
+    link: "https://www.imdexasia.com/visit/visit-us"
+    date_start: "2027-05-04"
+    date_end: "2027-05-06"
+    place: "Singapore (Changi Exhibition Centre)"
+    country_code: "SG"
+    tags: ["naval", "defence", "port-security", "cyber"]
+    type: "expo"
+    focus_type: "defense"
+    price: "Unknown"
+    online: false
+    cyber_track: true
+  - name: "MARESEC 2027 - 7th European Workshop on Maritime Systems Resilience and Security"
+    year: 2027
+    description: "Research workshop on resilience, security and technology in the maritime domain. Cyber-security is one of the listed topics, with a call for papers and special sessions."
+    link: "http://www.maresec.eu"
+    date_start: "2027-05-19"
+    date_end: "2027-05-20"
+    place: "Rostock"
+    country_code: "DE"
+    tags: ["research", "resilience", "maritime-security", "academic"]
+    type: "conference"
+    focus_type: "track"
+    price: "Unknown"
+    online: false
+    cyber_track: true
+  - name: "Greek Maritime Forum 2027"
+    year: 2027
+    description: "Shipping industry forum in Athens. The programme includes the panel 'Cybersecurity in a Connected Maritime World: Protecting Vessels, Ports & Data'."
+    link: "https://www.greekmaritimeforum.com"
+    date_start: "2027-05-25"
+    date_end: "2027-05-26"
+    place: "Athens (Wyndham Grand Athens)"
+    country_code: "GR"
+    tags: ["shipping", "cyber", "ports", "greece"]
+    type: "forum"
+    focus_type: "track"
+    price: "Unknown"
+    online: false
+    cyber_track: true
+  - name: "ISA OT Cybersecurity Summit 2027"
+    year: 2027
+    description: "International conference on the ISA/IEC 62443 standards for OT security; 'Rail & Maritime' is among its target industries. The Maritime Cyber Guild meets in Athens the day before."
+    link: "https://otcs.isa.org/"
+    date_start: "2027-06-16"
+    date_end: "2027-06-17"
+    place: "Athens"
+    country_code: "GR"
+    tags: ["ot-security", "iec-62443", "ics", "standards"]
+    type: "summit"
+    focus_type: "track"
+    price: "Paid"
+    online: false
+    cyber_track: true
+  - name: "OCEANS 2027 Aberdeen"
+    year: 2027
+    description: "MTS/IEEE OCEANS conference on ocean science and engineering. Technical track 04, Underwater Security and Protection, covers critical undersea infrastructure protection and cybersecurity."
+    link: "https://aberdeen27.oceansconference.org"
+    date_start: "2027-06-21"
+    date_end: "2027-06-24"
+    place: "Aberdeen (P&J Live)"
+    country_code: "GB"
+    tags: ["ocean-engineering", "subsea", "critical-infrastructure", "academic"]
+    type: "conference"
+    focus_type: "track"
+    price: "Unknown"
+    online: false
+    cyber_track: true

@@ -1347,10 +1347,10 @@ conferences:
   - name: "LNG Shipping & Terminals"
     year: 2026
     description: "Protection of high-value LNG assets - cybersecurity for critical energy transport and terminal operations."
-    link: "https://www.rivieramm.com/events/events"
-    date_start: "2026-11-10"
-    date_end: "2026-11-11"
-    place: "London"
+    link: "https://events.rivieramm.com/event/LNG-shipping-and-terminal-Conference/summary"
+    date_start: "2026-10-13"
+    date_end: "2026-10-14"
+    place: "London (Millennium Gloucester Hotel)"
     country_code: "GB"
     tags: ["lng", "energy", "terminals", "high-value-assets"]
     type: "conference"
@@ -1447,22 +1447,6 @@ conferences:
     price: "Free"
     online: true
     cyber_track: true
-  - name: "Maritime Cyber Guild Meetup Q4"
-    year: 2026
-    description: "End-of-year technical wrap up. Grassroots practitioner community review of 2026 maritime cyber landscape."
-    link: "https://www.eventbrite.dk/o/115564904011"
-    date_start: "2026-12-04"
-    date_end: "2026-12-04"
-    place: "Hørsholm / Online"
-    country_code: "DK"
-    tags: ["practitioner", "community", "year-review"]
-    type: "meetup"
-    focus_type: "dedicated"
-    price: "Low cost"
-    online: true
-    cyber_track: true
-
-  # ===== JANUARY 2027 =====
   - name: "ITM/PTTI 2027 (ION International Technical Meeting & Precise Time and Time Interval Meeting)"
     year: 2027
     description: "Institute of Navigation's annual International Technical Meeting, co-located with the Precise Time and Time Interval (PTTI) meeting. Call for abstracts explicitly lists maritime PNT across multiple topic areas: 'GNSS Integrity and Augmentation' (aviation, automotive, UAV, rail, maritime), 'Resilient Navigation for Safety-Critical Applications' (maritime among safety-critical domains), and 'Alternatives, Backups, and Complements to GNSS' (maritime resilience)."
@@ -1832,3 +1816,18 @@ conferences:
     price: "Unknown"
     online: false
     cyber_track: false
+  - name: "Maritime Cyber Guild Meetup - Athens"
+    year: 2027
+    description: "Grassroots practitioner meetup of the Maritime Cyber Guild, hosted by the International Society of Automation (ISA) the day before its OT Cybersecurity Summit. Announced on the guild's LinkedIn page in November 2026; the date is to be confirmed by an event page."
+    link: "https://www.eventbrite.dk/o/115564904011"
+    date_start: "2027-06-15"
+    date_end: "2027-06-15"
+    place: "Athens"
+    country_code: "GR"
+    tags: ["practitioner", "community", "ot-security"]
+    type: "meetup"
+    focus_type: "dedicated"
+    price: "Low cost"
+    online: false
+    cyber_track: true
+    tentative_date: true

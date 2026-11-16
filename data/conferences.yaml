@@ -798,11 +798,11 @@ conferences:
     cyber_track: true
   - name: "Digital Baltic 2026"
     year: 2026
-    description: "International conference on digital security in the Baltic Sea region - critical infrastructure protection, dual-use technologies, NATO-EU cooperation."
-    link: "https://polish-presidency.consilium.europa.eu"
-    date_start: "2026-06-02"
-    date_end: "2026-06-04"
-    place: "Gdynia"
+    description: "4th edition of the international conference on critical infrastructure security and shared situational awareness in the Baltic Sea region, co-organised by the Polish Ministry of National Defence, OBR CTM and PGZ. Panels named cyberspace among the main challenges for critical infrastructure (Defence24)."
+    link: "https://www.digitalbaltic.pl/digital-baltic-2026.html"
+    date_start: "2026-03-18"
+    date_end: "2026-03-19"
+    place: "Gdynia (OBR Centrum Techniki Morskiej)"
     country_code: "PL"
     tags: ["baltic", "infrastructure-protection", "nato", "eu", "maritime-cyber"]
     type: "conference"

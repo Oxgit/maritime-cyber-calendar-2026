@@ -1430,21 +1430,6 @@ conferences:
     cyber_track: true
 
   # ===== DECEMBER 2026 =====
-  - name: "CyberOwl Annual Maritime Cybersecurity Conference"
-    year: 2026
-    description: "Annual CyberOwl virtual conference - practical cybersecurity solutions for fleet operators, IMO/IACS compliance."
-    link: "https://cyberowl.io"
-    tentative_date: true
-    date_start: "2026-12-03"
-    date_end: "2026-12-03"
-    place: "Online"
-    country_code: "GB"
-    tags: ["maritime-cyber", "compliance", "imo", "iacs", "fleet-operations"]
-    type: "conference"
-    focus_type: "dedicated"
-    price: "Free"
-    online: true
-    cyber_track: true
   - name: "ITM/PTTI 2027 (ION International Technical Meeting & Precise Time and Time Interval Meeting)"
     year: 2027
     description: "Institute of Navigation's annual International Technical Meeting, co-located with the Precise Time and Time Interval (PTTI) meeting. Call for abstracts explicitly lists maritime PNT across multiple topic areas: 'GNSS Integrity and Augmentation' (aviation, automotive, UAV, rail, maritime), 'Resilient Navigation for Safety-Critical Applications' (maritime among safety-critical domains), and 'Alternatives, Backups, and Complements to GNSS' (maritime resilience)."

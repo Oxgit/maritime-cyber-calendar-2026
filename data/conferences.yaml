@@ -1940,3 +1940,17 @@ conferences:
     price: "Unknown"
     online: false
     cyber_track: true
+  - name: "MTS-ISAC Maritime Cyber Resilience Summit in the Asia-Pacific Region 2027"
+    year: 2027
+    description: "Inaugural Asia-Pacific edition of the MTS-ISAC Maritime Cyber Resilience Summit: two days of intelligence-driven sessions for maritime executives, operators and technology practitioners, the first in Singapore. Ticket sales end 1 January 2027."
+    link: "https://www.mtsisac.org/event-details/maritime-cyber-resilience-summit-in-the-asia-pacific-region-january-13-14-presented-by-the-mts-isac-1"
+    date_start: "2027-01-13"
+    date_end: "2027-01-14"
+    place: "Singapore (PARKROYAL on Beach Road)"
+    country_code: "SG"
+    tags: ["isac", "threat-intelligence", "maritime-cyber", "asia-pacific"]
+    type: "summit"
+    focus_type: "dedicated"
+    price: "Paid"
+    online: false
+    cyber_track: true

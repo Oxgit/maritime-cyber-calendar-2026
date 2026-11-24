@@ -1429,7 +1429,36 @@ conferences:
     online: false
     cyber_track: true
 
+  - name: "Seatrade Maritime webinar: Navigating the danger zone, how to protect your fleet from GPS attacks"
+    year: 2026
+    description: "Seatrade Maritime News webinar on GPS jamming and spoofing threats to ships and how fleet operators can protect their vessels."
+    link: "https://www.seatrade-maritime.com/security/webinar-navigating-the-danger-zone-how-to-protect-your-fleet-from-gps-attacks"
+    date_start: "2026-11-25"
+    date_end: "2026-11-25"
+    place: "Online"
+    country_code: "GB"
+    tags: ["gnss", "gps-jamming", "spoofing", "fleet-security"]
+    type: "training"
+    focus_type: "dedicated"
+    price: "Unknown"
+    online: true
+    cyber_track: true
+
   # ===== DECEMBER 2026 =====
+  - name: "International WorkBoat Show 2026"
+    year: 2026
+    description: "Trade show and conference for the US commercial marine and workboat industry. Session on 2 December (10:00-10:45 CST): 'The Compliance Clock is Ticking: Cybersecurity for Securing the Fleet', with a speaker from the US Coast Guard's OT and integrated systems cyber division, on what the Coast Guard's cyber rule means for working vessels, port facilities and offshore operations."
+    link: "https://www.workboatshow.com/"
+    date_start: "2026-12-02"
+    date_end: "2026-12-04"
+    place: "New Orleans (Morial Convention Center)"
+    country_code: "US"
+    tags: ["workboats", "uscg", "compliance", "cybersecurity"]
+    type: "expo"
+    focus_type: "track"
+    price: "Unknown"
+    online: false
+    cyber_track: true
   - name: "ITM/PTTI 2027 (ION International Technical Meeting & Precise Time and Time Interval Meeting)"
     year: 2027
     description: "Institute of Navigation's annual International Technical Meeting, co-located with the Precise Time and Time Interval (PTTI) meeting. Call for abstracts explicitly lists maritime PNT across multiple topic areas: 'GNSS Integrity and Augmentation' (aviation, automotive, UAV, rail, maritime), 'Resilient Navigation for Safety-Critical Applications' (maritime among safety-critical domains), and 'Alternatives, Backups, and Complements to GNSS' (maritime resilience)."
